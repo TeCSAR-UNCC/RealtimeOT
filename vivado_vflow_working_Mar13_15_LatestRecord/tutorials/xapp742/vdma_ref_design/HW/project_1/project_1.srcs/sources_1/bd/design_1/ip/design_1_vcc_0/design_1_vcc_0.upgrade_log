@@ -1,0 +1,21 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
+| Date         : Tue Jul  8 12:23:05 2014
+| Host         : rhyolite.coe.neu.edu running 64-bit CentOS release 6.5 (Final)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+-----------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vcc_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_vcc_0 from xilinx.com:ip:xlconstant:1.0 to xilinx.com:ip:xlconstant:1.1
+
+2. Upgrade messages
+-------------------
+
+Renamed port const to dout
+

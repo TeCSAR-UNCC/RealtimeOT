@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:12:34 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Thu Mar  5 12:45:57 2015
+# Process ID: 530
+# Log file: /export/scratch/fan/vivado/vivado_vflow_working_Feb20_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/webtalk/vivado.log
+# Journal file: /export/scratch/fan/vivado/vivado_vflow_working_Feb20_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/webtalk/vivado.jou
+#-----------------------------------------------------------
+source sdk.tcl

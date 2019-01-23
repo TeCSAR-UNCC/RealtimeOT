@@ -1,0 +1,232 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.8  2016-12-21 bk=1.3817 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 1940 -defaultsOSRD
+preplace port hdmii_clk -pg 1 -y 1600 -defaultsOSRD
+preplace port hdmio_io -pg 1 -y 1680 -defaultsOSRD
+preplace port hdmii_io -pg 1 -y 1570 -defaultsOSRD
+preplace port fmc_imageon_iic -pg 1 -y 2530 -defaultsOSRD
+preplace port morph_sel -pg 1 -y 1900 -defaultsOSRD
+preplace port smth_sel -pg 1 -y 1920 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 2020 -defaultsOSRD
+preplace portBus fmc_imageon_iic_rst_n -pg 1 -y 2570 -defaultsOSRD
+preplace portBus output_source -pg 1 -y 1340 -defaultsOSRD
+preplace inst video_overlay_unit|xup_and3_3 -pg 1 -lvl 5 -y 754 -defaultsOSRD
+preplace inst pipeline_registers_3 -pg 1 -lvl 10 -y 1680 -defaultsOSRD
+preplace inst four_signal_registering -pg 1 -lvl 3 -y 1630 -defaultsOSRD
+preplace inst video_overlay_unit|vovrlay_data_packing_0 -pg 1 -lvl 4 -y 674 -defaultsOSRD
+preplace inst video_overlay_unit -pg 1 -lvl 11 -y 224 -defaultsOSRD
+preplace inst ycbcr_to_grayscale -pg 1 -lvl 10 -y 2010 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -y 1750 -defaultsOSRD
+preplace inst concat_interrupt -pg 1 -lvl 12 -y 1460 -defaultsOSRD
+preplace inst rst_processing_system7_0_100M -pg 1 -lvl 9 -y 2520 -defaultsOSRD
+preplace inst axi_mem_intercon_1 -pg 1 -lvl 12 -y 2300 -defaultsOSRD
+preplace inst fmc_imageon_iic_0 -pg 1 -lvl 13 -y 2724 -defaultsOSRD
+preplace inst Morphology_0 -pg 1 -lvl 7 -y 1600 -defaultsOSRD
+preplace inst mog_woi_det -pg 1 -lvl 13 -y 2544 -defaultsOSRD
+preplace inst fmc_imageon_hdmi_input_0 -pg 1 -lvl 1 -y 1580 -defaultsOSRD
+preplace inst video_overlay_unit|pipeline_registers_0 -pg 1 -lvl 2 -y 334 -defaultsOSRD
+preplace inst axi_mem_intercon_2 -pg 1 -lvl 12 -y 1970 -defaultsOSRD
+preplace inst fmc_imageon_hdmi_output_0 -pg 1 -lvl 13 -y 1682 -defaultsOSRD
+preplace inst video_overlay_unit|vovrly_sync_sigs_pass -pg 1 -lvl 4 -y 874 -defaultsOSRD
+preplace inst video_overlay_unit|pipeline_registers_1 -pg 1 -lvl 6 -y 1494 -defaultsOSRD
+preplace inst bge_unit -pg 1 -lvl 11 -y 7568 -defaultsOSRD
+preplace inst four_signal_registering1 -pg 1 -lvl 12 -y 1690 -defaultsOSRD
+preplace inst video_overlay_unit|vovrly_vdma -pg 1 -lvl 7 -y 224 -defaultsOSRD
+preplace inst video_overlay_unit|pipeline_registers_2 -pg 1 -lvl 6 -y 1824 -defaultsOSRD
+preplace inst four_signal_registering2 -pg 1 -lvl 10 -y 1490 -defaultsOSRD
+preplace inst vbb_system_reset_0 -pg 1 -lvl 2 -y 1740 -defaultsOSRD
+preplace inst video_overlay_unit|pipeline_registers_3 -pg 1 -lvl 3 -y 744 -defaultsOSRD
+preplace inst image_smoothing_0 -pg 1 -lvl 4 -y 1600 -defaultsOSRD
+preplace inst video_overlay_unit|video_overlay_0 -pg 1 -lvl 7 -y 1054 -defaultsOSRD
+preplace inst video_overlay_unit|vovraly_rd_async_fifo -pg 1 -lvl 2 -y 594 -defaultsOSRD
+preplace inst video_overlay_unit|pipeline_registers_4 -pg 1 -lvl 2 -y 804 -defaultsOSRD
+preplace inst video_overlay_unit|vovrly_data_unpacking0 -pg 1 -lvl 6 -y 1664 -defaultsOSRD
+preplace inst video_overlay_unit|xup_and4_0 -pg 1 -lvl 3 -y 894 -defaultsOSRD
+preplace inst smth_pass_sel -pg 1 -lvl 5 -y 1730 -defaultsOSRD
+preplace inst video_overlay_unit|pipeline_registers_5 -pg 1 -lvl 5 -y 574 -defaultsOSRD
+preplace inst video_overlay_unit|xup_and4_1 -pg 1 -lvl 7 -y 854 -defaultsOSRD
+preplace inst video_overlay_unit|vovrly_async_fifo_rst -pg 1 -lvl 1 -y 584 -defaultsOSRD
+preplace inst ycbcr2gray -pg 1 -lvl 10 -y 2210 -defaultsOSRD
+preplace inst video_overlay_unit|vovrlay_woi_det -pg 1 -lvl 6 -y 484 -defaultsOSRD
+preplace inst video_overlay_unit|pipeline_registers_6 -pg 1 -lvl 6 -y 1314 -defaultsOSRD
+preplace inst LEARNING_FACTOR -pg 1 -lvl 10 -y 2300 -defaultsOSRD
+preplace inst morph_pass_sel -pg 1 -lvl 8 -y 1730 -defaultsOSRD
+preplace inst hdmi_sync_signals_passing -pg 1 -lvl 6 -y 1630 -defaultsOSRD
+preplace inst video_overlay_unit|vovraly_wr_async_fifo -pg 1 -lvl 6 -y 944 -defaultsOSRD
+preplace inst FG_THRESHOLD -pg 1 -lvl 10 -y 2450 -defaultsOSRD
+preplace inst video_overlay_unit|xup_and3_1 -pg 1 -lvl 6 -y 1954 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 12 -y 200 -defaultsOSRD
+preplace inst pipeline_registers_1 -pg 1 -lvl 3 -y 1900 -defaultsOSRD
+preplace inst video_overlay_unit|xup_and3_2 -pg 1 -lvl 6 -y 1154 -defaultsOSRD
+preplace inst MATCH_THRESHOLD -pg 1 -lvl 10 -y 2100 -defaultsOSRD
+preplace inst rst_processing_system7_0_150M -pg 1 -lvl 11 -y 7838 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 10 -y 2820 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 13 -y 2214 -defaultsOSRD
+preplace inst ycbcr2mem_unit -pg 1 -lvl 11 -y 7248 -defaultsOSRD
+preplace inst pipeline_registers_2 -pg 1 -lvl 10 -y 1830 -defaultsOSRD
+preplace inst color_video_pass -pg 1 -lvl 9 -y 1880 -defaultsOSRD
+preplace netloc video_overlay_unit|Conn4 1 0 6 NJ 234 NJ 234 NJ 234 NJ 234 NJ 234 N
+preplace netloc vblank_in_1 1 5 1 1990
+preplace netloc ycbcr2gray_Dout 1 10 1 4020
+preplace netloc video_overlay_unit|vovrly_sync_sigs_pass_s_axis_tready 1 3 4 9390 114 NJ 114 NJ 114 10990
+preplace netloc four_signal_registering1_Dout1 1 12 1 19530
+preplace netloc video_overlay_unit|vovraly_rd_async_fifo_m_axis_tvalid 1 2 4 9010 1014 NJ 1014 NJ 1014 10170J
+preplace netloc video_overlay_unit|axi_resetn_1 1 0 7 NJ 674 8400J 994 NJ 994 NJ 994 NJ 994 10230 164 11000J
+preplace netloc four_signal_registering1_Dout2 1 12 1 19570
+preplace netloc processing_system7_0_FIXED_IO 1 13 1 20290
+preplace netloc four_signal_registering1_Dout3 1 12 1 19550
+preplace netloc fmc_imageon_hdmi_in_unit0_video_de 1 1 2 480J 1580 N
+preplace netloc rst_processing_system7_0_150M_peripheral_aresetn 1 11 1 11770
+preplace netloc video_overlay_unit|vovraly_wr_async_fifo_M_AXIS 1 6 1 10920
+preplace netloc fmc_imageon_hdmi_in_unit0_video_hblank 1 1 12 NJ 1550 800 1810 1120J 1820 1480J 1930 NJ 1930 NJ 1930 NJ 1930 3210J 1740 3640J 1950 4090J 2560 NJ 2560 19560
+preplace netloc video_overlay_unit|vovrly_vdma_m_axis_mm2s_tlast 1 1 7 8500 134 NJ 134 NJ 134 NJ 134 NJ 134 10970J 424 11490
+preplace netloc ycbcr_orig_rebuild_dout 1 9 2 3650 1900 4220
+preplace netloc video_overlay_unit|vovrly_vdma_mm2s_introut 1 7 1 11520
+preplace netloc morph_pass_sel_hblank_smth_sel 1 8 2 3150 1520 NJ
+preplace netloc pipeline_registers_4_pipe_out 1 6 2 2310 1750 NJ
+preplace netloc video_overlay_unit|input_video_vblank_1 1 0 6 NJ 654 8410J 734 9030J 674 9360J 754 9860J 674 N
+preplace netloc video_overlay_unit|vovrly_sync_sigs_pass_m_axis_tlast 1 4 2 N 834 10310J
+preplace netloc image_smoothing_full_version_0_Vblank_out 1 3 2 1150 1830 N
+preplace netloc MixtureOfGuassians_0_window_en_out 1 6 6 2330 1740 2660 1520 3130J 1590 NJ 1590 4170J 2130 11690
+preplace netloc four_signal_registering2_vblank_out 1 10 2 4240 2070 11720
+preplace netloc In2_1 1 3 6 1140 1810 1500 1950 NJ 1950 NJ 1950 NJ 1950 3250J
+preplace netloc video_overlay_unit|processing_system7_0_FCLK_CLK0 1 0 7 NJ 254 NJ 254 NJ 254 NJ 254 NJ 254 10360 174 10870J
+preplace netloc ycbcr_vdma_M_AXI_S2MM 1 11 1 11800
+preplace netloc xlconcat_0_dout 1 12 1 19580
+preplace netloc video_overlay_unit|axi_vdma_0_m_axis_mm2s_tvalid 1 1 7 8460 74 NJ 74 NJ 74 NJ 74 NJ 74 11020J 404 11460
+preplace netloc video_overlay_unit|processing_system7_0_FCLK_CLK1 1 0 7 8120 664 8420 1004 NJ 1004 NJ 1004 NJ 1004 10260 184 10960
+preplace netloc video_overlay_unit|data_packing_0_write_data 1 4 2 9850 874 NJ
+preplace netloc four_signal_registering1_Dout 1 12 1 19540
+preplace netloc video_overlay_unit|video_overlay_0_video_data_out 1 7 1 N
+preplace netloc video_overlay_unit|pipeline_registers_6_pipe_out 1 6 1 11000
+preplace netloc video_overlay_unit|vovrly_sync_sigs_pass_m_axis_tvalid 1 4 1 9890
+preplace netloc processing_system7_0_axi_periph_M06_AXI 1 10 1 4070
+preplace netloc fmc_imageon_hdmi_in_unit0_video_vblank 1 1 12 490 1620 820 1730 1110J 1970 NJ 1970 NJ 1970 NJ 1970 NJ 1970 3240J 1750 3630J 1920 4110J 2540 NJ 2540 19560
+preplace netloc video_overlay_unit|xup_and3_1_y 1 5 3 10360 1754 11040 1204 NJ
+preplace netloc video_overlay_unit|vovraly_rd_async_fifo_s_axis_tready 1 1 7 8490 94 NJ 94 NJ 94 NJ 94 NJ 94 11010J 414 11480
+preplace netloc processing_system7_0_DDR 1 13 1 20280
+preplace netloc image_smoothing_1_Hblank_out 1 4 1 1530
+preplace netloc image_smoothing_full_version_0_Hblank_out 1 3 2 1180 1790 N
+preplace netloc fmc_imageon_hdmi_out_0_IO_HDMIO 1 13 1 20290
+preplace netloc morph_pass_sel_Dout 1 8 2 3170 1700 NJ
+preplace netloc four_signal_registering2_de_out 1 10 2 4210J 2050 11690
+preplace netloc video_overlay_unit|vovraly_wr_async_fifo_s_axis_tready 1 5 1 10360
+preplace netloc video_overlay_unit|vovrly_async_fifo_rst_aresetn 1 1 5 8440 1024 NJ 1024 9390 1024 9880 1024 10210J
+preplace netloc axi_mem_intercon_2_M00_AXI 1 12 1 19550
+preplace netloc video_overlay_unit|clk_1 1 0 7 NJ 274 8430 874 9020 664 9350 594 9850 644 10330 784 10910J
+preplace netloc Din_1 1 5 5 N 1780 NJ 1780 2650J 1920 3230J 1770 3620J
+preplace netloc video_overlay_0_video_data_out 1 11 2 11690 1050 19600J
+preplace netloc Morphology_0_win_enable_out 1 7 1 N
+preplace netloc video_overlay_unit|output_source_1 1 0 7 NJ 1184 NJ 1184 NJ 1184 NJ 1184 NJ 1184 10180J 1224 10880
+preplace netloc video_overlay_unit|xup_and3_1_y_1 1 5 1 10290
+preplace netloc processing_system7_0_axi_periph_M05_AXI 1 10 3 4120J 2480 NJ 2480 19530
+preplace netloc video_overlay_unit_s2mm_introut 1 11 1 11690
+preplace netloc sel_1 1 0 8 NJ 1900 NJ 1900 780J 1980 NJ 1980 NJ 1980 2000J 1810 NJ 1810 N
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 8 6 3250 2610 3660J 2580 3990 2800 NJ 2800 NJ 2800 20250
+preplace netloc video_overlay_unit_mm2s_introut 1 11 1 11750
+preplace netloc image_smoothing_1_spdif_out 1 4 1 1490
+preplace netloc video_overlay_unit|fifo_generator_0_m_axis_tdata 1 2 6 9040 544 NJ 544 9870J 844 10190 1234 NJ 1234 11510J
+preplace netloc processing_system7_0_axi_periph_M02_AXI 1 10 1 3980
+preplace netloc processing_system7_0_axi_periph_M03_AXI 1 10 1 4060
+preplace netloc video_overlay_unit|xup_and4_1_y 1 2 6 9010J 124 NJ 124 NJ 124 NJ 124 10980J 434 11460
+preplace netloc fmc_imageon_iic_0_iic2intc_irpt 1 11 3 11800 1390 NJ 1390 20270
+preplace netloc morph_pass_sel_vblank_smth_sel 1 8 2 3140 1480 NJ
+preplace netloc smth_sel_1 1 0 5 170J 1830 NJ 1830 NJ 1830 1100J 1850 N
+preplace netloc pipeline_registers_2_pipe_out 1 6 2 2270 1790 NJ
+preplace netloc spdif_1 1 7 1 2640
+preplace netloc mog_woi_det_window_enable 1 3 11 1200 1750 1520 1900 NJ 1900 NJ 1900 2670J 1550 3190J 1610 NJ 1610 4160J 2120 NJ 2120 19530J 2030 20260
+preplace netloc video_overlay_unit|video_grayscale_data_smth_1 1 0 2 8150J 354 N
+preplace netloc video_overlay_unit|pipe_in_1 1 0 6 NJ 914 NJ 914 9000J 984 NJ 984 9910J 974 10200
+preplace netloc xlslice_0_Dout 1 10 1 4080
+preplace netloc window_enable_1 1 5 6 N 1760 NJ 1760 2680J 1900 3190J 1720 3660J 1910 4050J
+preplace netloc video_overlay_unit|axi_vdma_0_m_axis_mm2s_tdata 1 1 7 8470 44 NJ 44 NJ 44 NJ 44 NJ 44 NJ 44 11520
+preplace netloc video_overlay_unit|vbb_system_reset_0_system_reset_n 1 0 7 NJ 414 NJ 414 9050 534 NJ 534 9900 664 10240 144 10950
+preplace netloc fmc_imageon_iic_0_gpo 1 13 1 20290
+preplace netloc video_overlay_unit|vbb_system_reset_0_system_reset 1 0 7 NJ 294 8450J 404 NJ 404 9360 564 9890J 654 10320 154 10930J
+preplace netloc video_overlay_unit|data_unpacking_0_video_overlay_set 1 6 2 10970 1264 NJ
+preplace netloc Morphology_0_output_data_bit 1 7 1 2630
+preplace netloc four_signal_registering2_hblank_out 1 10 2 4230 2060 11730
+preplace netloc FG_THRESHOLD_dout 1 10 1 4000
+preplace netloc video_overlay_unit|xup_and3_0_y_1 1 4 3 NJ 854 10280J 804 10870
+preplace netloc video_overlay_unit|pipeline_registers_2_pipe_out 1 6 1 11020
+preplace netloc IO_HDMII_1 1 0 1 N
+preplace netloc mog_vdma_M_AXI_MM2S 1 11 1 11810
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 10 1 4060
+preplace netloc morph_pass_sel_spdif_smth_sel 1 8 2 3120 1460 NJ
+preplace netloc image_smoothing_1_data_out 1 4 1 1480
+preplace netloc In3_1 1 3 2 1190 1730 N
+preplace netloc swap_dout 1 1 2 N 1570 790J
+preplace netloc video_overlay_unit|vovraly_rd_async_fifo_m_axis_tkeep 1 2 3 N 574 NJ 574 9860J
+preplace netloc video_overlay_unit|xup_and4_0_y 1 3 1 N
+preplace netloc pipeline_registers_3_pipe_out 1 10 1 4090
+preplace netloc image_smoothing_1_win_enable_out 1 4 1 N
+preplace netloc video_overlay_unit|vovraly_rd_async_fifo_m_axis_tlast 1 2 2 9040J 814 9330
+preplace netloc video_overlay_unit|image_smoothing_full_version_0_data_out 1 0 6 8130J 434 NJ 434 NJ 434 NJ 434 NJ 434 10300
+preplace netloc morph_pass_sel_de_smth_sel 1 8 2 3160 1440 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 8 6 3170 2620 3670 2570 4130 2470 NJ 2470 19600 2380 20240
+preplace netloc Morphology_0_Hblank_out 1 7 1 2690
+preplace netloc MATCH_THRESHOLD_dout 1 10 1 4040
+preplace netloc fmc_imageon_hdmi_in_unit0_audio_spdif 1 1 2 500J 1600 N
+preplace netloc mog_vdma_M_AXI_S2MM 1 11 1 11820
+preplace netloc processing_system7_0_FCLK_CLK1 1 10 4 4250 2140 11760 2460 19570 2390 20230
+preplace netloc pipeline_registers_2_pipe_out1 1 10 1 4200
+preplace netloc hblank_in_1 1 5 1 1960
+preplace netloc image_smoothing_1_de_out 1 4 1 1500
+preplace netloc video_overlay_unit|input_video_hblank_1 1 0 6 8160J 454 NJ 454 NJ 454 NJ 454 NJ 454 10350
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 9 1 3620
+preplace netloc video_overlay_unit|data_packing_0_write_data_valid 1 4 2 9910 684 10270
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 10 3 4110 2700 NJ 2700 19580J
+preplace netloc video_overlay_unit|axi_vdma_0_m_axis_mm2s_tuser 1 0 8 8160 644 8400 64 NJ 64 NJ 64 NJ 64 NJ 64 11040J 394 11470
+preplace netloc video_overlay_unit|axi_vdma_0_m_axis_mm2s_tkeep 1 1 7 8480 54 NJ 54 NJ 54 NJ 54 NJ 54 NJ 54 11460
+preplace netloc pipeline_registers_5_pipe_out 1 6 2 2320 1730 2640
+preplace netloc Morphology_0_Vblank_out 1 7 1 2680
+preplace netloc Morphology_0_de_out 1 7 1 2650
+preplace netloc vbb_system_reset_0_system_reset_n 1 2 10 810 1970 1100J 1950 1480J 1960 1980 1960 NJ 1960 NJ 1960 3220 1710 3680 1760 4150 2100 11780J
+preplace netloc video_overlay_unit|vovrly_sync_sigs_pass_m_axis_tuser 1 4 2 9840 884 10250J
+preplace netloc video_overlay_unit|pipeline_registers_5_pipe_out 1 5 1 10340
+preplace netloc fmc_imageon_iic_0_IIC 1 13 1 20280
+preplace netloc LEARNING_FACTOR_dout 1 10 1 4010
+preplace netloc rst_processing_system7_0_150M_interconnect_aresetn 1 11 1 11740
+preplace netloc four_signal_registering2_spdif_out 1 10 2 4180J 2080 11710
+preplace netloc de_in_1 1 5 1 1970
+preplace netloc video_overlay_unit|vovrly_vdma_s2mm_introut 1 7 1 11500
+preplace netloc ycbcr_vdma_M_AXI_MM2S 1 11 1 11790
+preplace netloc axi_mem_intercon_1_M00_AXI 1 12 1 19530
+preplace netloc video_overlay_unit|pipeline_registers_3_pipe_out 1 3 4 9380 764 9860J 824 10250J 794 10900J
+preplace netloc video_overlay_unit|image_smoothing_full_version_0_win_enable_out 1 0 6 8140J 444 NJ 444 NJ 444 NJ 444 NJ 444 10220
+preplace netloc video_overlay_unit|pipeline_registers_1_pipe_out 1 6 1 10990
+preplace netloc pipeline_registers_1_pipe_out 1 6 2 2290 1770 NJ
+preplace netloc vbb_system_reset_0_system_reset 1 2 11 N 1750 1160 1760 1490J 1910 NJ 1910 2280 1910 NJ 1910 3180 1600 NJ 1600 4140 2520 NJ 2520 19560J
+preplace netloc processing_system7_0_M_AXI_GP0 1 9 5 3680 2150 NJ 2150 NJ 2150 19540J 2050 20220
+preplace netloc pipeline_registers_1_pipe_out1 1 3 6 1130 1780 1530 1920 NJ 1920 NJ 1920 2620J 1940 3260J
+preplace netloc output_source_1 1 0 11 170J 1180 NJ 1180 NJ 1180 NJ 1180 NJ 1180 NJ 1180 NJ 1180 NJ 1180 NJ 1180 NJ 1180 4210
+preplace netloc xlconstant_0_dout 1 1 1 N
+preplace netloc video_overlay_unit|vovraly_rd_async_fifo_m_axis_tuser 1 2 2 NJ 634 9340
+preplace netloc video_overlay_unit|data_unpacking_0_ready_to_unpack 1 2 6 9070 84 NJ 84 NJ 84 NJ 84 10940 1244 NJ
+preplace netloc axi_mem_intercon_M00_AXI 1 12 1 19590
+preplace netloc morph_pass_sel_windown_en_smth_sel 1 8 2 N 1760 3650J
+preplace netloc MixtureOfGuassians_0_is_fg 1 6 6 2340 1830 2690 1980 NJ 1980 3630J 1960 4120J 2110 11700
+preplace netloc image_smoothing_1_Vblank_out 1 4 1 1520
+preplace netloc video_overlay_unit|Conn1 1 0 7 8150J 104 NJ 104 NJ 104 NJ 104 NJ 104 NJ 104 11030
+preplace netloc video_overlay_unit|video_color_data_smth_1 1 0 2 8160J 824 N
+preplace netloc video_overlay_unit|pipe_in2_1 1 0 3 NJ 894 NJ 894 9060
+preplace netloc video_overlay_unit_M_AXI_S2MM 1 11 1 11740
+preplace netloc video_overlay_unit|Conn2 1 7 1 N
+preplace netloc processing_system7_0_axi_periph_M04_AXI 1 10 1 4030
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 9 4 3640 2550 4190 2600 NJ 2600 19550
+preplace netloc video_overlay_unit|Conn3 1 7 1 N
+preplace netloc video_overlay_unit|vovrlay_woi_det_window_enable 1 2 6 9070 974 9370 1244 NJ 1244 10230 1244 10890 1224 NJ
+preplace netloc S00_AXI_1 1 11 1 11740
+preplace netloc clk_1 1 0 13 170 1680 500 1660 780 1520 1170 1720 1510J 1550 1960 1520 2300 1720 2620J 1530 3200 1530 3670 1750 4100 2090 11700 1580 19560
+preplace netloc processing_system7_0_FCLK_RESET2_N 1 1 13 500 2350 NJ 2350 NJ 2350 NJ 2350 NJ 2350 NJ 2350 NJ 2350 NJ 2350 NJ 2350 NJ 2350 11710J 2450 19590J 2410 20220
+preplace netloc spdif_in_1 1 5 1 2000
+levelinfo -pg 1 150 330 650 970 1340 1760 2140 2480 2910 3440 3830 8420 19378 19975 20310 -top 0 -bot 7930
+levelinfo -hier video_overlay_unit * 8280 8770 9200 9620 10040 10660 11250 *
+",
+}
+{
+   da_axi4_cnt: "30",
+   da_board_cnt: "1",
+   da_ps7_cnt: "1",
+}

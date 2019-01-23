@@ -1,0 +1,1448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root MajorVersion="0" MinorVersion="33">
+  <CompositeFile CompositeFileTopName="hdmi_directpassthr_woi" CanBeSetAsTop="true" CanDisplayChildGraph="true">
+    <Description>Composite Fileset</Description>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1524601670"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1524601670"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1524601670"/>
+    <FileCollection Name="SOURCES" Type="SOURCES">
+      <File Name="ip/hdmi_directpassthr_woi_processing_system7_0_0/hdmi_directpassthr_woi_processing_system7_0_0.xci" Type="IP">
+        <Instance HierarchyPath="processing_system7_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_axi_iic_0_0/hdmi_directpassthr_woi_axi_iic_0_0.xci" Type="IP">
+        <Instance HierarchyPath="fmc_imageon_iic_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_processing_system7_0_axi_periph_0/hdmi_directpassthr_woi_processing_system7_0_axi_periph_0.xci" Type="IP">
+        <Instance HierarchyPath="processing_system7_0_axi_periph"/>
+        <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_rst_processing_system7_0_100M_0/hdmi_directpassthr_woi_rst_processing_system7_0_100M_0.xci" Type="IP">
+        <Instance HierarchyPath="rst_processing_system7_0_100M"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_fmc_imageon_hdmi_in_0_0/hdmi_directpassthr_woi_fmc_imageon_hdmi_in_0_0.xci" Type="IP">
+        <Instance HierarchyPath="fmc_imageon_hdmi_input_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_fmc_imageon_hdmi_out_0_0/hdmi_directpassthr_woi_fmc_imageon_hdmi_out_0_0.xci" Type="IP">
+        <Instance HierarchyPath="fmc_imageon_hdmi_output_0/fmc_imageon_hdmi_out_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlconstant_0_0/hdmi_directpassthr_woi_xlconstant_0_0.xci" Type="IP">
+        <Instance HierarchyPath="fmc_imageon_hdmi_output_0/vcc"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlconstant_1_0/hdmi_directpassthr_woi_xlconstant_1_0.xci" Type="IP">
+        <Instance HierarchyPath="fmc_imageon_hdmi_output_0/gnd"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlconcat_0_3/hdmi_directpassthr_woi_xlconcat_0_3.xci" Type="IP">
+        <Instance HierarchyPath="four_signal_registering/hdmi_sync_pass"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_pipeline_registers_1_0/hdmi_directpassthr_woi_pipeline_registers_1_0.xci" Type="IP">
+        <Instance HierarchyPath="four_signal_registering/pipeline_registers_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlslice_0_3/hdmi_directpassthr_woi_xlslice_0_3.xci" Type="IP">
+        <Instance HierarchyPath="four_signal_registering/hblank_out"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlslice_0_4/hdmi_directpassthr_woi_xlslice_0_4.xci" Type="IP">
+        <Instance HierarchyPath="four_signal_registering/vlbank_out"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlslice_0_5/hdmi_directpassthr_woi_xlslice_0_5.xci" Type="IP">
+        <Instance HierarchyPath="four_signal_registering/de_out"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlslice_0_6/hdmi_directpassthr_woi_xlslice_0_6.xci" Type="IP">
+        <Instance HierarchyPath="four_signal_registering/spdif_out"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_hblank_out_0/hdmi_directpassthr_woi_hblank_out_0.xci" Type="IP">
+        <Instance HierarchyPath="four_signal_registering1/hblank_out"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_de_out_0/hdmi_directpassthr_woi_de_out_0.xci" Type="IP">
+        <Instance HierarchyPath="four_signal_registering1/de_out"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_vlbank_out_0/hdmi_directpassthr_woi_vlbank_out_0.xci" Type="IP">
+        <Instance HierarchyPath="four_signal_registering1/vlbank_out"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_pipeline_registers_1_1/hdmi_directpassthr_woi_pipeline_registers_1_1.xci" Type="IP">
+        <Instance HierarchyPath="four_signal_registering1/pipeline_registers_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_hdmi_sync_pass_0/hdmi_directpassthr_woi_hdmi_sync_pass_0.xci" Type="IP">
+        <Instance HierarchyPath="four_signal_registering1/hdmi_sync_pass"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_spdif_out_0/hdmi_directpassthr_woi_spdif_out_0.xci" Type="IP">
+        <Instance HierarchyPath="four_signal_registering1/spdif_out"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_vbb_system_reset_0_1/hdmi_directpassthr_woi_vbb_system_reset_0_1.xci" Type="IP">
+        <Instance HierarchyPath="vbb_system_reset_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_axi_mem_intercon_0/hdmi_directpassthr_woi_axi_mem_intercon_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_mem_intercon"/>
+        <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_rst_processing_system7_0_150M_0/hdmi_directpassthr_woi_rst_processing_system7_0_150M_0.xci" Type="IP">
+        <Instance HierarchyPath="rst_processing_system7_0_150M"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_pipeline_registers_1_4/hdmi_directpassthr_woi_pipeline_registers_1_4.xci" Type="IP">
+        <Instance HierarchyPath="video_overlay_unit/pipeline_registers_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_pipeline_registers_1_5/hdmi_directpassthr_woi_pipeline_registers_1_5.xci" Type="IP">
+        <Instance HierarchyPath="video_overlay_unit/pipeline_registers_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_fifo_generator_0_0/hdmi_directpassthr_woi_fifo_generator_0_0.xci" Type="IP">
+        <Instance HierarchyPath="video_overlay_unit/vovraly_rd_async_fifo"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_axi_vdma_0_0/hdmi_directpassthr_woi_axi_vdma_0_0.xci" Type="IP">
+        <Instance HierarchyPath="video_overlay_unit/vovrly_vdma"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xup_and3_1_0/hdmi_directpassthr_woi_xup_and3_1_0.xci" Type="IP">
+        <Instance HierarchyPath="video_overlay_unit/xup_and3_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_pipeline_registers_1_7/hdmi_directpassthr_woi_pipeline_registers_1_7.xci" Type="IP">
+        <Instance HierarchyPath="video_overlay_unit/vovrly_async_fifo_rst/pipeline_registers_10"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xup_or2_0_1/hdmi_directpassthr_woi_xup_or2_0_1.xci" Type="IP">
+        <Instance HierarchyPath="video_overlay_unit/vovrly_async_fifo_rst/xup_or2_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlconstant_1_2/hdmi_directpassthr_woi_xlconstant_1_2.xci" Type="IP">
+        <Instance HierarchyPath="video_overlay_unit/vovrly_async_fifo_rst/xlconstant_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlconstant_0_4/hdmi_directpassthr_woi_xlconstant_0_4.xci" Type="IP">
+        <Instance HierarchyPath="LEARNING_FACTOR"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlconstant_0_5/hdmi_directpassthr_woi_xlconstant_0_5.xci" Type="IP">
+        <Instance HierarchyPath="FG_THRESHOLD"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlconstant_0_6/hdmi_directpassthr_woi_xlconstant_0_6.xci" Type="IP">
+        <Instance HierarchyPath="MATCH_THRESHOLD"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_fifo_generator_0_1/hdmi_directpassthr_woi_fifo_generator_0_1.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_read_async_fifo"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlslice_0_0/hdmi_directpassthr_woi_xlslice_0_0.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/mean1_selection/mean1_slice"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlconcat_0_0/hdmi_directpassthr_woi_xlconcat_0_0.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/mean1_selection/mean1_concat"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlconstant_0_7/hdmi_directpassthr_woi_xlconstant_0_7.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/mean1_selection/zero16"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_mean1_slice_0/hdmi_directpassthr_woi_mean1_slice_0.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/mean2_selection/mean2_slice"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_mean1_concat_0/hdmi_directpassthr_woi_mean1_concat_0.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/mean2_selection/mean2_concat"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_zero16_0/hdmi_directpassthr_woi_zero16_0.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/mean2_selection/zero16"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_mean1_slice_1/hdmi_directpassthr_woi_mean1_slice_1.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/mean3_selection/mean3_slice"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_mean1_concat_1/hdmi_directpassthr_woi_mean1_concat_1.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/mean3_selection/mean3_concat"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_zero16_1/hdmi_directpassthr_woi_zero16_1.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/mean3_selection/zero16"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_mean1_slice_2/hdmi_directpassthr_woi_mean1_slice_2.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/sd1_selection/sd1_slice"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_mean1_concat_2/hdmi_directpassthr_woi_mean1_concat_2.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/sd1_selection/sd1_concat"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_zero16_2/hdmi_directpassthr_woi_zero16_2.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/sd1_selection/zero16"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_mean1_slice_3/hdmi_directpassthr_woi_mean1_slice_3.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/sd2_selection/sd2_slice"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_mean1_concat_3/hdmi_directpassthr_woi_mean1_concat_3.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/sd2_selection/sd2_concat"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_zero16_3/hdmi_directpassthr_woi_zero16_3.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/sd2_selection/zero16"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_mean1_slice_4/hdmi_directpassthr_woi_mean1_slice_4.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/sd3_selection/sd3_slice"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_mean1_concat_4/hdmi_directpassthr_woi_mean1_concat_4.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/sd3_selection/sd3_concat"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_zero16_4/hdmi_directpassthr_woi_zero16_4.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/sd3_selection/zero16"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_mean1_slice_5/hdmi_directpassthr_woi_mean1_slice_5.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/w1_selection/w1_slice"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_mean1_concat_5/hdmi_directpassthr_woi_mean1_concat_5.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/w1_selection/w1_concat"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_zero16_5/hdmi_directpassthr_woi_zero16_5.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/w1_selection/zero16"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_mean1_slice_6/hdmi_directpassthr_woi_mean1_slice_6.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/w2_selection/w2_slice"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_mean1_concat_6/hdmi_directpassthr_woi_mean1_concat_6.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/w2_selection/w2_concat"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_zero16_6/hdmi_directpassthr_woi_zero16_6.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/w2_selection/zero16"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlconstant_0_8/hdmi_directpassthr_woi_xlconstant_0_8.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/w3_selection/one16"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_c_addsub_0_0/hdmi_directpassthr_woi_c_addsub_0_0.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/w3_selection/w1addw2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_c_addsub_0_1/hdmi_directpassthr_woi_c_addsub_0_1.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/w3_selection/one16subw1addw2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlconcat_0_4/hdmi_directpassthr_woi_xlconcat_0_4.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_packing/params_concat"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlslice_0_7/hdmi_directpassthr_woi_xlslice_0_7.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_packing/mean1_slice"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_mean1_slice_7/hdmi_directpassthr_woi_mean1_slice_7.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_packing/mean2_slice"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_mean1_slice_8/hdmi_directpassthr_woi_mean1_slice_8.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_packing/sd2_slice"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_mean1_slice_9/hdmi_directpassthr_woi_mean1_slice_9.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_packing/mean3_slice"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_mean1_slice_10/hdmi_directpassthr_woi_mean1_slice_10.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_packing/sd1_slice"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_mean1_slice_11/hdmi_directpassthr_woi_mean1_slice_11.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_packing/w1_slice"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_mean1_slice_12/hdmi_directpassthr_woi_mean1_slice_12.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_packing/w2_slice"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_mean1_slice_13/hdmi_directpassthr_woi_mean1_slice_13.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_packing/sd3_slice"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_fifo_generator_0_2/hdmi_directpassthr_woi_fifo_generator_0_2.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_write_async_fifo"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_axi_vdma_0_1/hdmi_directpassthr_woi_axi_vdma_0_1.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_vdma"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_axi_mem_intercon_1_0/hdmi_directpassthr_woi_axi_mem_intercon_1_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_mem_intercon_1"/>
+        <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlconstant_1_3/hdmi_directpassthr_woi_xlconstant_1_3.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_async_fifo_rst/xlconstant_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_pipeline_registers_10_0/hdmi_directpassthr_woi_pipeline_registers_10_0.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_async_fifo_rst/pipeline_registers_10"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xup_or2_2_0/hdmi_directpassthr_woi_xup_or2_2_0.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_async_fifo_rst/xup_or2_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_pipeline_registers_1_2/hdmi_directpassthr_woi_pipeline_registers_1_2.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/pipeline_registers_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlconcat_0_5/hdmi_directpassthr_woi_xlconcat_0_5.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/grayscale8to32"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlconstant_0_11/hdmi_directpassthr_woi_xlconstant_0_11.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/zero24"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlslice_0_8/hdmi_directpassthr_woi_xlslice_0_8.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/xlslice_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_pipeline_registers_1_3/hdmi_directpassthr_woi_pipeline_registers_1_3.xci" Type="IP">
+        <Instance HierarchyPath="video_overlay_unit/pipeline_registers_3"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlconcat_0_6/hdmi_directpassthr_woi_xlconcat_0_6.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/w3_selection/w3_concat"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlconstant_0_12/hdmi_directpassthr_woi_xlconstant_0_12.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/mog_params_extraction/w3_selection/zero16"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_fifo_generator_0_3/hdmi_directpassthr_woi_fifo_generator_0_3.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/vdma_sync_signals_passing"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xup_and3_0_1/hdmi_directpassthr_woi_xup_and3_0_1.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/xup_and3_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xup_and3_0_2/hdmi_directpassthr_woi_xup_and3_0_2.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/xup_and3_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xup_and3_1_1/hdmi_directpassthr_woi_xup_and3_1_1.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/xup_and3_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xup_and3_2_0/hdmi_directpassthr_woi_xup_and3_2_0.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/xup_and3_3"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_fifo_generator_0_4/hdmi_directpassthr_woi_fifo_generator_0_4.xci" Type="IP">
+        <Instance HierarchyPath="video_overlay_unit/vovrly_sync_sigs_pass"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_fifo_generator_1_0/hdmi_directpassthr_woi_fifo_generator_1_0.xci" Type="IP">
+        <Instance HierarchyPath="video_overlay_unit/vovraly_wr_async_fifo"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_data_packing_0_0/hdmi_directpassthr_woi_data_packing_0_0.xci" Type="IP">
+        <Instance HierarchyPath="video_overlay_unit/vovrlay_data_packing_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xup_and3_0_3/hdmi_directpassthr_woi_xup_and3_0_3.xci" Type="IP">
+        <Instance HierarchyPath="video_overlay_unit/xup_and3_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xup_and3_1_2/hdmi_directpassthr_woi_xup_and3_1_2.xci" Type="IP">
+        <Instance HierarchyPath="video_overlay_unit/xup_and3_3"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xup_and4_0_0/hdmi_directpassthr_woi_xup_and4_0_0.xci" Type="IP">
+        <Instance HierarchyPath="video_overlay_unit/xup_and4_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xup_and4_1_0/hdmi_directpassthr_woi_xup_and4_1_0.xci" Type="IP">
+        <Instance HierarchyPath="video_overlay_unit/xup_and4_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_pipeline_registers_5_0/hdmi_directpassthr_woi_pipeline_registers_5_0.xci" Type="IP">
+        <Instance HierarchyPath="video_overlay_unit/pipeline_registers_5"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_pipeline_registers_1_6/hdmi_directpassthr_woi_pipeline_registers_1_6.xci" Type="IP">
+        <Instance HierarchyPath="hdmi_sync_signals_passing/de_pass"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_pipeline_registers_1_8/hdmi_directpassthr_woi_pipeline_registers_1_8.xci" Type="IP">
+        <Instance HierarchyPath="hdmi_sync_signals_passing/vblank"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_pipeline_registers_1_10/hdmi_directpassthr_woi_pipeline_registers_1_10.xci" Type="IP">
+        <Instance HierarchyPath="hdmi_sync_signals_passing/hblank"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_pipeline_registers_1_11/hdmi_directpassthr_woi_pipeline_registers_1_11.xci" Type="IP">
+        <Instance HierarchyPath="hdmi_sync_signals_passing/spdif"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_Morphology_1_0/hdmi_directpassthr_woi_Morphology_1_0.xci" Type="IP">
+        <Instance HierarchyPath="Morphology_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlconstant_0_10/hdmi_directpassthr_woi_xlconstant_0_10.xci" Type="IP">
+        <Instance HierarchyPath="xlconstant_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_fifo_generator_0_5/hdmi_directpassthr_woi_fifo_generator_0_5.xci" Type="IP">
+        <Instance HierarchyPath="color_video_pass/color_video_pass_fifo"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_pipeline_registers_6_0/hdmi_directpassthr_woi_pipeline_registers_6_0.xci" Type="IP">
+        <Instance HierarchyPath="video_overlay_unit/pipeline_registers_6"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_pipeline_registers_10_1/hdmi_directpassthr_woi_pipeline_registers_10_1.xci" Type="IP">
+        <Instance HierarchyPath="color_video_pass/color_video_pass_fifo_wr_en/pipeline_registers_10"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xup_or2_2_1/hdmi_directpassthr_woi_xup_or2_2_1.xci" Type="IP">
+        <Instance HierarchyPath="color_video_pass/color_video_pass_fifo_wr_en/xup_or2_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_pipeline_registers_10_2/hdmi_directpassthr_woi_pipeline_registers_10_2.xci" Type="IP">
+        <Instance HierarchyPath="color_video_pass/color_video_pass_fifo_rd_en/pipeline_registers_10"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xup_or2_2_2/hdmi_directpassthr_woi_xup_or2_2_2.xci" Type="IP">
+        <Instance HierarchyPath="color_video_pass/color_video_pass_fifo_rd_en/xup_or2_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_data_unpacking_0_0/hdmi_directpassthr_woi_data_unpacking_0_0.xci" Type="IP">
+        <Instance HierarchyPath="video_overlay_unit/vovrly_data_unpacking0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_pipeline_registers_1_9/hdmi_directpassthr_woi_pipeline_registers_1_9.xci" Type="IP">
+        <Instance HierarchyPath="pipeline_registers_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_hblank_out_1/hdmi_directpassthr_woi_hblank_out_1.xci" Type="IP">
+        <Instance HierarchyPath="four_signal_registering2/hblank_out"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_de_out_1/hdmi_directpassthr_woi_de_out_1.xci" Type="IP">
+        <Instance HierarchyPath="four_signal_registering2/de_out"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_vlbank_out_1/hdmi_directpassthr_woi_vlbank_out_1.xci" Type="IP">
+        <Instance HierarchyPath="four_signal_registering2/vlbank_out"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_pipeline_registers_1_12/hdmi_directpassthr_woi_pipeline_registers_1_12.xci" Type="IP">
+        <Instance HierarchyPath="four_signal_registering2/pipeline_registers_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_hdmi_sync_pass_1/hdmi_directpassthr_woi_hdmi_sync_pass_1.xci" Type="IP">
+        <Instance HierarchyPath="four_signal_registering2/hdmi_sync_pass"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_spdif_out_1/hdmi_directpassthr_woi_spdif_out_1.xci" Type="IP">
+        <Instance HierarchyPath="four_signal_registering2/spdif_out"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_pipeline_registers_2_0/hdmi_directpassthr_woi_pipeline_registers_2_0.xci" Type="IP">
+        <Instance HierarchyPath="pipeline_registers_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_pipeline_registers_3_0/hdmi_directpassthr_woi_pipeline_registers_3_0.xci" Type="IP">
+        <Instance HierarchyPath="pipeline_registers_3"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlslice_0_9/hdmi_directpassthr_woi_xlslice_0_9.xci" Type="IP">
+        <Instance HierarchyPath="ycbcr_to_grayscale"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_image_smoothing_1_0/hdmi_directpassthr_woi_image_smoothing_1_0.xci" Type="IP">
+        <Instance HierarchyPath="image_smoothing_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_concatenation_0/hdmi_directpassthr_woi_concatenation_0.xci" Type="IP">
+        <Instance HierarchyPath="ycbcr2gray/concatenation"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_y_sel_0/hdmi_directpassthr_woi_y_sel_0.xci" Type="IP">
+        <Instance HierarchyPath="ycbcr2gray/y_sel"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_cbcr_gray_0/hdmi_directpassthr_woi_cbcr_gray_0.xci" Type="IP">
+        <Instance HierarchyPath="ycbcr2gray/cbcr_gray"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_axi_vdma_0_2/hdmi_directpassthr_woi_axi_vdma_0_2.xci" Type="IP">
+        <Instance HierarchyPath="ycbcr2mem_unit/ycbcr_vdma"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_fifo_generator_0_6/hdmi_directpassthr_woi_fifo_generator_0_6.xci" Type="IP">
+        <Instance HierarchyPath="ycbcr2mem_unit/ycbcr_mem_read_async_fifo"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_fifo_generator_0_7/hdmi_directpassthr_woi_fifo_generator_0_7.xci" Type="IP">
+        <Instance HierarchyPath="ycbcr2mem_unit/ycbcr_mem_sync_sigs_async_fifo"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_fifo_generator_0_8/hdmi_directpassthr_woi_fifo_generator_0_8.xci" Type="IP">
+        <Instance HierarchyPath="ycbcr2mem_unit/ycbcr_mem_write_async_fifo"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_data_packing_0_1/hdmi_directpassthr_woi_data_packing_0_1.xci" Type="IP">
+        <Instance HierarchyPath="ycbcr2mem_unit/ycbcr_data_packing_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_data_unpacking_0_1/hdmi_directpassthr_woi_data_unpacking_0_1.xci" Type="IP">
+        <Instance HierarchyPath="ycbcr2mem_unit/ycbcr_data_unpacking_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_axi_mem_intercon_2_0/hdmi_directpassthr_woi_axi_mem_intercon_2_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_mem_intercon_2"/>
+        <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xup_or2_0_0/hdmi_directpassthr_woi_xup_or2_0_0.xci" Type="IP">
+        <Instance HierarchyPath="ycbcr2mem_unit/ycbcr_aresetn_gen/xup_or2_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_pipeline_registers_0_0/hdmi_directpassthr_woi_pipeline_registers_0_0.xci" Type="IP">
+        <Instance HierarchyPath="ycbcr2mem_unit/ycbcr_aresetn_gen/pipeline_registers_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlconstant_1_5/hdmi_directpassthr_woi_xlconstant_1_5.xci" Type="IP">
+        <Instance HierarchyPath="ycbcr2mem_unit/ycbcr_aresetn_gen/one"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_pipeline_registers_0_1/hdmi_directpassthr_woi_pipeline_registers_0_1.xci" Type="IP">
+        <Instance HierarchyPath="ycbcr2mem_unit/tkeep_pass"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xup_and4_0_1/hdmi_directpassthr_woi_xup_and4_0_1.xci" Type="IP">
+        <Instance HierarchyPath="ycbcr2mem_unit/xup_and4_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xup_and4_1_1/hdmi_directpassthr_woi_xup_and4_1_1.xci" Type="IP">
+        <Instance HierarchyPath="ycbcr2mem_unit/xup_and4_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xup_and3_0_0/hdmi_directpassthr_woi_xup_and3_0_0.xci" Type="IP">
+        <Instance HierarchyPath="ycbcr2mem_unit/xup_and3_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xup_and3_1_3/hdmi_directpassthr_woi_xup_and3_1_3.xci" Type="IP">
+        <Instance HierarchyPath="ycbcr2mem_unit/xup_and3_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xup_and3_2_1/hdmi_directpassthr_woi_xup_and3_2_1.xci" Type="IP">
+        <Instance HierarchyPath="ycbcr2mem_unit/xup_and3_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_pipeline_registers_0_2/hdmi_directpassthr_woi_pipeline_registers_0_2.xci" Type="IP">
+        <Instance HierarchyPath="video_overlay_unit/pipeline_registers_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_pipeline_registers_4_0/hdmi_directpassthr_woi_pipeline_registers_4_0.xci" Type="IP">
+        <Instance HierarchyPath="video_overlay_unit/pipeline_registers_4"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xup_2_to_1_mux_vector_0_0/hdmi_directpassthr_woi_xup_2_to_1_mux_vector_0_0.xci" Type="IP">
+        <Instance HierarchyPath="smth_pass_sel/smth_pass_over"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlconcat_0_1/hdmi_directpassthr_woi_xlconcat_0_1.xci" Type="IP">
+        <Instance HierarchyPath="smth_pass_sel/before_smth"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlconcat_1_0/hdmi_directpassthr_woi_xlconcat_1_0.xci" Type="IP">
+        <Instance HierarchyPath="smth_pass_sel/after_smth"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlslice_0_1/hdmi_directpassthr_woi_xlslice_0_1.xci" Type="IP">
+        <Instance HierarchyPath="smth_pass_sel/xlslice_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlslice_1_0/hdmi_directpassthr_woi_xlslice_1_0.xci" Type="IP">
+        <Instance HierarchyPath="smth_pass_sel/xlslice_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlslice_2_0/hdmi_directpassthr_woi_xlslice_2_0.xci" Type="IP">
+        <Instance HierarchyPath="smth_pass_sel/xlslice_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlslice_3_0/hdmi_directpassthr_woi_xlslice_3_0.xci" Type="IP">
+        <Instance HierarchyPath="smth_pass_sel/xlslice_3"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlslice_4_0/hdmi_directpassthr_woi_xlslice_4_0.xci" Type="IP">
+        <Instance HierarchyPath="smth_pass_sel/xlslice_4"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlslice_5_0/hdmi_directpassthr_woi_xlslice_5_0.xci" Type="IP">
+        <Instance HierarchyPath="smth_pass_sel/xlslice_5"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_before_smth_0/hdmi_directpassthr_woi_before_smth_0.xci" Type="IP">
+        <Instance HierarchyPath="morph_pass_sel/before_morph"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_after_smth_0/hdmi_directpassthr_woi_after_smth_0.xci" Type="IP">
+        <Instance HierarchyPath="morph_pass_sel/after_morph"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_smth_pass_over_0/hdmi_directpassthr_woi_smth_pass_over_0.xci" Type="IP">
+        <Instance HierarchyPath="morph_pass_sel/morph_pass_over"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlslice_0_2/hdmi_directpassthr_woi_xlslice_0_2.xci" Type="IP">
+        <Instance HierarchyPath="morph_pass_sel/xlslice_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlslice_1_1/hdmi_directpassthr_woi_xlslice_1_1.xci" Type="IP">
+        <Instance HierarchyPath="morph_pass_sel/xlslice_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlslice_2_1/hdmi_directpassthr_woi_xlslice_2_1.xci" Type="IP">
+        <Instance HierarchyPath="morph_pass_sel/xlslice_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlslice_3_1/hdmi_directpassthr_woi_xlslice_3_1.xci" Type="IP">
+        <Instance HierarchyPath="morph_pass_sel/xlslice_3"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlslice_4_1/hdmi_directpassthr_woi_xlslice_4_1.xci" Type="IP">
+        <Instance HierarchyPath="morph_pass_sel/xlslice_4"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlslice_5_1/hdmi_directpassthr_woi_xlslice_5_1.xci" Type="IP">
+        <Instance HierarchyPath="morph_pass_sel/xlslice_5"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_MixtureOfGaussians_0_0/hdmi_directpassthr_woi_MixtureOfGaussians_0_0.xci" Type="IP">
+        <Instance HierarchyPath="bge_unit/MixtureOfGaussians_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_axi_window_of_interest_detection_0_0/hdmi_directpassthr_woi_axi_window_of_interest_detection_0_0.xci" Type="IP">
+        <Instance HierarchyPath="mog_woi_det"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_axi_window_of_interest_detection_0_1/hdmi_directpassthr_woi_axi_window_of_interest_detection_0_1.xci" Type="IP">
+        <Instance HierarchyPath="video_overlay_unit/vovrlay_woi_det"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xlconcat_0_2/hdmi_directpassthr_woi_xlconcat_0_2.xci" Type="IP">
+        <Instance HierarchyPath="concat_interrupt"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_video_overlay_0_2/hdmi_directpassthr_woi_video_overlay_0_2.xci" Type="IP">
+        <Instance HierarchyPath="video_overlay_unit/video_overlay_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xbar_0/hdmi_directpassthr_woi_xbar_0.xci" Type="IP">
+        <Instance HierarchyPath="processing_system7_0_axi_periph/xbar"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xbar_3/hdmi_directpassthr_woi_xbar_3.xci" Type="IP">
+        <Instance HierarchyPath="axi_mem_intercon_2/xbar"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xbar_1/hdmi_directpassthr_woi_xbar_1.xci" Type="IP">
+        <Instance HierarchyPath="axi_mem_intercon_1/xbar"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_xbar_2/hdmi_directpassthr_woi_xbar_2.xci" Type="IP">
+        <Instance HierarchyPath="axi_mem_intercon/xbar"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="hdl/hdmi_directpassthr_woi.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_auto_pc_3/hdmi_directpassthr_woi_auto_pc_3.xci" Type="IP">
+        <Instance HierarchyPath="processing_system7_0_axi_periph/s00_couplers/auto_pc"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_auto_pc_2/hdmi_directpassthr_woi_auto_pc_2.xci" Type="IP">
+        <Instance HierarchyPath="axi_mem_intercon_2/m00_couplers/auto_pc"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_auto_us_1/hdmi_directpassthr_woi_auto_us_1.xci" Type="IP">
+        <Instance HierarchyPath="axi_mem_intercon_2/s01_couplers/auto_us"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_auto_us_0/hdmi_directpassthr_woi_auto_us_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_mem_intercon_2/s00_couplers/auto_us"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_auto_ds_0/hdmi_directpassthr_woi_auto_ds_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_mem_intercon_1/m00_couplers/auto_ds"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_auto_pc_1/hdmi_directpassthr_woi_auto_pc_1.xci" Type="IP">
+        <Instance HierarchyPath="axi_mem_intercon_1/m00_couplers/auto_pc"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/hdmi_directpassthr_woi_auto_pc_0/hdmi_directpassthr_woi_auto_pc_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_mem_intercon/m00_couplers/auto_pc"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="hdmi_directpassthr_woi_ooc.xdc" Type="XDC">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="OUT_OF_CONTEXT"/>
+      </File>
+      <File Name="hw_handoff/hdmi_directpassthr_woi.hwh" Type="HwHandoff">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="hw_handoff/hdmi_directpassthr_woi_bd.tcl">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="hdl/hdmi_directpassthr_woi.hwdef">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+    </FileCollection>
+  </CompositeFile>
+</Root>

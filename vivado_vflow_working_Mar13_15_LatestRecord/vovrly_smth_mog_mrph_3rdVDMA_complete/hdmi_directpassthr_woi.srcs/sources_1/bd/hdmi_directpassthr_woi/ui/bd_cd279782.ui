@@ -1,0 +1,19 @@
+{
+   guistr: "# # String gsaved with Nlview version 6.4-r1  2014-02-28 bk=1.3047 VDI=34 GEI=35 GUI=JA:1.7
+#  -string -flagsOSRD
+preplace port VID_IO_IN -pg 1 -y 50 -defaultsOSRD
+preplace port IO_HDMIO -pg 1 -y 100 -defaultsOSRD
+preplace port clk -pg 1 -y 70 -defaultsOSRD
+preplace portBus audio_spdif -pg 1 -y 250 -defaultsOSRD
+preplace inst vcc -pg 1 -lvl 1 -y 200 -defaultsOSRD
+preplace inst fmc_imageon_hdmi_out_0 -pg 1 -lvl 2 -y 100 -defaultsOSRD
+preplace inst gnd -pg 1 -lvl 1 -y 110 -defaultsOSRD
+preplace netloc gnd_dout 1 1 1 340
+preplace netloc fmc_imageon_hdmi_out_0_IO_HDMIO 1 2 1 N
+preplace netloc clk_1 1 0 2 NJ 50 340
+preplace netloc vcc_dout 1 1 1 350
+preplace netloc fmc_imageon_hdmi_in_0_VID_IO_OUT 1 0 2 NJ 40 350
+preplace netloc fmc_imageon_hdmi_in_0_audio_spdif 1 0 2 NJ 60 330
+levelinfo -pg 1 150 260 470 620
+",
+}

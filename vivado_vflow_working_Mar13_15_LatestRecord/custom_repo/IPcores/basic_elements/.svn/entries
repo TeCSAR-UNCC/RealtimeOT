@@ -1,0 +1,187 @@
+10
+
+dir
+35
+https://nuforge.coe.neu.edu/svn/zynq/branches/vision_flow_vivado_ver/custom_repo/IPcores/basic_elements
+https://nuforge.coe.neu.edu/svn/zynq
+
+
+
+2014-08-14T21:22:03.804937Z
+35
+msabbagh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+aff6d62a-51ee-4626-8219-6379798b591e
+
+xup_nand5_1.0
+dir
+
+xup_nand6_1.0
+dir
+
+xup_xnor2_1.0
+dir
+
+xup_xnor_vector_1.0
+dir
+
+xup_tri_buf0_1.0
+dir
+
+xup_tri_buf1_1.0
+dir
+
+xup_clk_divider_1.0
+dir
+
+xup_tff_1.0
+dir
+
+xup_nor2_1.0
+dir
+
+xup_nor_vector_1.0
+dir
+
+xup_nor3_1.0
+dir
+
+xup_dff_en_1.0
+dir
+
+xup_ram_8x4_1.0
+dir
+
+xup_nor4_1.0
+dir
+
+xup_nor5_1.0
+dir
+
+xup_tff_en_vector_1.0
+dir
+
+xup_nor6_1.0
+dir
+
+xup_and2_1.0
+dir
+
+xup_and_vector_1.0
+dir
+
+xup_and3_1.0
+dir
+
+xup_and4_1.0
+dir
+
+xup_and5_1.0
+dir
+
+xup_and6_1.0
+dir
+
+xup_xor2_1.0
+dir
+
+xup_xor_vector_1.0
+dir
+
+xup_inv_1.0
+dir
+
+xup_tri_buf0_vector_1.0
+dir
+
+xup_rom_8x4_1.0
+dir
+
+xup_tff_en_1.0
+dir
+
+xup_or_vector_1.0
+dir
+
+xup_or2_1.0
+dir
+
+xup_or3_1.0
+dir
+
+xup_or4_1.0
+dir
+
+xup_or5_1.0
+dir
+
+xup_dff_en_reset_vector_1.0
+dir
+
+xup_or6_1.0
+dir
+
+xup_2_to_1_mux_1.0
+dir
+
+xup_inv_vector_1.0
+dir
+
+xup_4_to_1_mux_1.0
+dir
+
+xup_dff_vector_1.0
+dir
+
+xup_dff_en_reset_1.0
+dir
+
+xup_tff_en_reset_vector_1.0
+dir
+
+xup_tri_buf1_vector_1.0
+dir
+
+xup_2_to_1_mux_vector_1.0
+dir
+
+xup_dff_1.0
+dir
+
+xup_4_to_1_mux_vector_1.0
+dir
+
+xup_tff_vector_1.0
+dir
+
+xup_nand2_1.0
+dir
+
+xup_nand_vector_1.0
+dir
+
+xup_nand3_1.0
+dir
+
+xup_dff_en_vector_1.0
+dir
+
+xup_tff_en_reset_1.0
+dir
+
+xup_nand4_1.0
+dir
+

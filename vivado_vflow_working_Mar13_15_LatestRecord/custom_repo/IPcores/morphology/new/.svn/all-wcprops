@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/morphology/new
+END
+morph_dia.v
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/morphology/new/morph_dia.v
+END
+morph_buf_controller.v
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/morphology/new/morph_buf_controller.v
+END
+morph_top.v
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/morphology/new/morph_top.v
+END
+morph_err_l1.v
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/morphology/new/morph_err_l1.v
+END
+morph_err_l2.v
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/morphology/new/morph_err_l2.v
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/mixture_of_gaussians/sources_1/ip/divider_16_8
+END
+divider_16_8_ooc.xdc
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/mixture_of_gaussians/sources_1/ip/divider_16_8/divider_16_8_ooc.xdc
+END
+divider_16_8.xml
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/mixture_of_gaussians/sources_1/ip/divider_16_8/divider_16_8.xml
+END
+divider_16_8_funcsim.vhdl
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/mixture_of_gaussians/sources_1/ip/divider_16_8/divider_16_8_funcsim.vhdl
+END
+divider_16_8_stub.v
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/mixture_of_gaussians/sources_1/ip/divider_16_8/divider_16_8_stub.v
+END
+divider_16_8.xci
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/mixture_of_gaussians/sources_1/ip/divider_16_8/divider_16_8.xci
+END
+divider_16_8.dcp
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/mixture_of_gaussians/sources_1/ip/divider_16_8/divider_16_8.dcp
+END
+divider_16_8.veo
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/mixture_of_gaussians/sources_1/ip/divider_16_8/divider_16_8.veo
+END
+divider_16_8_funcsim.v
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/mixture_of_gaussians/sources_1/ip/divider_16_8/divider_16_8_funcsim.v
+END
+divider_16_8_stub.vhdl
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/mixture_of_gaussians/sources_1/ip/divider_16_8/divider_16_8_stub.vhdl
+END

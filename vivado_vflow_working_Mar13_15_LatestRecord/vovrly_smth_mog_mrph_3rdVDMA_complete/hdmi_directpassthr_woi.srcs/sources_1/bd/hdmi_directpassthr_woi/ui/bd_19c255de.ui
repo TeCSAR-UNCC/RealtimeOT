@@ -1,0 +1,35 @@
+{
+   guistr: "# # String gsaved with Nlview version 6.4-r1  2014-02-28 bk=1.3047 VDI=34 GEI=35 GUI=JA:1.7
+#  -string -flagsOSRD
+preplace port S00_AXI -pg 1 -y 50 -defaultsOSRD
+preplace port M00_ACLK -pg 1 -y 180 -defaultsOSRD
+preplace port ACLK -pg 1 -y 70 -defaultsOSRD
+preplace port S01_AXI -pg 1 -y 270 -defaultsOSRD
+preplace port S01_ACLK -pg 1 -y 330 -defaultsOSRD
+preplace port S00_ACLK -pg 1 -y 110 -defaultsOSRD
+preplace port M00_AXI -pg 1 -y 200 -defaultsOSRD
+preplace portBus S01_ARESETN -pg 1 -y 350 -defaultsOSRD
+preplace portBus ARESETN -pg 1 -y 290 -defaultsOSRD
+preplace portBus S00_ARESETN -pg 1 -y 130 -defaultsOSRD
+preplace portBus M00_ARESETN -pg 1 -y 200 -defaultsOSRD
+preplace inst m00_couplers -pg 1 -lvl 3 -y 200 -defaultsOSRD
+preplace inst s01_couplers -pg 1 -lvl 1 -y 310 -defaultsOSRD
+preplace inst s00_couplers -pg 1 -lvl 1 -y 90 -defaultsOSRD
+preplace inst xbar -pg 1 -lvl 2 -y 300 -defaultsOSRD
+preplace netloc S01_ACLK_1 1 0 1 N
+preplace netloc m00_couplers_to_axi_mem_intercon_1 1 3 1 N
+preplace netloc xbar_to_m00_couplers 1 2 1 770
+preplace netloc S00_ACLK_1 1 0 1 N
+preplace netloc S01_ARESETN_1 1 0 1 N
+preplace netloc axi_mem_intercon_1_to_s00_couplers 1 0 1 N
+preplace netloc s01_couplers_to_xbar 1 1 1 430
+preplace netloc axi_mem_intercon_1_to_s01_couplers 1 0 1 N
+preplace netloc s00_couplers_to_xbar 1 1 1 470
+preplace netloc M00_ARESETN_1 1 0 3 NJ 200 NJ 190 780
+preplace netloc axi_mem_intercon_1_ARESETN_net 1 0 3 200 210 450 210 NJ
+preplace netloc M00_ACLK_1 1 0 3 NJ 190 NJ 180 N
+preplace netloc S00_ARESETN_1 1 0 1 N
+preplace netloc axi_mem_intercon_1_ACLK_net 1 0 3 210 180 440 200 NJ
+levelinfo -pg 1 170 320 610 890 1030
+",
+}

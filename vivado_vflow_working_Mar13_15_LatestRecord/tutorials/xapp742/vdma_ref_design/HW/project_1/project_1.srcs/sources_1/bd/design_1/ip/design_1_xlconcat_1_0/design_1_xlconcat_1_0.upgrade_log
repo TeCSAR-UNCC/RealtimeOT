@@ -1,0 +1,30 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
+| Date         : Tue Jul  8 12:23:04 2014
+| Host         : rhyolite.coe.neu.edu running 64-bit CentOS release 6.5 (Final)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+-----------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_xlconcat_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_xlconcat_1_0 from xilinx.com:ip:xlconcat:1.0 to xilinx.com:ip:xlconcat:2.1
+
+2. Upgrade messages
+-------------------
+
+Set parameter IN0_WIDTH to value 1
+Renamed port In0 to In4
+Set parameter IN1_WIDTH to value 1
+Renamed port In1 to In3
+Set parameter IN2_WIDTH to value 1
+Renamed port In2 to In2
+Set parameter IN3_WIDTH to value 1
+Renamed port In3 to In1
+Set parameter IN4_WIDTH to value 1
+Renamed port In4 to In0
+

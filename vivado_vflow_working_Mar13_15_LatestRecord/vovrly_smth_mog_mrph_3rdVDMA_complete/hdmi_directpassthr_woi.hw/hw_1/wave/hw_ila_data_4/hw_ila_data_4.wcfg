@@ -1,0 +1,706 @@
+<?xml version="1.0"?>
+<wave_config>
+	<wave_state>
+	</wave_state>
+	<db_ref_list>
+		<db_ref path="/export/thishost/scratch/sabbagh/vivado/hdmi_directpassthr_woi/hdmi_directpassthr_woi.hw/hw_1/wave/hw_ila_data_4/hw_ila_data_4.wdb" id="1" type="auto">
+			<top_modules>
+				<top_module name="top">
+				</top_module>
+			</top_modules>
+		</db_ref>
+	</db_ref_list>
+	<WVObjectSize size="138">
+	</WVObjectSize>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_1" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_1</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_1</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_2" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_2</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_2</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_3" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_3</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_3</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_4" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_4</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_4</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_5" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_5</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_5</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_6" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_6</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_6</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_7" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_7</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_7</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_8" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_8</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_8</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_9" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_9</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_9</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_10" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_10</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_10</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_11" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_11</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_11</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_12" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_12</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_12</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_13" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_13</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_13</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_14" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_14</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_14</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_15" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_15</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_15</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_16" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_16</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_16</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_17" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_17</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_17</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_18" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_18</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_18</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_19" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_19</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_19</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_20" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_20</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_20</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_21" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_21</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_21</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_22" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_22</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_22</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_23" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_23</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_23</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_24" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_24</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_24</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_25" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_25</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_25</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_26" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_26</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_26</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_27" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_27</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_27</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_28" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_28</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_28</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_29" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_29</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_29</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_30" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_30</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_30</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_31" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_31</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_31</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_32" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_32</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_32</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_33" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_33</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_33</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_34" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_34</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_34</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_35" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_35</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_35</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_36" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_36</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_36</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/S00_AXI_1_ARADDR" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/S00_AXI_1_ARADDR[31:0]</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/S00_AXI_1_ARADDR[31:0]</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/S00_AXI_1_ARPROT" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/S00_AXI_1_ARPROT[2:0]</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/S00_AXI_1_ARPROT[2:0]</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_37" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_37</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_37</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_38" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_38</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_38</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_39" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_39</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_39</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/S00_AXI_1_ARVALID" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/S00_AXI_1_ARVALID</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/S00_AXI_1_ARVALID</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/S00_AXI_1_ARREADY" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/S00_AXI_1_ARREADY</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/S00_AXI_1_ARREADY</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/S00_AXI_1_RDATA" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/S00_AXI_1_RDATA[31:0]</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/S00_AXI_1_RDATA[31:0]</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_40" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_40</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_40</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_41" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_41</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_41</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/S00_AXI_1_RRESP" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/S00_AXI_1_RRESP[1:0]</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/S00_AXI_1_RRESP[1:0]</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_42" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_42</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_42</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_43" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_43</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_43</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_44" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_44</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_44</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_45" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_45</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_45</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_46" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_46</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_46</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_47" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_47</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_47</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_48" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_48</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_48</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_49" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_49</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_49</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_50" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_50</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_50</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_51" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_51</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_51</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_52" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_52</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_52</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_53" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_53</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_53</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_54" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_54</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_54</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_55" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_55</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_55</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_56" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_56</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_56</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_57" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_57</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_57</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_58" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_58</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_58</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_59" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_59</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_59</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_60" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_60</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_60</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_61" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_61</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_61</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_62" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_62</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_62</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_63" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_63</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_63</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_64" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_64</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_64</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_65" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_65</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_65</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_66" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_66</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_66</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_67" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_67</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_67</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_68" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_68</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_68</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_69" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_69</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_69</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_70" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_70</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_70</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_71" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_71</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_71</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_72" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_72</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_72</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_73" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_73</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_73</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_74" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_74</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_74</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_75" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_75</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_75</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_76" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_76</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_76</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_77" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_77</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_77</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/S00_AXI_1_RVALID" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/S00_AXI_1_RVALID</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/S00_AXI_1_RVALID</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/S00_AXI_1_RREADY" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/S00_AXI_1_RREADY</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/S00_AXI_1_RREADY</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_78" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_78</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_78</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/&lt;const0&gt;" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/&lt;const0&gt;</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/&lt;const0&gt;</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/&lt;const0&gt;_1" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/&lt;const0&gt;_1</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/&lt;const0&gt;_1</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_79" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_79</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_79</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_80" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_80</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_80</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_81" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_81</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_81</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_82" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_82</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_82</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_83" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_83</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_83</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_84" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_84</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_84</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_85" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_85</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_85</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_86" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_86</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_86</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/&lt;const0&gt;_2" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/&lt;const0&gt;_2</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/&lt;const0&gt;_2</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_87" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_87</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_87</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_88" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_88</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_88</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_89" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_89</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_89</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_90" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_90</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_90</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_91" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_91</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_91</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/&lt;const0&gt;_3" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/&lt;const0&gt;_3</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/&lt;const0&gt;_3</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_92" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_92</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_92</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/S00_AXI_1_ARLEN" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/S00_AXI_1_ARLEN[7:0]</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/S00_AXI_1_ARLEN[7:0]</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/S00_AXI_1_ARSIZE" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/S00_AXI_1_ARSIZE[2:0]</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/S00_AXI_1_ARSIZE[2:0]</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/S00_AXI_1_ARBURST" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/S00_AXI_1_ARBURST[1:0]</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/S00_AXI_1_ARBURST[1:0]</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_93" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_93</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_93</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/S00_AXI_1_ARCACHE" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/S00_AXI_1_ARCACHE[3:0]</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/S00_AXI_1_ARCACHE[3:0]</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_94" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_94</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_94</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_95" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_95</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_95</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_96" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_96</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_96</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_97" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_97</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_97</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_98" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_98</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_98</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_99" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_99</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_99</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_100" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_100</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_100</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_101" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_101</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_101</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_102" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_102</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_102</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_103" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_103</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_103</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_104" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_104</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_104</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_105" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_105</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_105</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/&lt;const0&gt;_4" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/&lt;const0&gt;_4</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/&lt;const0&gt;_4</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_106" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_106</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_106</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_107" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_107</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_107</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_108" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_108</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_108</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_109" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_109</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_109</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_110" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_110</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_110</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_111" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_111</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_111</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_112" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_112</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_112</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_113" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_113</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_113</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/&lt;const0&gt;_5" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/&lt;const0&gt;_5</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/&lt;const0&gt;_5</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/&lt;const0&gt;_6" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/&lt;const0&gt;_6</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/&lt;const0&gt;_6</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/&lt;const0&gt;_7" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/&lt;const0&gt;_7</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/&lt;const0&gt;_7</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/S00_AXI_1_RLAST" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/S00_AXI_1_RLAST</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/S00_AXI_1_RLAST</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/&lt;const0&gt;_8" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/&lt;const0&gt;_8</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/&lt;const0&gt;_8</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/GND_1_114" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/GND_1_114</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/GND_1_114</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/&lt;const0&gt;_9" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/&lt;const0&gt;_9</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/&lt;const0&gt;_9</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+</wave_config>
+

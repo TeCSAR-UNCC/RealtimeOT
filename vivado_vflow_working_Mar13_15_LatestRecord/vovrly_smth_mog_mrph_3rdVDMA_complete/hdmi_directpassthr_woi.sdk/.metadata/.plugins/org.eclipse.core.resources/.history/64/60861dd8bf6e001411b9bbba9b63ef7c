@@ -1,0 +1,132 @@
+/*
+ * main.c
+ *
+ *  Created on: Jun 29, 2014
+ *      Author: msabbagh
+ */
+#include <stdio.h>
+#include "cache_disable.h"
+#include "fmc_imageon_hdmi_passthrough.h"
+#include "vdma_cfg.h"
+#include "system_reset.h"
+#include "vdma_stat.h"
+#include "object_focus.h"
+#include "object_detection.h"
+#include "xil_cache.h"
+#include "mog_params_config.h"
+#include "woi_config.h"
+#include "input_param.h"
+
+fmc_imageon_hdmi_passthrough_t demo;
+
+void print( const char *str);
+
+int main()
+{
+	int reconfig;
+
+	u32 MD_THRESHOLD = 0;
+	u32 LEARNING_FACTOR = 0;
+	u32 FG_THRESHOLD = 0;
+	u32 FGDM_THRESHOLD = 0;
+
+	///////////////////// System Reset Assertion /////////////////////////////////////
+	system_reset_assert();
+	//////////////////////////////////////////////////////////////////////////////////
+
+	//FMC Module (hosting HDMI RX/TX ICs) Initialization
+	print("FMC Modules Initialization\n\r");
+	demo.uBaseAddr_IIC_FmcImageon = XPAR_FMC_IMAGEON_IIC_0_BASEADDR;
+
+	fmc_imageon_hdmi_passthrough_init( &demo );
+
+
+	//VDMA Configuration
+	vdma_cfg();
+
+
+	//Disabling Cache for Video Overlay
+	Xil_DCacheDisable();
+
+	//MoG Parameters Initialization
+
+	woi_config (0, 1023, 0, 767, 0x43c10000);
+	woi_config (0, 1023, 0, 767, 0x43c20000);
+	//mog_params_config (5, 5, 5, 5, MIXTUREOFGAUSSIANS_S00_AXI_SLV_BASE_ADDRESS);
+	///////////////////// System Reset deassertion /////////////////////////////////////
+	usleep(1000000);//Assert reset at least for 0.5 s, which means 5000000 cycles with frequency of 10 MHZ !!
+	system_reset_deassert();
+	//////////////////////////////////////////////////////////////////////////////////
+
+
+	//VDMA Status Monitoring
+	vdma_stat();
+
+	while (1)
+	{
+//		printf("\n\n*****************Please Enter Your Desired Parameters*****************\n\n");
+//		printf("*****************Match Detection Threshold Configuration*****************\n\n");
+//		printf("***************************************************\n\n");
+//		printf(" 1: 0 \n 2: 1 \n 3: 2 \n 4: 3 \n 5: 4 \n 6: 5 \n");
+//		printf(" 7: 6 \n 8: 7 \n 9: 8 \n 10: 9 \n 11: 10 \n 12: 11\n");
+//		printf(" 13: 12 \n 14: 13 \n 15: 14 \n 16: 15 \n");
+//		printf("***************************************************\n\n");
+//		MD_THRESHOLD = input_param();
+//		printf("*****************Learning Factor Configuration*****************\n\n");
+//		printf("***************************************************\n");
+//		printf(" 1: 50%% \n 2: 75%% \n 3: 87.5%% \n 4: 93.7%% \n 5: 96.8%% \n 6: 99.21%% \n");
+//		printf("***************************************************\n");
+//		LEARNING_FACTOR = input_param();
+//		printf("*****************Foreground Threshold Configuration*****************\n\n");
+//		printf("***************************************************\n\n");
+//		printf(" 1: 0.06 \n 2: 0.12 \n 3: 0.18 \n 4: 0.24 \n 5: 0.31 \n 6: 0.37 \n");
+//		printf(" 7: 0.43 \n 8: 0.50 \n 9: 0.56 \n 10: 0.62 \n 11: 0.68 \n 12: 0.75 \n");
+//		printf(" 13: 0.81 \n 14: 0.87 \n 15: 0.94 \n 16: 1.00 \n");
+//		printf("***************************************************\n\n");
+//		FG_THRESHOLD = input_param();
+//		printf("*****************ForeGround Match Detection Threshold Configuration*****************\n\n");
+//		printf("***************************************************\n\n");
+//		printf(" 1: 0 \n 2: 1 \n 3: 2 \n 4: 3 \n 5: 4 \n 6: 5 \n");
+//		printf(" 7: 6 \n 8: 7 \n 9: 8 \n 10: 9 \n 11: 10 \n 12: 11\n");
+//		printf(" 13: 12 \n 14: 13 \n 15: 14 \n 16: 15 \n");
+//		printf("***************************************************\n\n");
+//		FGDM_THRESHOLD = input_param();
+
+		//MoG Parameters Configuration
+		//mog_params_config(MD_THRESHOLD, LEARNING_FACTOR, FG_THRESHOLD, FGDM_THRESHOLD, MIXTUREOFGAUSSIANS_S00_AXI_SLV_BASE_ADDRESS);
+
+		printf("***************** Do you want to reconfigure the parameters? 0: No, 1: Yes *****************\n\n");
+		reconfig = input_param();
+
+		if(reconfig == 0)
+			break;
+
+	}
+//			u32 k;
+//			u32 *color_data_write_base_address;
+//			u32 *color_data_write_offset_address;
+//			color_data_write_base_address = WRITE_ADDRESS_BASE_YCBCR2MEM_VDMA;
+//			color_data_write_offset_address = WRITE_ADDRESS_BASE_YCBCR2MEM_VDMA;
+//			color_data_write_base_address = 0x00000000;
+//			color_data_write_offset_address = 0x00000000;
+//		//////////////////// VIDEO OVERLAY /////////////////////////////
+//
+//			 while(1)
+//				 {
+//				 	 for(k=0; k < (SUBFRAME_HORIZONTAL_SIZE_YCBCR2MEM * SUBFRAME_VERTICAL_SIZE_YCBCR2MEM);k+=4)
+//						 {
+//				 		 if(*color_data_write_offset_address)
+//				 		 {
+//				 		 	 printf("color video data value: %x\n", *color_data_write_offset_address);
+//				 			 printf("color video data address: %x\n", color_data_write_offset_address);
+//				 		 }
+//				 		 	color_data_write_offset_address = color_data_write_base_address + k;
+//						 }
+//				 }
+	/************Starting Object Detection Process **************/
+	//call object detection
+	object_detection (&VOVRLAY_WRITE_REGION);
+
+return 0;
+}
+

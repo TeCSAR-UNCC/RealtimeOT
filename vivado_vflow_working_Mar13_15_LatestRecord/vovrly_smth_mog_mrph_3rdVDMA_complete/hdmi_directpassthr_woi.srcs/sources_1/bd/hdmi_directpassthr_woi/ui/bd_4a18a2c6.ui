@@ -1,0 +1,110 @@
+{
+   guistr: "# # String gsaved with Nlview version 6.4-r1  2014-02-28 bk=1.3047 VDI=34 GEI=35 GUI=JA:1.7
+#  -string -flagsOSRD
+preplace port axi_clk -pg 1 -y 410 -defaultsOSRD
+preplace port M_AXI_S2MM -pg 1 -y 210 -defaultsOSRD
+preplace port s2mm_introut -pg 1 -y 430 -defaultsOSRD
+preplace port window_enable -pg 1 -y 860 -defaultsOSRD
+preplace port unpack_enable -pg 1 -y 810 -defaultsOSRD
+preplace port system_reset_n -pg 1 -y 910 -defaultsOSRD
+preplace port S_AXI -pg 1 -y 50 -defaultsOSRD
+preplace port hdmi_clk -pg 1 -y 490 -defaultsOSRD
+preplace port S_AXI_LITE -pg 1 -y 240 -defaultsOSRD
+preplace port ready_to_unpack -pg 1 -y 790 -defaultsOSRD
+preplace port mm2s_introut -pg 1 -y 410 -defaultsOSRD
+preplace port system_reset -pg 1 -y 890 -defaultsOSRD
+preplace port M_AXI_MM2S -pg 1 -y 190 -defaultsOSRD
+preplace port s_axi_lite_aclk -pg 1 -y 150 -defaultsOSRD
+preplace portBus video_color_data_smth -pg 1 -y 340 -defaultsOSRD
+preplace portBus video_grayscale_data_smth -pg 1 -y 790 -defaultsOSRD
+preplace portBus ycbcr_data_in_orig -pg 1 -y 1610 -defaultsOSRD
+preplace portBus is_fg -pg 1 -y 990 -defaultsOSRD
+preplace portBus input_video_vblank -pg 1 -y 110 -defaultsOSRD
+preplace portBus video_data_out -pg 1 -y 1270 -defaultsOSRD
+preplace portBus input_video_hblank -pg 1 -y 130 -defaultsOSRD
+preplace portBus axi_resetn -pg 1 -y 170 -defaultsOSRD
+preplace portBus m_axis_tdata -pg 1 -y 770 -defaultsOSRD
+preplace portBus mog_window_enable -pg 1 -y 1350 -defaultsOSRD
+preplace portBus output_source -pg 1 -y 1230 -defaultsOSRD
+preplace portBus video_overlay_set -pg 1 -y 840 -defaultsOSRD
+preplace portBus grayscale_pixel_in_orig -pg 1 -y 1480 -defaultsOSRD
+preplace inst pipeline_registers_3 -pg 1 -lvl 3 -y 970 -defaultsOSRD
+preplace inst video_overlay_0 -pg 1 -lvl 7 -y 1270 -defaultsOSRD
+preplace inst pipeline_registers_4 -pg 1 -lvl 2 -y 320 -defaultsOSRD
+preplace inst vovrly_async_fifo_rst -pg 1 -lvl 1 -y 420 -defaultsOSRD
+preplace inst pipeline_registers_5 -pg 1 -lvl 5 -y 510 -defaultsOSRD
+preplace inst pipeline_registers_6 -pg 1 -lvl 6 -y 1590 -defaultsOSRD
+preplace inst vovrly_sync_sigs_pass -pg 1 -lvl 4 -y 570 -defaultsOSRD
+preplace inst xup_and4_0 -pg 1 -lvl 3 -y 800 -defaultsOSRD
+preplace inst vovrly_data_unpacking0 -pg 1 -lvl 6 -y 830 -defaultsOSRD
+preplace inst xup_and4_1 -pg 1 -lvl 7 -y 680 -defaultsOSRD
+preplace inst vovraly_wr_async_fifo -pg 1 -lvl 6 -y 550 -defaultsOSRD
+preplace inst xup_and3_1 -pg 1 -lvl 6 -y 990 -defaultsOSRD
+preplace inst xup_and3_2 -pg 1 -lvl 6 -y 1150 -defaultsOSRD
+preplace inst xup_and3_3 -pg 1 -lvl 5 -y 780 -defaultsOSRD
+preplace inst vovrly_vdma -pg 1 -lvl 7 -y 310 -defaultsOSRD
+preplace inst pipeline_registers_0 -pg 1 -lvl 2 -y 770 -defaultsOSRD
+preplace inst vovraly_rd_async_fifo -pg 1 -lvl 2 -y 560 -defaultsOSRD
+preplace inst pipeline_registers_1 -pg 1 -lvl 6 -y 1460 -defaultsOSRD
+preplace inst vovrlay_woi_det -pg 1 -lvl 6 -y 110 -defaultsOSRD
+preplace inst vovrlay_data_packing_0 -pg 1 -lvl 4 -y 870 -defaultsOSRD
+preplace inst pipeline_registers_2 -pg 1 -lvl 6 -y 1330 -defaultsOSRD
+preplace netloc Conn1 1 0 7 NJ 240 NJ 230 NJ 250 NJ 250 NJ 250 NJ 250 2790
+preplace netloc vovrly_vdma_s2mm_introut 1 7 1 N
+preplace netloc data_packing_0_write_data 1 4 2 NJ 890 2260
+preplace netloc vovraly_wr_async_fifo_s_axis_tready 1 5 1 2340
+preplace netloc vovraly_rd_async_fifo_m_axis_tvalid 1 2 4 1040 1040 NJ 1010 NJ 1010 NJ
+preplace netloc vovrly_async_fifo_rst_aresetn 1 1 5 510 700 NJ 680 1360 680 1920 640 NJ
+preplace netloc vovraly_rd_async_fifo_s_axis_tready 1 1 7 560 410 NJ 450 NJ 450 NJ 580 NJ 400 NJ 500 3250
+preplace netloc Conn2 1 7 1 N
+preplace netloc xup_and3_1_y_1 1 5 1 2290
+preplace netloc xup_and3_0_y_1 1 4 3 1890 1080 NJ 1080 2770
+preplace netloc pipe_in2_1 1 0 3 NJ 990 NJ 990 N
+preplace netloc Conn3 1 7 1 N
+preplace netloc vovraly_wr_async_fifo_M_AXIS 1 6 1 2770
+preplace netloc vovrly_vdma_m_axis_mm2s_tlast 1 1 7 570 420 NJ 460 NJ 460 NJ 590 NJ 410 NJ 510 3260
+preplace netloc vovrlay_woi_det_window_enable 1 2 6 1100 900 1340 950 NJ 950 2330 1060 2800 860 NJ
+preplace netloc vbb_system_reset_0_system_reset 1 0 7 N 890 NJ 890 NJ 890 1360 790 NJ 880 2280 1070 NJ
+preplace netloc Conn4 1 0 6 NJ 50 NJ 50 NJ 50 NJ 50 NJ 50 N
+preplace netloc input_video_vblank_1 1 0 6 NJ 110 NJ 110 NJ 110 NJ 110 NJ 110 N
+preplace netloc pipeline_registers_3_pipe_out 1 3 4 1370 1260 NJ 1260 NJ 1260 NJ
+preplace netloc fifo_generator_0_m_axis_tdata 1 2 6 1060 720 NJ 780 NJ 870 2320 720 NJ 770 NJ
+preplace netloc vovrly_sync_sigs_pass_m_axis_tlast 1 4 2 1940 600 NJ
+preplace netloc axi_vdma_0_m_axis_mm2s_tvalid 1 1 7 530 250 NJ 350 NJ 350 NJ 350 NJ 350 NJ 490 3230
+preplace netloc axi_vdma_0_m_axis_mm2s_tdata 1 1 7 540 210 NJ 230 NJ 230 NJ 230 NJ 230 NJ 130 3260
+preplace netloc data_unpacking_0_video_overlay_set 1 6 2 2830 840 NJ
+preplace netloc video_overlay_0_video_data_out 1 7 1 N
+preplace netloc video_color_data_smth_1 1 0 2 NJ 340 N
+preplace netloc axi_vdma_0_m_axis_mm2s_tkeep 1 1 7 550 220 NJ 240 NJ 240 NJ 240 NJ 240 NJ 140 3230
+preplace netloc vovraly_rd_async_fifo_m_axis_tlast 1 2 2 NJ 560 1320
+preplace netloc data_packing_0_write_data_valid 1 4 2 1860 900 2200
+preplace netloc axi_vdma_0_m_axis_mm2s_tuser 1 0 8 290 350 500 240 NJ 330 NJ 330 NJ 330 NJ 330 NJ 480 3240
+preplace netloc image_smoothing_full_version_0_data_out 1 0 6 NJ 1480 NJ 1480 NJ 1480 NJ 1480 NJ 1480 N
+preplace netloc clk_1 1 0 7 NJ 490 490 840 1080 670 1350 430 1980 440 2250 1220 NJ
+preplace netloc vovraly_rd_async_fifo_m_axis_tuser 1 2 2 NJ 600 1320
+preplace netloc xup_and4_1_y 1 2 6 NJ 690 NJ 690 NJ 690 NJ 690 NJ 600 3230
+preplace netloc data_unpacking_0_ready_to_unpack 1 2 6 1100 710 NJ 770 NJ 850 NJ 730 2820 790 NJ
+preplace netloc image_smoothing_full_version_0_win_enable_out 1 0 6 NJ 1350 NJ 1350 NJ 1350 NJ 1350 NJ 1350 N
+preplace netloc video_grayscale_data_smth_1 1 0 2 NJ 790 N
+preplace netloc input_video_hblank_1 1 0 6 NJ 130 NJ 130 NJ 130 NJ 130 NJ 130 N
+preplace netloc pipe_in_1 1 0 6 NJ 1610 NJ 1610 NJ 1610 NJ 1610 NJ 1610 N
+preplace netloc pipeline_registers_5_pipe_out 1 5 1 2240
+preplace netloc xup_and4_0_y 1 3 1 1330
+preplace netloc xup_and3_1_y 1 5 3 2350 740 2770 810 NJ
+preplace netloc axi_resetn_1 1 0 7 NJ 170 NJ 170 NJ 170 NJ 170 NJ 170 2290 220 2840
+preplace netloc vovrly_sync_sigs_pass_m_axis_tuser 1 4 2 1930 610 NJ
+preplace netloc vovraly_rd_async_fifo_m_axis_tkeep 1 2 3 1080 440 NJ 440 NJ
+preplace netloc vbb_system_reset_0_system_reset_n 1 0 7 NJ 910 NJ 910 1090 700 NJ 760 1850 860 2310 710 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 7 NJ 150 NJ 150 NJ 150 NJ 150 NJ 150 2340 280 NJ
+preplace netloc pipeline_registers_1_pipe_out 1 6 1 2840
+preplace netloc output_source_1 1 0 7 NJ 1230 NJ 1230 NJ 1230 NJ 1230 NJ 1230 NJ 1230 N
+preplace netloc vovrly_vdma_mm2s_introut 1 7 1 N
+preplace netloc pipeline_registers_6_pipe_out 1 6 1 2850
+preplace netloc vovrly_sync_sigs_pass_s_axis_tready 1 3 4 1370 700 NJ 700 NJ 700 NJ
+preplace netloc processing_system7_0_FCLK_CLK1 1 0 7 280 480 520 400 NJ 400 NJ 400 NJ 400 2210 320 2850
+preplace netloc pipeline_registers_2_pipe_out 1 6 1 2820
+preplace netloc vovrly_sync_sigs_pass_m_axis_tvalid 1 4 1 1910
+levelinfo -pg 1 260 390 810 1210 1610 2090 2560 3040 3280
+",
+}
+0

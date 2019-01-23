@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:08:52 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Fri Jul 25 11:36:04 2014
+# Process ID: 16329
+# Log file: /export/thishost/scratch/sabbagh/vivado/hdmi_directpassthr_woi/hdmi_directpassthr_woi.runs/impl_1/hdmi_directpassthr_woi_wrapper.vdi
+# Journal file: /export/thishost/scratch/sabbagh/vivado/hdmi_directpassthr_woi/hdmi_directpassthr_woi.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source hdmi_directpassthr_woi_wrapper.tcl -notrace

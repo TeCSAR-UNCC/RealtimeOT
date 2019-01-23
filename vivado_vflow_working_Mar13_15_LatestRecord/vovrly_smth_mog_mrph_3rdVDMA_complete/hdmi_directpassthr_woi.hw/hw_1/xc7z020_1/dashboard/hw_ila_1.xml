@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <DashboardHolder activeDashboard="ILA">
+        <Dashboard columnResizable="1" key="ILA" rowResizable="0" title="ILA">
+            <Settings/>
+            <GadgetContainer boxAxis="1" count="2" height="759"
+                layout="JideBoxLayout" vgap="6" width="684">
+                <Gadget height="108" key="Trigger Capture Status" width="684">
+                    <Ila capture_condition="AND" capture_mode="ALWAYS"
+                        data_depth="1024" trigger_condition="AND"
+                        trigger_mode="BASIC_ONLY" trigger_position="512"
+                        trigout_mode="DISABLED" tsm_file="" window_count="1"/>
+                </Gadget>
+                <Gadget height="446" key="Basic Trigger Setup" width="684">
+                    <Probe name="hdmi_directpassthr_woi_i/processing_system7_0_axi_periph_M02_AXI_ARADDR[8:0]"/>
+                    <Probe name="hdmi_directpassthr_woi_i/processing_system7_0_axi_periph_M02_AXI_ARREADY"/>
+                    <Probe name="hdmi_directpassthr_woi_i/processing_system7_0_axi_periph_M02_AXI_ARVALID"/>
+                    <Probe name="hdmi_directpassthr_woi_i/processing_system7_0_axi_periph_M02_AXI_AWADDR[8:0]"/>
+                    <Probe name="hdmi_directpassthr_woi_i/processing_system7_0_axi_periph_M02_AXI_AWREADY"/>
+                    <Probe name="hdmi_directpassthr_woi_i/processing_system7_0_axi_periph_M02_AXI_AWVALID"/>
+                    <Probe name="hdmi_directpassthr_woi_i/processing_system7_0_axi_periph_M02_AXI_BREADY"/>
+                    <Probe name="hdmi_directpassthr_woi_i/processing_system7_0_axi_periph_M02_AXI_BVALID"/>
+                    <Probe name="hdmi_directpassthr_woi_i/processing_system7_0_axi_periph_M02_AXI_RDATA[31:0]"/>
+                    <Probe name="hdmi_directpassthr_woi_i/processing_system7_0_axi_periph_M02_AXI_RREADY"/>
+                    <Probe name="hdmi_directpassthr_woi_i/processing_system7_0_axi_periph_M02_AXI_RVALID"/>
+                    <Probe name="hdmi_directpassthr_woi_i/processing_system7_0_axi_periph_M02_AXI_WDATA[31:0]"/>
+                    <Probe name="hdmi_directpassthr_woi_i/processing_system7_0_axi_periph_M02_AXI_WREADY"/>
+                    <Probe name="hdmi_directpassthr_woi_i/processing_system7_0_axi_periph_M02_AXI_WVALID"/>
+                </Gadget>
+                <Settings/>
+            </GadgetContainer>
+        </Dashboard>
+    </DashboardHolder>
+</component>

@@ -1,0 +1,57 @@
+{
+   guistr: "# # String gsaved with Nlview version 6.4-r1  2014-02-28 bk=1.3047 VDI=34 GEI=35 GUI=JA:1.7
+#  -string -flagsOSRD
+preplace port ext_hdmi_vsync -pg 1 -y 760 -defaultsOSRD
+preplace port IIC_MAIN -pg 1 -y 1060 -defaultsOSRD
+preplace port CLK_IN1_N -pg 1 -y 60 -defaultsOSRD
+preplace port ext_hdmi_de -pg 1 -y 720 -defaultsOSRD
+preplace port sys_rst -pg 1 -y 20 -defaultsOSRD
+preplace port CLK_IN1_P -pg 1 -y 40 -defaultsOSRD
+preplace port ext_hdmi_hsync -pg 1 -y 740 -defaultsOSRD
+preplace port uart -pg 1 -y 780 -defaultsOSRD
+preplace port DDR3 -pg 1 -y 520 -defaultsOSRD
+preplace port ext_hdmi_clk -pg 1 -y 680 -defaultsOSRD
+preplace portBus ext_hdmi_data -pg 1 -y 700 -defaultsOSRD
+preplace portBus EXT_USR_CLK_N -pg 1 -y 570 -defaultsOSRD
+preplace portBus EXT_USR_CLK_P -pg 1 -y 590 -defaultsOSRD
+preplace inst processor_subsystem -pg 1 -lvl 1 -y 820 -defaultsOSRD
+preplace inst axi_perf_mon_0 -pg 1 -lvl 3 -y 920 -defaultsOSRD
+preplace inst memory_subsystem -pg 1 -lvl 3 -y 550 -defaultsOSRD
+preplace inst video_pipeline -pg 1 -lvl 2 -y 230 -defaultsOSRD
+preplace netloc S_AXI_1 1 1 2 N 860 NJ
+preplace netloc ctrl1_1 1 1 1 650
+preplace netloc S_AXI_LITE_1 1 1 1 630
+preplace netloc ctrl_1 1 1 1 620
+preplace netloc sys_rst_1 1 0 3 NJ 590 NJ 600 1110
+preplace netloc EXT_USR_CLK_N_1 1 0 2 NJ 570 660
+preplace netloc mig_1_ui_clk 1 0 3 280 560 760 870 NJ
+preplace netloc hdmi_interface_0_hdmi_data 1 2 2 1140 360 NJ
+preplace netloc EXT_USR_CLK_P_1 1 0 2 NJ 580 680
+preplace netloc CLK_IN1_P_1 1 0 3 NJ 600 NJ 610 1100
+preplace netloc proc_M_AXI_IC 1 1 2 730 490 NJ
+preplace netloc ctrl3_1 1 1 1 690
+preplace netloc data_irq1 1 0 3 270 550 NJ 70 1090
+preplace netloc proc_sys_reset_1_peripheral_aresetn 1 1 2 770 570 1130
+preplace netloc proc_IIC 1 1 3 790 780 NJ 780 NJ
+preplace netloc hdmi_interface_0_hdmi_vsync 1 2 2 1090 390 NJ
+preplace netloc proc_UART 1 1 3 640 770 NJ 770 NJ
+preplace netloc mig_1_ui_clk1 1 0 4 260 620 NJ 710 1100 710 1560
+preplace netloc hdmi_interface_0_hdmi_hsync 1 2 2 1100 380 NJ
+preplace netloc ext_reset_in_1 1 0 4 240 540 NJ 60 NJ 340 1580
+preplace netloc CLK_IN1_N_1 1 0 3 NJ 610 NJ 620 1090
+preplace netloc hdmi_interface_0_hdmi_de 1 2 2 1120 370 NJ
+preplace netloc data_M_AXI_S2MM 1 2 1 1110
+preplace netloc data_irq 1 0 3 250 50 NJ 50 1100
+preplace netloc clk_wiz_1_clk_out2 1 1 2 750 590 NJ
+preplace netloc proc_sys_reset_1_interconnect_aresetn 1 1 2 780 550 NJ
+preplace netloc hdmi_interface_0_hdmi_clk 1 2 2 1150 350 NJ
+preplace netloc mig_1_DDR3 1 3 1 N
+preplace netloc axi_interconnect_2_M00_AXI 1 2 2 1160 700 1570
+preplace netloc ctrl4_1 1 1 1 720
+preplace netloc proc_M_AXI_DC 1 1 2 700 470 NJ
+preplace netloc data_M_AXI_MM2S 1 2 1 1130
+preplace netloc ctrl2_1 1 1 1 670
+levelinfo -pg 1 180 440 950 1419 1650
+",
+}
+0

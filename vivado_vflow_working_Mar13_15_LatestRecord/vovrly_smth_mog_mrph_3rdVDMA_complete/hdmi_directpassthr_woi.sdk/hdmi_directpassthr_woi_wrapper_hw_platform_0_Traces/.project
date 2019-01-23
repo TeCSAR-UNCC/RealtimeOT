@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>hdmi_directpassthr_woi_wrapper_hw_platform_0_Traces</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.linuxtools.tmf.project.nature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Traces/Run_Mar-22_09-41/PS_Trace_Mar-22_09-41/PS_Trace_Mar-22_09-41_</name>
+			<type>1</type>
+			<location>/home/LAB/asawant2/VisionGit/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/hdmi_directpassthr_woi_wrapper_hw_platform_0_Traces/Traces/.bookmarks</location>
+		</link>
+		<link>
+			<name>Traces/Run_Mar-22_13-26/PS_Trace_Mar-22_13-26/PS_Trace_Mar-22_13-26_</name>
+			<type>1</type>
+			<location>/home/LAB/cbui1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/hdmi_directpassthr_woi_wrapper_hw_platform_0_Traces/Traces/.bookmarks</location>
+		</link>
+		<link>
+			<name>Traces/Run_Mar-22_13-27/PS_Trace_Mar-22_13-27/PS_Trace_Mar-22_13-27_</name>
+			<type>1</type>
+			<location>/home/LAB/cbui1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/hdmi_directpassthr_woi_wrapper_hw_platform_0_Traces/Traces/.bookmarks</location>
+		</link>
+	</linkedResources>
+</projectDescription>

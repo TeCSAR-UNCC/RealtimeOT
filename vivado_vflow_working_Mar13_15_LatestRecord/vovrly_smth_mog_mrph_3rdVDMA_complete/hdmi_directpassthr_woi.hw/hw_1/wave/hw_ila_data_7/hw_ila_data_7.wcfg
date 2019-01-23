@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<wave_config>
+	<wave_state>
+	</wave_state>
+	<db_ref_list>
+		<db_ref path="/export/thishost/scratch/sabbagh/vivado/hdmi_directpassthr_woi/hdmi_directpassthr_woi.hw/hw_1/wave/hw_ila_data_7/hw_ila_data_7.wdb" id="1" type="auto">
+			<top_modules>
+				<top_module name="top">
+				</top_module>
+			</top_modules>
+		</db_ref>
+	</db_ref_list>
+	<WVObjectSize size="5">
+	</WVObjectSize>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/video_overlay_unit_pipe_out2" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/video_overlay_unit_pipe_out2[31:0]</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/video_overlay_unit_pipe_out2[31:0]</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/rst_processing_system7_0_150M_peripheral_aresetn_1" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/rst_processing_system7_0_150M_peripheral_aresetn_1</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/rst_processing_system7_0_150M_peripheral_aresetn_1</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/video_overlay_unit_pipe_out3" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/video_overlay_unit_pipe_out3</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/video_overlay_unit_pipe_out3</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/video_overlay_unit_s_axis_tready_1" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/video_overlay_unit_s_axis_tready_1</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/video_overlay_unit_s_axis_tready_1</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="hdmi_directpassthr_woi_i/video_overlay_unit_y1" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">hdmi_directpassthr_woi_i/video_overlay_unit_y1</obj_property>
+		<obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/video_overlay_unit_y1</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+</wave_config>
+

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:12:34 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Tue Aug  4 17:43:19 2015
+# Process ID: 28284
+# Log file: /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/custom_repo/IPcores/vovrlay/vivado.log
+# Journal file: /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/custom_repo/IPcores/vovrlay/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.xpr
+open_bd_design {/export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/hdmi_directpassthr_woi.bd}
+delete_bd_objs [get_bd_nets output_source_1] [get_bd_ports output_source]
+startgroup
+create_bd_port -dir I -from 3 -to 0 output_source
+connect_bd_net [get_bd_pins /video_overlay_unit/video_overlay_0/output_source] [get_bd_ports output_source]
+endgroup
+save_bd_design
+make_wrapper -files [get_files /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/hdmi_directpassthr_woi.bd] -top
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2

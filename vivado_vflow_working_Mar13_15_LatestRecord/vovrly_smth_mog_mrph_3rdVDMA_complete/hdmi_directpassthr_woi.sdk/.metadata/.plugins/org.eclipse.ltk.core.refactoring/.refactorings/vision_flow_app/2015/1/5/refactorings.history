@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;vision_flow_app/src/blob_tracking.h&apos; to &apos;object_tracking.h&apos;" description="Rename resource &apos;blob_tracking.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/blob_tracking.h" name="object_tracking.h" stamp="1422299113613" updateReferences="true"/>
+</session>

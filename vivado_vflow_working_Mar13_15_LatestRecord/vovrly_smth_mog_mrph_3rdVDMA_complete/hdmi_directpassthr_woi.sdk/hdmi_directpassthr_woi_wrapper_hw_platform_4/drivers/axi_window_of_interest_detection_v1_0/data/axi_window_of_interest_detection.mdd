@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER axi_window_of_interest_detection
+	OPTION supported_peripherals = (axi_window_of_interest_detection);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = axi_window_of_interest_detection;
+END DRIVER

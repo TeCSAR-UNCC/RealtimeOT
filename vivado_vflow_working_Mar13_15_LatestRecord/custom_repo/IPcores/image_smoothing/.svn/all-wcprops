@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/image_smoothing
+END
+.zip
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/image_smoothing/.zip
+END
+component.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/image_smoothing/component.xml
+END
+init_fifo_wr_rd_controller_smooth.v
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/image_smoothing/init_fifo_wr_rd_controller_smooth.v
+END
+image_smoothing.v
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/image_smoothing/image_smoothing.v
+END

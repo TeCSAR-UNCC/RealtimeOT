@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:12:34 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Mon Nov  2 10:41:25 2015
+# Process ID: 523
+# Log file: /export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.runs/impl_2/hdmi_directpassthr_woi_wrapper.vdi
+# Journal file: /export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.runs/impl_2/vivado.jou
+#-----------------------------------------------------------
+source hdmi_directpassthr_woi_wrapper.tcl -notrace

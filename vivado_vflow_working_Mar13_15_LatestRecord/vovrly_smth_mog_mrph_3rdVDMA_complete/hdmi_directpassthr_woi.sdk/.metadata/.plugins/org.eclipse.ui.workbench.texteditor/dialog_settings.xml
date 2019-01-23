@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="238" key="DIALOG_X_ORIGIN"/>
+		<item value="244" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="object_focus" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="object_focus"/>
+			<item value="label"/>
+			<item value="blob"/>
+			<item value="vovrly_write_back"/>
+			<item value="IntID"/>
+			<item value="object"/>
+			<item value="prv_velY"/>
+			<item value="pixelValue ="/>
+		</list>
+		<list key="replacehistory">
+			<item value="M_status == -1"/>
+			<item value=""/>
+			<item value="object_focus"/>
+			<item value="MoG_VDMA_ID"/>
+			<item value="vdma_struct"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="337" key="DIALOG_WIDTH"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="434" key="DIALOG_HEIGHT"/>
+		<item value="252" key="DIALOG_Y_ORIGIN"/>
+		<item value="622" key="DIALOG_X_ORIGIN"/>
+	</section>
+</section>

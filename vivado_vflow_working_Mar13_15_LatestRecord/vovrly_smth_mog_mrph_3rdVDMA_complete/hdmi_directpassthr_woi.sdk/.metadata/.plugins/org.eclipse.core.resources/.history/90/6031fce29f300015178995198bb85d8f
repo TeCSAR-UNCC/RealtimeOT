@@ -1,0 +1,680 @@
+/*
+ * blob_tracking.c
+ *
+ *  Created on: May 4, 2015
+ *      Author: xufaneric
+ */
+
+#include <math.h>
+#include "matrix.h"
+#include "blob_tracking.h"
+#include "vdma_cfg.h"
+#include "object_focus.h"
+#include "common_value_defination.h"
+#include "xtime_l.h"
+
+#define MAXSCORE 10000
+//#define APPEAR_THRESHOLD 4
+//#define DiSAPPEAR_THRESHOLD 4
+//#define SCORE_THRESHOLD 150
+
+
+struct Bloblist_Tracking Bloblist;
+struct sBloblist m_Bloblist_past_0, m_Bloblist_past_1;
+
+int displayThreshold;
+
+//void getHistogram(struct Blob_Tracking *);
+u32 getPixelValue(int, int);
+//struct Blob_Tracking getInfo(struct sBlob);
+//double getScore(struct Blob_Tracking, struct Blob_Tracking);
+//int getListID(struct Blob_Tracking, double);
+
+void blob_tracking(int APPEAR_THRESHOLD, int DiSAPPEAR_THRESHOLD, int SCORE_THRESHOLD)
+{
+	int i,j,k;
+	struct sBloblist m_Bloblist, m_Bloblist_new, m_Bloblist_new_no_cover;
+	u32 *read_pointer;
+
+	Xil_DCacheFlush();
+
+//	printf("************************************************\n\r");
+	XTime start, finish, start_tiny, finish_tiny;
+	double time;
+	int min_x = 0, min_y = 0, wx = 0, wy = 0;
+	XTime_GetTime(&start);
+	int COMM_VAL_cur = COMM_VAL;
+
+	/****************************************
+	 *   Read the data from the 1st core    *
+	 ****************************************/
+//	xil_printf("COMM_VAL is %d \n\r", COMM_VAL);
+	if (COMM_VAL == 1)
+	{
+		m_Bloblist = Bloblist_Buf0;
+		read_pointer = VOVRLAY_READ_REGION + FRAME_HORIZONTAL_LEN_VIDEO_OVERLAY * FRAME_VERTICAL_LEN_VIDEO_OVERLAY;
+	}
+
+	if (COMM_VAL == 2)
+	{
+		m_Bloblist = Bloblist_Buf1;
+		read_pointer = VOVRLAY_READ_REGION;
+	}
+	if (COMM_VAL == 1)
+	{
+//			xil_printf("first loop \n\r");
+		for (i=0 ; i< m_Bloblist_past_0.blobtotal; i++)
+		{
+			min_x = m_Bloblist_past_0.blob[i].min_x;
+			min_y = m_Bloblist_past_0.blob[i].min_y;
+			wx = m_Bloblist_past_0.blob[i].wx;
+			wy = m_Bloblist_past_0.blob[i].wy;
+//				xil_printf("delete buf1: (x,y,w,h) is (%d,%d,%d,%d)\r\n", min_x, min_y, wx, wy);
+			object_focus (min_x, min_y, wx, wy,	read_pointer, 0XFFFFFFFF,  0, VIDEO_OVERLAY_VDMA_ID);
+		}
+	}
+	if (COMM_VAL == 2)
+	{
+//			xil_printf("second loop \n\r");
+		for (i=0 ; i< m_Bloblist_past_1.blobtotal; i++)
+		{
+			min_x = m_Bloblist_past_1.blob[i].min_x;
+			min_y = m_Bloblist_past_1.blob[i].min_y;
+			wx = m_Bloblist_past_1.blob[i].wx;
+			wy = m_Bloblist_past_1.blob[i].wy;
+//				xil_printf("delete buf2: (x,y,w,h) is (%d,%d,%d,%d)\r\n", min_x, min_y, wx, wy);
+			object_focus (min_x, min_y, wx, wy,	read_pointer, 0XFFFFFFFF,  0, VIDEO_OVERLAY_VDMA_ID);
+		}
+	}
+
+//	xil_printf("read_pointer is 0x%08X\n\r", read_pointer);
+
+	/*************************************
+	 *   All blobs in list +1 miss       *
+	 *   when hit, +1 hit, -1 miss       *
+	 *   and update the data             *
+	 *************************************/
+	j = 0;
+	for(i = 0; i < Bloblist.existNumber; i++)
+	{
+		while(!Bloblist.blob[j].isInListFlag) {j++;}
+		Bloblist.blob[j].missCounter++;
+		Bloblist.blob[j].isNewAdded = 0;
+		j++;
+	}
+	if(COMM_VAL != COMM_VAL_cur)
+		return;
+
+//	xil_printf("m_Bloblist.blobtotal = %d\n\r", m_Bloblist.blobtotal);
+	for(i = 0; i < m_Bloblist.blobtotal; i++)
+	{
+		if(COMM_VAL != COMM_VAL_cur)
+			return;
+
+		/*******************************************
+		 * Transfer the data from blob_detection() *
+		 *******************************************/
+//		XTime_GetTime(&start);
+		struct Blob_Tracking blobTest;  //read one of the blobs, and convert its pos/size information
+//		blobTest = getInfo(m_Bloblist.blob[i]);
+		blobTest.centerX = m_Bloblist.blob[i].min_x + m_Bloblist.blob[i].wx / 2;
+		blobTest.centerY = m_Bloblist.blob[i].min_y + m_Bloblist.blob[i].wy / 2;
+		blobTest.width = m_Bloblist.blob[i].wx;
+		blobTest.height = m_Bloblist.blob[i].wy;
+//		xil_printf("blobTest info initialization: (x,y,w,h) = (%d, %d, %d, %d)\n\r", blobTest.centerX, blobTest.centerY, blobTest.width, blobTest.height);
+
+		/* get histogram */
+		int m, x, y, C0, C1;
+		for (m = 0; m < 256; m++)
+			blobTest.histogram[m] = 0;
+
+//		XTime_GetTime(&start_tiny);
+		for (y = blobTest.centerY - blobTest.height / 2; y < blobTest.centerY + blobTest.height / 2; y++)
+		{
+			for (x = blobTest.centerX - blobTest.width / 2 ; x < blobTest.centerX + blobTest.width / 2; x+=2)
+			{
+				u32 pixelValue = getPixelValue(x,y);
+				C1 = pixelValue >> 24;
+				C0 = (pixelValue & 0x0000FF00) >> 8;
+//				xil_printf("%08X %d %d\r\n", pixelValue, C1, C0);
+				blobTest.histogram[C1]++;
+				blobTest.histogram[C0]++;
+			}
+		}
+//		printf("done\r\n");
+//		XTime_GetTime(&finish_tiny);
+//		time = (double)(finish_tiny - start_tiny) / 333000000 * 1000;
+//		printf("geting one histogram takes %f ms.\r\n", time);
+
+//		XTime_GetTime(&start_tiny);
+		int pixelNumber = blobTest.height * blobTest.width;
+//		double sum = 0.0;
+		for (m = 0; m < 256; m++) //normalization the histogram
+		{
+//			printf("blobTest.histogram[%d] = %d\n\r", m, blobTest.histogram[m]);
+			blobTest.histogram[m] = (blobTest.histogram[m] * 500 + pixelNumber / 2) / pixelNumber;
+//			sum += blobTest.histogram[m];
+//			printf("blobTest.histogram[%d] = %d\n\r", m, blobTest.histogram[m]);
+		}
+
+//		XTime_GetTime(&finish_tiny);
+//		time = (double)(finish_tiny - start_tiny) / 333000000 * 1000;
+//		printf("normalization takes %f ms.\r\n", time);
+
+//		printf("pixelNumber = %d, sum = %lf\n\r", pixelNumber, sum);
+
+//		XTime_GetTime(&finish);
+//		time = (double)(finish - start) / 333000000 * 1000;
+//		printf("histogram takes %f ms.\r\n", time);
+
+		/********************************************************
+		 * Check whether the blob is already in the list or not *
+		 ********************************************************/
+//		xil_printf("check list!\n\r");
+//		XTime_GetTime(&start);
+		int minScore = MAXSCORE;
+		int currentScore = MAXSCORE;
+		int minPosScore, minHistScore;
+		int listID = -1, id = -1;
+		int n = 0;
+		for(m = 0; m < Bloblist.existNumber; m++)
+		{
+
+			while((!Bloblist.blob[n].isInListFlag) || Bloblist.blob[n].isNewAdded) {n++;}
+//			currentScore = getScore(Bloblist.blob[n], blobTest);
+//			if(Bloblist.blob[n].hitCounter == 1)
+//				currentScore = currentScore / 2.0;
+
+			/**************************************************
+			 * Compare two blobs and get the difference_score *
+			 **************************************************/
+			int score = 0, histScore = 0;
+
+//			xil_printf("blobTest info score_cal: (x,y,w,h) = (%d, %d, %d, %d)\n\r", blobTest.centerX, blobTest.centerY, blobTest.width, blobTest.height);
+//			xil_printf("Bloblist.blob[%d] info score_cal: (x,y,w,h) = (%d, %d, %d, %d)\n\r", n, Bloblist.blob[n].centerX, Bloblist.blob[n].centerY, Bloblist.blob[n].width, Bloblist.blob[n].height);
+			score += fabs(blobTest.centerX - Bloblist.blob[n].centerX);
+			score += fabs(blobTest.centerY - Bloblist.blob[n].centerY);
+//			score += abs(blobTest.centerX - Bloblist.blob[n].centerX - Bloblist.blob[n].moveX);
+//			score += abs(blobTest.centerY - Bloblist.blob[n].centerY - Bloblist.blob[n].moveY);
+			score += fabs(blobTest.width - Bloblist.blob[n].width);
+			score += fabs(blobTest.height - Bloblist.blob[n].height);
+
+			int h_i;
+			// simple way to calculate histogram score
+			for (h_i = 0; h_i < 256; h_i++)
+				histScore += fabs(blobTest.histogram[h_i] - Bloblist.blob[n].histogram[h_i]);
+
+			// normal way to calculate histogram score
+//			int sim = 0;
+//			for (h_i = 0; h_i < 256; h_i++)
+//				sim += sqrt(blobTest.histogram[h_i] * Bloblist.blob[n].histogram[h_i]);
+//			histScore = 1000 - 2 * sim;
+
+//			printf("(score, histScore) = (%lf, %lf)\n\r", score, histScore);
+			currentScore = score + histScore;
+
+			if (currentScore < minScore)
+			{
+				minScore = currentScore;
+				minPosScore = score;
+				minHistScore = histScore;
+				listID = n;
+			}
+			n++;
+		}
+
+		if (minScore < SCORE_THRESHOLD)
+			id = listID;
+
+//		printf("id = %d, (minScore,minPosScore,minHistScore) = (%d, %d, %d)\n\r", id, minScore, minPosScore, minHistScore);
+
+		if(id == -1) //if not in the list, add it
+		{
+			for(j = 0; j < Bloblist.totalNumber + 1; j++)
+				if(!Bloblist.blob[j].isInListFlag)
+				{
+					Bloblist.blob[j] = blobTest;
+					Bloblist.blob[j].moveX = 0;
+					Bloblist.blob[j].moveY = 0;
+					Bloblist.blob[j].isInListFlag = 1;
+					Bloblist.blob[j].isPotentialFlag = 1;
+					Bloblist.blob[j].isActualFlag = 0;
+					Bloblist.blob[j].hitCounter = 1;
+					Bloblist.blob[j].missCounter = 0;
+					Bloblist.blob[j].isNewAdded = 1;
+					Bloblist.blob[j].predictNum = 0;
+					break;
+				}
+			Bloblist.totalNumber++;
+			Bloblist.potentialNumber++;
+		}
+		else // if in the list, calculate the information which may be needed in the future.
+		{
+			int velocityNum = (Bloblist.blob[id].hitCounter - 1) % APPEAR_THRESHOLD;
+//			Bloblist.blob[id].velocityX[velocityNum] = blobTest.centerX - Bloblist.blob[id].centerX;
+//			Bloblist.blob[id].velocityY[velocityNum] = blobTest.centerY - Bloblist.blob[id].centerY;
+//			Bloblist.blob[id].centerXPrev[velocityNum] = Bloblist.blob[id].centerX;
+//			Bloblist.blob[id].centerYPrev[velocityNum] = Bloblist.blob[id].centerY;
+			Bloblist.blob[id].widthPrev[velocityNum] = Bloblist.blob[id].width;
+			Bloblist.blob[id].heightPrev[velocityNum] = Bloblist.blob[id].height;
+
+//			Bloblist.blob[id].moveX = blobTest.centerX - Bloblist.blob[id].centerX;
+//			Bloblist.blob[id].moveY = blobTest.centerY - Bloblist.blob[id].centerY;
+			Bloblist.blob[id].velXLast = (blobTest.centerX - Bloblist.blob[id].centerXLast) / 2;
+			Bloblist.blob[id].velYLast = (blobTest.centerY - Bloblist.blob[id].centerYLast) / 2;
+			Bloblist.blob[id].centerXLast = Bloblist.blob[id].centerX;
+			Bloblist.blob[id].centerYLast = Bloblist.blob[id].centerY;
+			Bloblist.blob[id].centerX = blobTest.centerX;
+			Bloblist.blob[id].centerY = blobTest.centerY;
+			Bloblist.blob[id].height = (blobTest.height + Bloblist.blob[id].height) / 2;
+			Bloblist.blob[id].width = (blobTest.width + Bloblist.blob[id].width) / 2;
+			int h;
+			for (h = 0; h < 256; h++) {
+				Bloblist.blob[id].histogram[h] = (Bloblist.blob[id].histogram[h] + blobTest.histogram[h]) / 2;
+			}
+			Bloblist.blob[id].hitCounter++;
+			Bloblist.blob[id].missCounter = 0;
+		}
+//		XTime_GetTime(&finish);
+//		time = (double)(finish - start) / 333000000 * 1000;
+//		printf("check list takes %f ms.\r\n", time);
+
+	}
+//	XTime_GetTime(&finish);
+//	time = (double)(finish - start) / 333000000 * 1000;
+//	printf("histogram and checklist takes %f ms.\r\n", time);
+
+	/*************************************
+	 * Check and change the blob status  *
+	 * (actual or potential) in the list *
+	 *************************************/
+	j = 0;
+	k = 0;
+	for(i = 0; i < Bloblist.totalNumber; i++)
+	{
+		while(!Bloblist.blob[j].isInListFlag) {j++;}
+		if(Bloblist.blob[j].missCounter > DiSAPPEAR_THRESHOLD)
+		{
+			Bloblist.blob[j].isActualFlag = 0;
+			Bloblist.blob[j].isPotentialFlag = 0;
+			Bloblist.blob[j].isInListFlag = 0;
+			matrix_free(&Bloblist.blob[j].X);
+			matrix_free(&Bloblist.blob[j].P);
+			k++;
+		}
+		else if(Bloblist.blob[j].isPotentialFlag && (Bloblist.blob[j].hitCounter > APPEAR_THRESHOLD))
+		{
+			Bloblist.blob[j].isActualFlag = 1;
+			Bloblist.blob[j].isPotentialFlag = 0;
+
+			//kalman filter init
+			matrix_set_m(&Bloblist.blob[j].X, 4);
+			matrix_set_n(&Bloblist.blob[j].X, 1);
+			matrix_init(&Bloblist.blob[j].X);
+			matrix_write(&Bloblist.blob[j].X, 0, 0, Bloblist.blob[j].centerXLast);
+			matrix_write(&Bloblist.blob[j].X, 1, 0, Bloblist.blob[j].velXLast);
+			matrix_write(&Bloblist.blob[j].X, 2, 0, Bloblist.blob[j].centerYLast);
+			matrix_write(&Bloblist.blob[j].X, 3, 0, Bloblist.blob[j].velYLast);
+
+			matrix_set_m(&Bloblist.blob[j].P, 4);
+			matrix_set_n(&Bloblist.blob[j].P, 4);
+			matrix_init(&Bloblist.blob[j].P);
+			matrix_write(&Bloblist.blob[j].P, 0, 0, 500);
+			matrix_write(&Bloblist.blob[j].P, 0, 1, 0);
+			matrix_write(&Bloblist.blob[j].P, 0, 2, 0);
+			matrix_write(&Bloblist.blob[j].P, 0, 3, 0);
+			matrix_write(&Bloblist.blob[j].P, 1, 0, 0);
+			matrix_write(&Bloblist.blob[j].P, 1, 1, 500);
+			matrix_write(&Bloblist.blob[j].P, 1, 2, 0);
+			matrix_write(&Bloblist.blob[j].P, 1, 3, 0);
+			matrix_write(&Bloblist.blob[j].P, 2, 0, 0);
+			matrix_write(&Bloblist.blob[j].P, 2, 1, 0);
+			matrix_write(&Bloblist.blob[j].P, 2, 2, 500);
+			matrix_write(&Bloblist.blob[j].P, 2, 3, 0);
+			matrix_write(&Bloblist.blob[j].P, 3, 0, 0);
+			matrix_write(&Bloblist.blob[j].P, 3, 1, 0);
+			matrix_write(&Bloblist.blob[j].P, 3, 2, 0);
+			matrix_write(&Bloblist.blob[j].P, 3, 3, 500);
+		}
+		j++;
+	}
+	Bloblist.totalNumber -= k;
+	Bloblist.existNumber = Bloblist.totalNumber;
+
+	XTime_GetTime(&finish);
+	time = (double)(finish - start) / 333000000 * 1000;
+//	printf("Tracking takes %f ms.\r\n", time);
+	TotalTrackingTime += time;
+
+	if(COMM_VAL != COMM_VAL_cur)
+		return;
+//	xil_printf("COMM_VAL is %d \n\r", COMM_VAL);
+	j = 0;
+	k = 0;
+	int prevNum = 0;
+	m_Bloblist_new.blobtotal = 0;
+	XTime_GetTime(&start);
+//	xil_printf("COMM_VAL is %d \n\r", COMM_VAL);
+	for(i = 0; i < Bloblist.totalNumber; i++)
+	{
+		while(!Bloblist.blob[j].isInListFlag) {j++;}
+		if(Bloblist.blob[j].isActualFlag)
+		{
+			int width = 0, height = 0;
+			for (prevNum = 0; prevNum < APPEAR_THRESHOLD; prevNum++) {
+				width += Bloblist.blob[j].widthPrev[prevNum];
+				height +=  Bloblist.blob[j].heightPrev[prevNum];
+			}
+			m_Bloblist_new.blob[k].wx = width / APPEAR_THRESHOLD;
+			m_Bloblist_new.blob[k].wy = height / APPEAR_THRESHOLD;
+
+//			if(Bloblist.blob[j].predictNum == 0) {
+//				Bloblist.blob[j].velocityXAve = 0;
+//				Bloblist.blob[j].velocityYAve = 0;
+//				Bloblist.blob[j].centerXPrevAve = 0;
+//				Bloblist.blob[j].centerYPrevAve = 0;
+//				for (prevNum = 0; prevNum < APPEAR_THRESHOLD; prevNum++){  //calculate the average position and velocity
+//					Bloblist.blob[j].velocityXAve += Bloblist.blob[j].velocityX[prevNum];
+//					Bloblist.blob[j].velocityYAve += Bloblist.blob[j].velocityY[prevNum];
+//					Bloblist.blob[j].centerXPrevAve += Bloblist.blob[j].centerXPrev[prevNum];
+//					Bloblist.blob[j].centerYPrevAve += Bloblist.blob[j].centerYPrev[prevNum];
+//				}
+//				Bloblist.blob[j].velocityXAve /= APPEAR_THRESHOLD;
+//				Bloblist.blob[j].velocityYAve /= APPEAR_THRESHOLD;
+//				Bloblist.blob[j].centerXPrevAve /= APPEAR_THRESHOLD;
+//				Bloblist.blob[j].centerYPrevAve /= APPEAR_THRESHOLD;
+//				// linear regression
+//				int Sx = 0, Sxy = 0, S = 0;
+//				for (prevNum = 0; prevNum < APPEAR_THRESHOLD; prevNum++){
+//					Sx += (Bloblist.blob[j].centerXPrev[prevNum] - Bloblist.blob[j].centerXPrevAve) * (Bloblist.blob[j].centerXPrev[prevNum] - Bloblist.blob[j].centerXPrevAve);
+//					Sxy += (Bloblist.blob[j].centerXPrev[prevNum] - Bloblist.blob[j].centerXPrevAve) * (Bloblist.blob[j].centerYPrev[prevNum] - Bloblist.blob[j].centerYPrevAve);
+//				}
+//				S = Sx;
+//				if(Sx < Sxy)
+//					S = Sxy;
+//				int SSq = Sx * Sx + Sxy * Sxy;
+//				while(1){
+//					if (S * S < SSq)
+//						break;
+//					S++;
+//				}
+////				if (Sx == 0) {
+////					Sx = 1;
+////				}
+////				Bloblist.blob[j].slope = (double)Sxy / (double)Sx;
+//				int velSq = Bloblist.blob[j].velocityXAve * Bloblist.blob[j].velocityXAve + Bloblist.blob[j].velocityYAve * Bloblist.blob[j].velocityYAve;
+//				int vel = 0;
+//				while(1){
+//					if (velSq < vel * vel)
+//						break;
+//					vel++;
+//				}
+//				if(Bloblist.blob[j].velocityXAve > 0)
+//					Bloblist.blob[j].velocityXAve = (vel * Sx) / S;
+//				else
+//					Bloblist.blob[j].velocityXAve = ((-1) * vel * Sx) / S;
+//				if(Bloblist.blob[j].velocityYAve > 0)
+//					Bloblist.blob[j].velocityYAve = abs((vel * Sxy) / S);
+//				else
+//					Bloblist.blob[j].velocityYAve = (-1) * abs(vel * Sxy) / S;
+//			}
+//
+//			int centerX = Bloblist.blob[j].centerXPrevAve + (APPEAR_THRESHOLD / 2 + Bloblist.blob[j].predictNum) * Bloblist.blob[j].velocityXAve;
+//			int centerY = Bloblist.blob[j].centerYPrevAve + (APPEAR_THRESHOLD / 2 + Bloblist.blob[j].predictNum) * Bloblist.blob[j].velocityYAve;
+//			Bloblist.blob[j].predictNum++;
+//			if (Bloblist.blob[j].predictNum > 1)
+//				Bloblist.blob[j].predictNum = 0;
+//			m_Bloblist_new.blob[k].min_x = centerX - Bloblist.blob[j].width / 2;
+//			m_Bloblist_new.blob[k].min_y = centerY - Bloblist.blob[j].height / 2;
+			m_Bloblist_new.blob[k].min_x =  Bloblist.blob[j].centerX - Bloblist.blob[j].width / 2;
+			m_Bloblist_new.blob[k].min_y =  Bloblist.blob[j].centerY - Bloblist.blob[j].height / 2;
+//			m_Bloblist_new.blobtotal++;
+			k++;
+//			xil_printf("index of m_Bloblist_new.blob is %d\n\r", k);
+//			xil_printf("(x,y,w,h) is (%d,%d,%d,%d)\r\n", m_Bloblist_new.blob[i].min_x, m_Bloblist_new.blob[i].min_y, m_Bloblist_new.blob[i].wx, m_Bloblist_new.blob[i].wy);
+		}
+		j++;
+	}
+	m_Bloblist_new.blobtotal = k;
+
+	if(COMM_VAL != COMM_VAL_cur)
+		return;
+	k = 0;
+	int isCoveredFlag = 0;
+	int isOverlapFlag = 0;
+	for(i = 0; i < m_Bloblist_new.blobtotal; i++)
+	{
+		isCoveredFlag = 0;
+		isOverlapFlag = 0;
+		for(j = 0; j < m_Bloblist_new.blobtotal; j++) // check cover or overlap for discarding the redundant rectangles
+		{
+			if (i == j) continue;
+			if (m_Bloblist_new.blob[i].wx * m_Bloblist_new.blob[i].wy >= m_Bloblist_new.blob[j].wx * m_Bloblist_new.blob[j].wy)
+				continue;
+			if (m_Bloblist_new.blob[i].min_x > m_Bloblist_new.blob[j].min_x)
+				if (m_Bloblist_new.blob[i].min_y > m_Bloblist_new.blob[j].min_y)
+					if (m_Bloblist_new.blob[i].min_x + m_Bloblist_new.blob[i].wx < m_Bloblist_new.blob[j].min_x + m_Bloblist_new.blob[j].wx)
+						if (m_Bloblist_new.blob[i].min_y + m_Bloblist_new.blob[i].wy < m_Bloblist_new.blob[j].min_y + m_Bloblist_new.blob[j].wy)
+						{
+							isCoveredFlag = 1;
+							break;
+						}
+			if (m_Bloblist_new.blob[i].min_x + m_Bloblist_new.blob[i].wx / 2 > m_Bloblist_new.blob[j].min_x)
+				if (m_Bloblist_new.blob[i].min_y + m_Bloblist_new.blob[i].wy / 2 > m_Bloblist_new.blob[j].min_y)
+					if (m_Bloblist_new.blob[i].min_x + m_Bloblist_new.blob[i].wx / 2 < m_Bloblist_new.blob[j].min_x + m_Bloblist_new.blob[j].wx)
+						if (m_Bloblist_new.blob[i].min_y + m_Bloblist_new.blob[i].wy / 2 < m_Bloblist_new.blob[j].min_y + m_Bloblist_new.blob[j].wy)
+						{
+							isOverlapFlag = 1;
+							break;
+						}
+		}
+
+		if (isCoveredFlag == 0 && isOverlapFlag == 0)
+		{
+			m_Bloblist_new_no_cover.blob[k].wx = m_Bloblist_new.blob[i].wx;
+			m_Bloblist_new_no_cover.blob[k].wy = m_Bloblist_new.blob[i].wy;
+			m_Bloblist_new_no_cover.blob[k].min_x = m_Bloblist_new.blob[i].min_x;
+			m_Bloblist_new_no_cover.blob[k].min_y = m_Bloblist_new.blob[i].min_y;
+//			printf("size = %d \r\n", m_Bloblist_new_no_cover.blob[k].wx * m_Bloblist_new_no_cover.blob[k].wy);
+			k++;
+		}
+	}
+	m_Bloblist_new_no_cover.blobtotal = k;
+
+
+//	xil_printf("COMM_VAL is %d \n\r", COMM_VAL);
+	xil_printf("(detect, Total, actual, display) is (%d, %d, %d, %d) \r\n", m_Bloblist.blobtotal, Bloblist.totalNumber, m_Bloblist_new.blobtotal, m_Bloblist_new_no_cover.blobtotal);
+//	xil_printf("copy info0: (x,y,w,h) is (%d,%d,%d,%d)\r\n", m_Bloblist_new.blob[0].min_x, m_Bloblist_new.blob[0].min_y, m_Bloblist_new.blob[0].wx, m_Bloblist_new.blob[0].wy);
+
+
+//	xil_printf("COMM_VAL is %d \n\r", COMM_VAL);
+	min_x = 0, min_y = 0, wx = 0, wy = 0;
+//	if (COMM_VAL == 1) {
+//		object_focus (256, 256, 512, 512, read_pointer, 0XFFFFFFFF,  0, VIDEO_OVERLAY_VDMA_ID);
+//		object_focus (256, 256, 512, 512, read_pointer, 0XFFFFFFFF,  1, VIDEO_OVERLAY_VDMA_ID);
+//	}
+//
+//	if (COMM_VAL == 2) {
+//		object_focus (256, 256, 512, 512, read_pointer, 0XFFFFFFFF,  0, VIDEO_OVERLAY_VDMA_ID);
+//		object_focus (256, 256, 512, 512, read_pointer, 0XFFFFFFFF,  1, VIDEO_OVERLAY_VDMA_ID);
+//	}
+
+//	displayThreshold++;
+//	if (displayThreshold == 5)
+	{
+		if (COMM_VAL == 1)
+		{
+//			xil_printf("first loop \n\r");
+//			for (i=0 ; i< m_Bloblist_past_0.blobtotal; i++)
+//			{
+//				min_x = m_Bloblist_past_0.blob[i].min_x;
+//				min_y = m_Bloblist_past_0.blob[i].min_y;
+//				wx = m_Bloblist_past_0.blob[i].wx;
+//				wy = m_Bloblist_past_0.blob[i].wy;
+////				xil_printf("delete buf1: (x,y,w,h) is (%d,%d,%d,%d)\r\n", min_x, min_y, wx, wy);
+//				object_focus (min_x, min_y, wx, wy,	read_pointer, 0XFFFFFFFF,  0, VIDEO_OVERLAY_VDMA_ID);
+//			}
+			for (i=0 ; i< m_Bloblist_new_no_cover.blobtotal; i++)
+			{
+				min_x = m_Bloblist_new_no_cover.blob[i].min_x;
+				min_y = m_Bloblist_new_no_cover.blob[i].min_y;
+				wx = m_Bloblist_new_no_cover.blob[i].wx;
+				wy = m_Bloblist_new_no_cover.blob[i].wy;
+//				xil_printf("write buf1: (x,y,w,h) is (%d,%d,%d,%d)\r\n", min_x, min_y, wx, wy);
+				object_focus (min_x, min_y, wx, wy, read_pointer, 0XFFFFFFFF,  1, VIDEO_OVERLAY_VDMA_ID);
+			}
+			m_Bloblist_past_0 = m_Bloblist_new_no_cover;
+		}
+
+		if (COMM_VAL == 2)
+		{
+//			xil_printf("second loop \n\r");
+//			for (i=0 ; i< m_Bloblist_past_1.blobtotal; i++)
+//			{
+//				min_x = m_Bloblist_past_1.blob[i].min_x;
+//				min_y = m_Bloblist_past_1.blob[i].min_y;
+//				wx = m_Bloblist_past_1.blob[i].wx;
+//				wy = m_Bloblist_past_1.blob[i].wy;
+////				xil_printf("delete buf2: (x,y,w,h) is (%d,%d,%d,%d)\r\n", min_x, min_y, wx, wy);
+//				object_focus (min_x, min_y, wx, wy,	read_pointer, 0XFFFFFFFF,  0, VIDEO_OVERLAY_VDMA_ID);
+//			}
+			for (i=0 ; i< m_Bloblist_new_no_cover.blobtotal; i++)
+			{
+				min_x = m_Bloblist_new_no_cover.blob[i].min_x;
+				min_y = m_Bloblist_new_no_cover.blob[i].min_y;
+				wx = m_Bloblist_new_no_cover.blob[i].wx;
+				wy = m_Bloblist_new_no_cover.blob[i].wy;
+//				xil_printf("write buf2: (x,y,w,h) is (%d,%d,%d,%d)\r\n", min_x, min_y, wx, wy);
+				object_focus (min_x, min_y, wx, wy, read_pointer, 0XFFFFFFFF,  1, VIDEO_OVERLAY_VDMA_ID);
+			}
+			m_Bloblist_past_1 = m_Bloblist_new_no_cover;
+		}
+
+//		displayThreshold = 0;
+	}
+
+	XTime_GetTime(&finish);
+	time = (double)(finish - start) / 333000000 * 1000;
+//	printf("Writing back takes %f ms.\r\n", time);
+	TotalWritingTime += time;
+}
+
+
+//void getHistogram(struct Blob_Tracking * B_p)
+//{
+//	xil_printf("getHistogram called.\n\r");
+//	int i, x, y;
+//	printf("(*B_p).histogram[148] = %lf\n\r", (*B_p).histogram[148]);
+//	for (i = 0; i < 256; i++)
+//		(*B_p).histogram[i] = 0.0;
+//	printf("(*B_p).histogram[148] = %lf\n\r", (*B_p).histogram[148]);
+//	for (y = (*B_p).centerY - (*B_p).height / 2; y < (*B_p).centerY + (*B_p).height / 2; y++)
+//	{
+//		for (x = (*B_p).centerX - (*B_p).width / 2 ; x < (*B_p).centerX + (*B_p).width / 2; x+=2)
+//		{
+//			u32 pixelValue = getPixelValue(x,y);
+//			int Y1 = pixelValue >> 24;
+//			int Y0 = (pixelValue & 0x0000FF00) >> 8;
+////			xil_printf("(Y1, Y0) = (%d, %d)\n\r", Y1, Y0);
+////			if(Y1 == 148 || Y0 == 148)
+////				printf("(*B_p).histogram[148] is changed to %lf\n\r", (*B_p).histogram[148]);
+////			else
+//			{
+//				(*B_p).histogram[Y1]++;
+//				(*B_p).histogram[Y0]++;
+//			}
+//		}
+//	}
+//	printf("(*B_p).histogram[148] = %lf\n\r", (*B_p).histogram[148]);
+//	int pixelNumber = (*B_p).height * (*B_p).width;
+//	double sum = 0.0;
+//	for (i = 0; i < 256; i++)
+//	{
+//		(*B_p).histogram[i] = (*B_p).histogram[i] * 1000.0 / (double)pixelNumber;
+//		sum += (*B_p).histogram[i];
+//		printf("(*B_p).histogram[%d] = %lf\n\r", i, (*B_p).histogram[i]);
+//	}
+//	printf("pixelNumber = %d, sum = %lf\n\r", pixelNumber, sum);
+//}
+
+u32 getPixelValue(int x, int y)
+{
+//	xil_printf("getPixelValue called.\n\r");
+	u32 * pixelValue;
+	pixelValue = YCBCR2MEM_WRITE_REGION;
+	pixelValue += (SUBFRAME_START_OFFSET_YCBCR2MEM + y * FRAME_HORIZONTAL_LEN_YCBCR2MEM) / 4 + x / 2;
+	return * pixelValue;
+}
+
+/*******************************************
+ * Transfer the data from blob_detection() *
+ *******************************************/
+//struct Blob_Tracking getInfo(struct sBlob B_b)
+//{
+//	xil_printf("getInfo called.\n\r");
+//	struct Blob_Tracking B_t;
+//	B_t.centerX = B_b.min_x + B_b.wx / 2;
+//	B_t.centerY = B_b.min_y + B_b.wy / 2;
+//	B_t.width = B_b.wx;
+//	B_t.height = B_b.wy;
+//	getHistogram(&B_t);
+//	int i = 0;
+//	for(i = 0; i < 256; i++)
+////		printf("%lf  " ,B_t.histogram[i]);
+//	return B_t;
+//}
+
+/**************************************************
+ * Compare two blobs and get the difference_score *
+ **************************************************/
+//double getScore(struct Blob_Tracking B_a, struct Blob_Tracking B_b)
+//{
+//	xil_printf("getScore called.\n\r");
+//	double score = 0, histScore = 0;
+//	score += fabs(B_b.centerX - B_a.centerX - B_a.moveX);
+//	score += fabs(B_b.centerY - B_a.centerY - B_a.moveY);
+//	score += fabs(B_b.width - B_a.width);
+//	score += fabs(B_b.height - B_a.height);
+//
+//	int i;
+//	for (i = 0; i < 256; i++)
+//		histScore += fabs(B_b.histogram[i] - B_a.histogram[i]);
+//	printf("(score, histScore) = (%lf, %lf)\n\r", score, histScore);
+//	double finalScore = score + histScore;
+//	return finalScore;
+//}
+
+/********************************************************
+ * Check whether the blob is already in the list or not *
+ ********************************************************/
+//int getListID(struct Blob_Tracking Blob, double threshold)
+//{
+//	xil_printf("getListID called.\n\r");
+//	double minScore = MAXSCORE;
+//	double currentScore = minScore;
+//	minScore = 10000;
+//	int listID = -1;
+//	int i;
+//	int j=0;
+//	for(i = 0; i < Bloblist.totalNumber; i++)
+//	{
+//		while((!Bloblist.blob[j].isInListFlag) || Bloblist.blob[j].isNewAdded) {j++;}
+//		currentScore = getScore(Bloblist.blob[j], Blob);
+//		if(Bloblist.blob[j].hitCounter == 1)
+//			currentScore = currentScore / 2.0;
+//		if (currentScore < minScore)
+//		{
+//			minScore = currentScore;
+//			listID = j;
+//		}
+//		j++;
+//	}
+//	xil_printf("listID = %d\n\r", listID);
+//
+//	if(minScore < threshold)
+//		return listID;
+//	else
+//		return -1;
+//}
+
+

@@ -1,0 +1,30 @@
+{
+   guistr: "# # String gsaved with Nlview version 6.4-r1  2014-02-28 bk=1.3047 VDI=34 GEI=35 GUI=JA:1.7
+#  -string -flagsOSRD
+preplace port reset_n -pg 1 -y 120 -defaultsOSRD
+preplace port clk -pg 1 -y 100 -defaultsOSRD
+preplace portBus de_in -pg 1 -y 80 -defaultsOSRD
+preplace portBus spdif_in -pg 1 -y 320 -defaultsOSRD
+preplace portBus vblank_in -pg 1 -y 440 -defaultsOSRD
+preplace portBus spdif -pg 1 -y 300 -defaultsOSRD
+preplace portBus hblank_in -pg 1 -y 200 -defaultsOSRD
+preplace portBus vblank -pg 1 -y 420 -defaultsOSRD
+preplace portBus de -pg 1 -y 60 -defaultsOSRD
+preplace portBus hblank -pg 1 -y 180 -defaultsOSRD
+preplace inst spdif -pg 1 -lvl 1 -y 300 -defaultsOSRD
+preplace inst vblank -pg 1 -lvl 1 -y 420 -defaultsOSRD
+preplace inst de_pass -pg 1 -lvl 1 -y 60 -defaultsOSRD
+preplace inst hblank -pg 1 -lvl 1 -y 180 -defaultsOSRD
+preplace netloc image_smoothing_full_version_0_spdif_out 1 0 1 NJ
+preplace netloc In2_2 1 0 1 NJ
+preplace netloc vbb_system_reset_0_system_reset 1 0 1 160
+preplace netloc image_smoothing_full_version_0_Hblank_out1 1 0 1 NJ
+preplace netloc pipeline_registers_4_pipe_out 1 1 1 NJ
+preplace netloc pipeline_registers_5_pipe_out 1 1 1 NJ
+preplace netloc pipeline_registers_1_pipe_out 1 1 1 NJ
+preplace netloc vbb_system_reset_0_system_reset_n 1 0 1 170
+preplace netloc pipeline_registers_2_pipe_out 1 1 1 NJ
+preplace netloc image_smoothing_full_version_0_Vblank_out1 1 0 1 NJ
+levelinfo -pg 1 140 280 420
+",
+}

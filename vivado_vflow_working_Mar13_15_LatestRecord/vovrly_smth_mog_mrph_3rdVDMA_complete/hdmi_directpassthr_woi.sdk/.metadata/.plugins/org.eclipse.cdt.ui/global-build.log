@@ -1,0 +1,1294 @@
+13:43:43 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+13:43:45 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:43:46 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+13:44:27 **** Auto Build of configuration Debug for project vision_flow_app ****
+make all 
+Building file: ../src/vision_flow.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/custom_repo/SWcodes/inc -I/home/LAB/asawant2/VisionGit/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/uncc_embed/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -c -fmessage-length=0 -MT"src/vision_flow.o" -MMD -MP -MF"src/vision_flow.d" -MT"src/vision_flow.o" -o "src/vision_flow.o" "../src/vision_flow.c"
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/cache_disable.h:12:0,
+                 from ../src/vision_flow.h:12,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/cache_disable.h:13:0,
+                 from ../src/vision_flow.h:12,
+                 from ../src/vision_flow.c:8:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/vdma_cfg.h:43:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^
+In file included from ../src/vision_flow.h:13:0,
+                 from ../src/vision_flow.c:8:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:62:0,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:63:0,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_imageon.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_imageon.h:78:0,
+                 from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:63,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:64:0,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+Finished building: ../src/vision_flow.c
+ 
+Building target: vision_flow_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "vision_flow_app.elf"  ./src/app_cpu0.o ./src/cache_disable.o ./src/fg_match_det_threshold_config.o ./src/fmc_imageon_hdmi_passthrough.o ./src/foreground_threshold_config.o ./src/input_param.o ./src/learnfact_config.o ./src/match_det_threshold_config.o ./src/mog_params_config.o ./src/object_detection.o ./src/object_detection_intr.o ./src/object_focus.o ./src/system_reset_assert.o ./src/system_reset_deassert.o ./src/temp.o ./src/vdma_cfg.o ./src/vdma_stat.o ./src/video_resolution.o ./src/vision_flow.o ./src/woi_config.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: vision_flow_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size vision_flow_app.elf  |tee "vision_flow_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  96720	   4528	188967440	189068688	b44f590	vision_flow_app.elf
+Finished building: vision_flow_app.elf.size
+ 
+13:44:32 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:44:33 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+13:45:17 **** Auto Build of configuration Debug for project vision_flow_app ****
+make all 
+Building file: ../src/vision_flow.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/custom_repo/SWcodes/inc -I/home/LAB/asawant2/VisionGit/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/uncc_embed/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -c -fmessage-length=0 -MT"src/vision_flow.o" -MMD -MP -MF"src/vision_flow.d" -MT"src/vision_flow.o" -o "src/vision_flow.o" "../src/vision_flow.c"
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/cache_disable.h:12:0,
+                 from ../src/vision_flow.h:12,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/cache_disable.h:13:0,
+                 from ../src/vision_flow.h:12,
+                 from ../src/vision_flow.c:8:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/vdma_cfg.h:43:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^
+In file included from ../src/vision_flow.h:13:0,
+                 from ../src/vision_flow.c:8:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:62:0,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:63:0,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_imageon.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_imageon.h:78:0,
+                 from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:63,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:64:0,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+Finished building: ../src/vision_flow.c
+ 
+Building target: vision_flow_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "vision_flow_app.elf"  ./src/app_cpu0.o ./src/cache_disable.o ./src/fg_match_det_threshold_config.o ./src/fmc_imageon_hdmi_passthrough.o ./src/foreground_threshold_config.o ./src/input_param.o ./src/learnfact_config.o ./src/match_det_threshold_config.o ./src/mog_params_config.o ./src/object_detection.o ./src/object_detection_intr.o ./src/object_focus.o ./src/system_reset_assert.o ./src/system_reset_deassert.o ./src/temp.o ./src/vdma_cfg.o ./src/vdma_stat.o ./src/video_resolution.o ./src/vision_flow.o ./src/woi_config.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: vision_flow_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size vision_flow_app.elf  |tee "vision_flow_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  96784	   4528	188967440	189068752	b44f5d0	vision_flow_app.elf
+Finished building: vision_flow_app.elf.size
+ 
+13:45:43 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:45:44 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+13:46:08 **** Auto Build of configuration Debug for project vision_flow_app ****
+make all 
+Building file: ../src/vision_flow.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/custom_repo/SWcodes/inc -I/home/LAB/asawant2/VisionGit/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/uncc_embed/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -c -fmessage-length=0 -MT"src/vision_flow.o" -MMD -MP -MF"src/vision_flow.d" -MT"src/vision_flow.o" -o "src/vision_flow.o" "../src/vision_flow.c"
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/cache_disable.h:12:0,
+                 from ../src/vision_flow.h:12,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/cache_disable.h:13:0,
+                 from ../src/vision_flow.h:12,
+                 from ../src/vision_flow.c:8:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/vdma_cfg.h:43:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^
+In file included from ../src/vision_flow.h:13:0,
+                 from ../src/vision_flow.c:8:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:62:0,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:63:0,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_imageon.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_imageon.h:78:0,
+                 from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:63,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:64:0,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+Finished building: ../src/vision_flow.c
+ 
+Building target: vision_flow_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "vision_flow_app.elf"  ./src/app_cpu0.o ./src/cache_disable.o ./src/fg_match_det_threshold_config.o ./src/fmc_imageon_hdmi_passthrough.o ./src/foreground_threshold_config.o ./src/input_param.o ./src/learnfact_config.o ./src/match_det_threshold_config.o ./src/mog_params_config.o ./src/object_detection.o ./src/object_detection_intr.o ./src/object_focus.o ./src/system_reset_assert.o ./src/system_reset_deassert.o ./src/temp.o ./src/vdma_cfg.o ./src/vdma_stat.o ./src/video_resolution.o ./src/vision_flow.o ./src/woi_config.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: vision_flow_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size vision_flow_app.elf  |tee "vision_flow_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  96784	   4528	188967440	189068752	b44f5d0	vision_flow_app.elf
+Finished building: vision_flow_app.elf.size
+ 
+13:46:11 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:46:12 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+13:47:48 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:47:49 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+13:48:38 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:48:39 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+13:50:11 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:50:12 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+13:51:35 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:51:36 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+13:54:53 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:54:55 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+10:20:39 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+10:20:40 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+10:22:09 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+10:22:10 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+11:33:06 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+11:33:07 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+15:45:43 **** Auto Build of configuration Debug for project vision_flow_app ****
+make all 
+Building file: ../src/app_cpu0.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/custom_repo/SWcodes/inc -I/home/LAB/asawant2/VisionGit/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/uncc_embed/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -c -fmessage-length=0 -MT"src/app_cpu0.o" -MMD -MP -MF"src/app_cpu0.d" -MT"src/app_cpu0.o" -o "src/app_cpu0.o" "../src/app_cpu0.c"
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/cache_disable.h:12:0,
+                 from ../src/vision_flow.h:12,
+                 from ../src/app_cpu0.c:30:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/cache_disable.h:13:0,
+                 from ../src/vision_flow.h:12,
+                 from ../src/app_cpu0.c:30:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/vdma_cfg.h:43:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^
+In file included from ../src/vision_flow.h:13:0,
+                 from ../src/app_cpu0.c:30:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:62:0,
+                 from ../src/vision_flow.h:13,
+                 from ../src/app_cpu0.c:30:
+../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:63:0,
+                 from ../src/vision_flow.h:13,
+                 from ../src/app_cpu0.c:30:
+../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_imageon.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_imageon.h:78:0,
+                 from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:63,
+                 from ../src/vision_flow.h:13,
+                 from ../src/app_cpu0.c:30:
+../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:64:0,
+                 from ../src/vision_flow.h:13,
+                 from ../src/app_cpu0.c:30:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+../src/app_cpu0.c: In function 'main':
+../src/app_cpu0.c:113:10: warning: unused variable 'RegVal' [-Wunused-variable]
+      u32 RegVal;
+          ^
+../src/app_cpu0.c:76:6: warning: unused variable 'double_buf_flag' [-Wunused-variable]
+  int double_buf_flag = 0;
+      ^
+../src/app_cpu0.c:75:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+Finished building: ../src/app_cpu0.c
+ 
+Building file: ../src/cache_disable.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/custom_repo/SWcodes/inc -I/home/LAB/asawant2/VisionGit/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/uncc_embed/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -c -fmessage-length=0 -MT"src/cache_disable.o" -MMD -MP -MF"src/cache_disable.d" -MT"src/cache_disable.o" -o "src/cache_disable.o" "../src/cache_disable.c"
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/cache_disable.h:12:0,
+                 from ../src/cache_disable.c:7:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/cache_disable.h:13:0,
+                 from ../src/cache_disable.c:7:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/vdma_cfg.h:43:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^
+../src/cache_disable.c: In function 'cache_disable':
+../src/cache_disable.c:13:2: warning: implicit declaration of function 'Xil_SetTlbAttributes' [-Wimplicit-function-declaration]
+  Xil_SetTlbAttributes(start_address + (1024 * 1024 * j), 0x04deA);
+  ^
+../src/cache_disable.c:15:2: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat=]
+  printf("\n ****************** Cache is disabled for %d Mega Byte of memory address space starting from address: %x ****************** \n\n", region_size_mb, start_address);
+  ^
+../src/cache_disable.c:15:2: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32' [-Wformat=]
+../src/cache_disable.c:15:2: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat=]
+../src/cache_disable.c:15:2: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32' [-Wformat=]
+Finished building: ../src/cache_disable.c
+ 
+Building file: ../src/object_detection.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/custom_repo/SWcodes/inc -I/home/LAB/asawant2/VisionGit/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/uncc_embed/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -c -fmessage-length=0 -MT"src/object_detection.o" -MMD -MP -MF"src/object_detection.d" -MT"src/object_detection.o" -o "src/object_detection.o" "../src/object_detection.c"
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/object_detection.h:4:0,
+                 from ../src/object_detection.c:17:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/vdma_cfg.h:43:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^
+../src/object_detection.c: In function 'object_detection':
+../src/object_detection.c:70:23: warning: assignment makes pointer from integer without a cast
+    input_pointer_base = base_address + SUBFRAME_START_OFFSET_VIDEO_OVERLAY;  // start address of memory where we read data from
+                       ^
+../src/object_detection.c:72:23: warning: assignment makes pointer from integer without a cast
+    input_pointer_base = base_address + FRAME_HORIZONTAL_LEN_VIDEO_OVERLAY * FRAME_VERTICAL_LEN_VIDEO_OVERLAY + SUBFRAME_START_OFFSET_VIDEO_OVERLAY;  // start address of memory where we read data from
+                       ^
+../src/object_detection.c:295:18: warning: assignment from incompatible pointer type
+     read_pointer = VOVRLAY_READ_REGION;
+                  ^
+../src/object_detection.c:300:22: warning: assignment from incompatible pointer type
+     read_pointer_del = VOVRLAY_READ_REGION;
+                      ^
+../src/object_detection.c:183:15: warning: iteration 278u invokes undefined behavior [-Waggressive-loop-optimizations]
+      if (Label[center_index] != 0 && Label[top_index] != 0 && Label[center_index] !=  Label[top_index])
+               ^
+../src/object_detection.c:174:4: note: containing loop
+    for(y_index = 1; y_index < reduced_height-1 ; y_index++)
+    ^
+../src/object_detection.c:50:8: warning: 'input_pointer_base' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  u32 * input_pointer_base, * input_pointer_offset;
+        ^
+Finished building: ../src/object_detection.c
+ 
+Building file: ../src/object_detection_intr.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/custom_repo/SWcodes/inc -I/home/LAB/asawant2/VisionGit/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/uncc_embed/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -c -fmessage-length=0 -MT"src/object_detection_intr.o" -MMD -MP -MF"src/object_detection_intr.d" -MT"src/object_detection_intr.o" -o "src/object_detection_intr.o" "../src/object_detection_intr.c"
+In file included from ../src/object_detection_intr.h:15:0,
+                 from ../src/object_detection_intr.c:9:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/vdma_cfg.h:43:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^
+../src/object_detection_intr.c: In function 'user_IntrHandler':
+../src/object_detection_intr.c:436:21: warning: passing argument 1 of 'object_detection' makes integer from pointer without a cast
+   object_detection (&VOVRLAY_WRITE_REGION, double_buf_flag);
+                     ^
+In file included from ../src/object_detection_intr.h:16:0,
+                 from ../src/object_detection_intr.c:9:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/object_detection.h:46:5: note: expected 'u32' but argument is of type 'volatile unsigned char (*)[655360]'
+ int object_detection(u32 base_address, u32 double_buf);//Base address for reading the blob mask
+     ^
+../src/object_detection_intr.c:398:9: warning: unused variable 'time' [-Wunused-variable]
+  double time;
+         ^
+../src/object_detection_intr.c:397:15: warning: unused variable 'finish' [-Wunused-variable]
+  XTime start, finish;
+               ^
+../src/object_detection_intr.c:397:8: warning: unused variable 'start' [-Wunused-variable]
+  XTime start, finish;
+        ^
+../src/object_detection_intr.c: At top level:
+../src/object_detection_intr.c:35:13: warning: 'interrupt_for_blob_control' defined but not used [-Wunused-variable]
+  static int interrupt_for_blob_control = 0;
+             ^
+../src/object_detection_intr.c:284:13: warning: 'DisableIntrSystem' defined but not used [-Wunused-function]
+ static void DisableIntrSystem(u16 ReadIntrId, u16 WriteIntrId)
+             ^
+../src/object_detection_intr.c:489:13: warning: 'user_callback' defined but not used [-Wunused-function]
+ static void user_callback()
+             ^
+../src/object_detection_intr.c:508:13: warning: 'ReadIntrHandler' defined but not used [-Wunused-function]
+ static void ReadIntrHandler(void * InstancePtr)
+             ^
+../src/object_detection_intr.c:572:13: warning: 'WriteIntrHandler' defined but not used [-Wunused-function]
+ static void WriteIntrHandler(void * InstancePtr)
+             ^
+../src/object_detection_intr.c:318:13: warning: 'ReadCallBack' defined but not used [-Wunused-function]
+ static void ReadCallBack(void *CallbackRef, u32 Mask)
+             ^
+../src/object_detection_intr.c:339:13: warning: 'ReadErrorCallBack' defined but not used [-Wunused-function]
+ static void ReadErrorCallBack(void *CallbackRef, u32 Mask)
+             ^
+../src/object_detection_intr.c:361:13: warning: 'WriteCallBack' defined but not used [-Wunused-function]
+ static void WriteCallBack(void *CallbackRef, u32 Mask)
+             ^
+../src/object_detection_intr.c:382:13: warning: 'WriteErrorCallBack' defined but not used [-Wunused-function]
+ static void WriteErrorCallBack(void *CallbackRef, u32 Mask)
+             ^
+Finished building: ../src/object_detection_intr.c
+ 
+Building file: ../src/object_focus.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/custom_repo/SWcodes/inc -I/home/LAB/asawant2/VisionGit/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/uncc_embed/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -c -fmessage-length=0 -MT"src/object_focus.o" -MMD -MP -MF"src/object_focus.d" -MT"src/object_focus.o" -o "src/object_focus.o" "../src/object_focus.c"
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/object_focus.h:11:0,
+                 from ../src/object_focus.c:9:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/object_focus.h:12:0,
+                 from ../src/object_focus.c:9:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/vdma_cfg.h:43:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^
+../src/object_focus.c: In function 'object_focus':
+../src/object_focus.c:45:18: warning: assignment makes pointer from integer without a cast
+   offset_pointer = base_pointer;
+                  ^
+../src/object_focus.c:71:19: warning: assignment makes pointer from integer without a cast
+    offset_pointer = base_pointer;
+                   ^
+../src/object_focus.c:136:18: warning: assignment makes pointer from integer without a cast
+   offset_pointer = base_pointer;
+                  ^
+Finished building: ../src/object_focus.c
+ 
+Building file: ../src/vdma_cfg.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/custom_repo/SWcodes/inc -I/home/LAB/asawant2/VisionGit/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/uncc_embed/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -c -fmessage-length=0 -MT"src/vdma_cfg.o" -MMD -MP -MF"src/vdma_cfg.d" -MT"src/vdma_cfg.o" -o "src/vdma_cfg.o" "../src/vdma_cfg.c"
+In file included from ../src/vdma_cfg.c:12:0:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/vdma_cfg.h:43:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^
+../src/vdma_cfg.c: In function 'vdma_cfg':
+../src/vdma_cfg.c:55:40: warning: assignment makes integer from pointer without a cast
+  vdma_struct[MoG_VDMA_ID].RD_ADDR_BASE = &MoG_READ_WRITE_REGION;
+                                        ^
+../src/vdma_cfg.c:56:40: warning: assignment makes integer from pointer without a cast
+  vdma_struct[MoG_VDMA_ID].WR_ADDR_BASE = &MoG_READ_WRITE_REGION;
+                                        ^
+../src/vdma_cfg.c:76:50: warning: assignment makes integer from pointer without a cast
+  vdma_struct[VIDEO_OVERLAY_VDMA_ID].RD_ADDR_BASE = &VOVRLAY_READ_REGION;
+                                                  ^
+../src/vdma_cfg.c:77:50: warning: assignment makes integer from pointer without a cast
+  vdma_struct[VIDEO_OVERLAY_VDMA_ID].WR_ADDR_BASE = &VOVRLAY_WRITE_REGION;
+                                                  ^
+../src/vdma_cfg.c:95:46: warning: assignment makes integer from pointer without a cast
+  vdma_struct[YCBCR2MEM_VDMA_ID].RD_ADDR_BASE = &YCBCR2MEM_READ_REGION;
+                                              ^
+../src/vdma_cfg.c:96:46: warning: assignment makes integer from pointer without a cast
+  vdma_struct[YCBCR2MEM_VDMA_ID].WR_ADDR_BASE = &YCBCR2MEM_WRITE_REGION;
+                                              ^
+../src/vdma_cfg.c:378:2: warning: "/*" within comment [-Wcomment]
+  /* VDMA 1 */
+ ^
+../src/vdma_cfg.c:510:2: warning: "/*" within comment [-Wcomment]
+  /* VDMA 2 */
+ ^
+../src/vdma_cfg.c:88:13: warning: array subscript is above array bounds [-Warray-bounds]
+  vdma_struct[YCBCR2MEM_VDMA_ID].AXIVDMA_DEVICE_ID = YCBCR2MEM_VDMA_ID;
+             ^
+../src/vdma_cfg.c:89:13: warning: array subscript is above array bounds [-Warray-bounds]
+  vdma_struct[YCBCR2MEM_VDMA_ID].Num_Read_Frames = NUMBER_OF_READ_FRAMES_YCBCR2MEM;
+             ^
+../src/vdma_cfg.c:90:13: warning: array subscript is above array bounds [-Warray-bounds]
+  vdma_struct[YCBCR2MEM_VDMA_ID].Num_Write_Frames = NUMBER_OF_WRITE_FRAMES_YCBCR2MEM;
+             ^
+../src/vdma_cfg.c:91:13: warning: array subscript is above array bounds [-Warray-bounds]
+  vdma_struct[YCBCR2MEM_VDMA_ID].FrameCfg.ReadFrameCount = NUMBER_OF_READ_FRAMES_YCBCR2MEM;
+             ^
+../src/vdma_cfg.c:92:13: warning: array subscript is above array bounds [-Warray-bounds]
+  vdma_struct[YCBCR2MEM_VDMA_ID].FrameCfg.WriteFrameCount = NUMBER_OF_WRITE_FRAMES_YCBCR2MEM;
+             ^
+../src/vdma_cfg.c:93:13: warning: array subscript is above array bounds [-Warray-bounds]
+  vdma_struct[YCBCR2MEM_VDMA_ID].FrameCfg.ReadDelayTimerCount = DELAY_TIMER_COUNTER;
+             ^
+../src/vdma_cfg.c:94:13: warning: array subscript is above array bounds [-Warray-bounds]
+  vdma_struct[YCBCR2MEM_VDMA_ID].FrameCfg.WriteDelayTimerCount = DELAY_TIMER_COUNTER;
+             ^
+../src/vdma_cfg.c:95:13: warning: array subscript is above array bounds [-Warray-bounds]
+  vdma_struct[YCBCR2MEM_VDMA_ID].RD_ADDR_BASE = &YCBCR2MEM_READ_REGION;
+             ^
+../src/vdma_cfg.c:96:13: warning: array subscript is above array bounds [-Warray-bounds]
+  vdma_struct[YCBCR2MEM_VDMA_ID].WR_ADDR_BASE = &YCBCR2MEM_WRITE_REGION;
+             ^
+../src/vdma_cfg.c:97:13: warning: array subscript is above array bounds [-Warray-bounds]
+  vdma_struct[YCBCR2MEM_VDMA_ID].BlockStartOffset = SUBFRAME_START_OFFSET_YCBCR2MEM;
+             ^
+../src/vdma_cfg.c:98:13: warning: array subscript is above array bounds [-Warray-bounds]
+  vdma_struct[YCBCR2MEM_VDMA_ID].FrameHoriz = FRAME_HORIZONTAL_LEN_YCBCR2MEM;
+             ^
+../src/vdma_cfg.c:99:13: warning: array subscript is above array bounds [-Warray-bounds]
+  vdma_struct[YCBCR2MEM_VDMA_ID].FrameVert = FRAME_VERTICAL_LEN_YCBCR2MEM;
+             ^
+../src/vdma_cfg.c:100:13: warning: array subscript is above array bounds [-Warray-bounds]
+  vdma_struct[YCBCR2MEM_VDMA_ID].BlockHoriz = SUBFRAME_HORIZONTAL_SIZE_YCBCR2MEM;
+             ^
+../src/vdma_cfg.c:101:13: warning: array subscript is above array bounds [-Warray-bounds]
+  vdma_struct[YCBCR2MEM_VDMA_ID].BlockVert = SUBFRAME_VERTICAL_SIZE_YCBCR2MEM;
+             ^
+../src/vdma_cfg.c:102:13: warning: array subscript is above array bounds [-Warray-bounds]
+  vdma_struct[YCBCR2MEM_VDMA_ID].FrameWidth = FRAME_HORIZONTAL_LEN_YCBCR2MEM;
+             ^
+../src/vdma_cfg.c:103:13: warning: array subscript is above array bounds [-Warray-bounds]
+  vdma_struct[YCBCR2MEM_VDMA_ID].FrameHeight = FRAME_VERTICAL_LEN_YCBCR2MEM;
+             ^
+../src/vdma_cfg.c:438:75: warning: array subscript is above array bounds [-Warray-bounds]
+  vdma_struct[YCBCR2MEM_VDMA_ID].Config = XAxiVdma_LookupConfig(vdma_struct[YCBCR2MEM_VDMA_ID].AXIVDMA_DEVICE_ID);
+                                                                           ^
+../src/vdma_cfg.c:438:13: warning: array subscript is above array bounds [-Warray-bounds]
+  vdma_struct[YCBCR2MEM_VDMA_ID].Config = XAxiVdma_LookupConfig(vdma_struct[YCBCR2MEM_VDMA_ID].AXIVDMA_DEVICE_ID);
+             ^
+../src/vdma_cfg.c:441:54: warning: array subscript is above array bounds [-Warray-bounds]
+       "No video DMA found for ID %d\r\n", vdma_struct[YCBCR2MEM_VDMA_ID].AXIVDMA_DEVICE_ID);
+                                                      ^
+../src/vdma_cfg.c:456:84: warning: array subscript is above array bounds [-Warray-bounds]
+  Status = XAxiVdma_SetFrmStore(&vdma_struct[YCBCR2MEM_VDMA_ID].AxiVdma, vdma_struct[YCBCR2MEM_VDMA_ID].Num_Read_Frames, XAXIVDMA_READ);
+                                                                                    ^
+../src/vdma_cfg.c:466:84: warning: array subscript is above array bounds [-Warray-bounds]
+  Status = XAxiVdma_SetFrmStore(&vdma_struct[YCBCR2MEM_VDMA_ID].AxiVdma, vdma_struct[YCBCR2MEM_VDMA_ID].Num_Write_Frames, XAXIVDMA_WRITE);
+                                                                                    ^
+Finished building: ../src/vdma_cfg.c
+ 
+Building file: ../src/vdma_stat.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/custom_repo/SWcodes/inc -I/home/LAB/asawant2/VisionGit/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/uncc_embed/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -c -fmessage-length=0 -MT"src/vdma_stat.o" -MMD -MP -MF"src/vdma_stat.d" -MT"src/vdma_stat.o" -o "src/vdma_stat.o" "../src/vdma_stat.c"
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/vdma_stat.h:11:0,
+                 from ../src/vdma_stat.c:8:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/vdma_cfg.h:43:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^
+Finished building: ../src/vdma_stat.c
+ 
+Building file: ../src/vision_flow.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/custom_repo/SWcodes/inc -I/home/LAB/asawant2/VisionGit/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/uncc_embed/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -c -fmessage-length=0 -MT"src/vision_flow.o" -MMD -MP -MF"src/vision_flow.d" -MT"src/vision_flow.o" -o "src/vision_flow.o" "../src/vision_flow.c"
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/cache_disable.h:12:0,
+                 from ../src/vision_flow.h:12,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/cache_disable.h:13:0,
+                 from ../src/vision_flow.h:12,
+                 from ../src/vision_flow.c:8:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/vdma_cfg.h:43:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^
+In file included from ../src/vision_flow.h:13:0,
+                 from ../src/vision_flow.c:8:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:62:0,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:63:0,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_imageon.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_imageon.h:78:0,
+                 from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:63,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:64:0,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+Finished building: ../src/vision_flow.c
+ 
+Building target: vision_flow_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "vision_flow_app.elf"  ./src/app_cpu0.o ./src/cache_disable.o ./src/fg_match_det_threshold_config.o ./src/fmc_imageon_hdmi_passthrough.o ./src/foreground_threshold_config.o ./src/input_param.o ./src/learnfact_config.o ./src/match_det_threshold_config.o ./src/mog_params_config.o ./src/object_detection.o ./src/object_detection_intr.o ./src/object_focus.o ./src/system_reset_assert.o ./src/system_reset_deassert.o ./src/temp.o ./src/vdma_cfg.o ./src/vdma_stat.o ./src/video_resolution.o ./src/vision_flow.o ./src/woi_config.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: vision_flow_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size vision_flow_app.elf  |tee "vision_flow_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  96848	   4528	188967440	189068816	b44f610	vision_flow_app.elf
+Finished building: vision_flow_app.elf.size
+ 
+15:45:48 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+15:45:49 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+15:50:02 **** Auto Build of configuration Debug for project vision_flow_app ****
+make all 
+Building file: ../src/object_detection.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/custom_repo/SWcodes/inc -I/home/LAB/asawant2/VisionGit/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/uncc_embed/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -c -fmessage-length=0 -MT"src/object_detection.o" -MMD -MP -MF"src/object_detection.d" -MT"src/object_detection.o" -o "src/object_detection.o" "../src/object_detection.c"
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/object_detection.h:4:0,
+                 from ../src/object_detection.c:17:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/vdma_cfg.h:43:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^
+../src/object_detection.c: In function 'object_detection':
+../src/object_detection.c:70:23: warning: assignment makes pointer from integer without a cast
+    input_pointer_base = base_address + SUBFRAME_START_OFFSET_VIDEO_OVERLAY;  // start address of memory where we read data from
+                       ^
+../src/object_detection.c:72:23: warning: assignment makes pointer from integer without a cast
+    input_pointer_base = base_address + FRAME_HORIZONTAL_LEN_VIDEO_OVERLAY * FRAME_VERTICAL_LEN_VIDEO_OVERLAY + SUBFRAME_START_OFFSET_VIDEO_OVERLAY;  // start address of memory where we read data from
+                       ^
+../src/object_detection.c:273:18: warning: assignment from incompatible pointer type
+     read_pointer = VOVRLAY_READ_REGION;
+                  ^
+../src/object_detection.c:278:22: warning: assignment from incompatible pointer type
+     read_pointer_del = VOVRLAY_READ_REGION;
+                      ^
+../src/object_detection.c:170:15: warning: iteration 278u invokes undefined behavior [-Waggressive-loop-optimizations]
+      if (Label[center_index] != 0 && Label[top_index] != 0 && Label[center_index] !=  Label[top_index])
+               ^
+../src/object_detection.c:161:4: note: containing loop
+    for(y_index = 1; y_index < reduced_height-1 ; y_index++)
+    ^
+../src/object_detection.c:50:8: warning: 'input_pointer_base' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  u32 * input_pointer_base, * input_pointer_offset;
+        ^
+Finished building: ../src/object_detection.c
+ 
+Building target: vision_flow_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "vision_flow_app.elf"  ./src/app_cpu0.o ./src/cache_disable.o ./src/fg_match_det_threshold_config.o ./src/fmc_imageon_hdmi_passthrough.o ./src/foreground_threshold_config.o ./src/input_param.o ./src/learnfact_config.o ./src/match_det_threshold_config.o ./src/mog_params_config.o ./src/object_detection.o ./src/object_detection_intr.o ./src/object_focus.o ./src/system_reset_assert.o ./src/system_reset_deassert.o ./src/temp.o ./src/vdma_cfg.o ./src/vdma_stat.o ./src/video_resolution.o ./src/vision_flow.o ./src/woi_config.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: vision_flow_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size vision_flow_app.elf  |tee "vision_flow_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  96848	   4528	188967440	189068816	b44f610	vision_flow_app.elf
+Finished building: vision_flow_app.elf.size
+ 
+15:50:10 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+15:50:12 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+15:59:50 **** Auto Build of configuration Debug for project vision_flow_app ****
+make all 
+Building file: ../src/object_detection.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/custom_repo/SWcodes/inc -I/home/LAB/asawant2/VisionGit/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/uncc_embed/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -c -fmessage-length=0 -MT"src/object_detection.o" -MMD -MP -MF"src/object_detection.d" -MT"src/object_detection.o" -o "src/object_detection.o" "../src/object_detection.c"
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/object_detection.h:4:0,
+                 from ../src/object_detection.c:19:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/vdma_cfg.h:43:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^
+../src/object_detection.c: In function 'object_detection':
+../src/object_detection.c:72:23: warning: assignment makes pointer from integer without a cast
+    input_pointer_base = base_address + SUBFRAME_START_OFFSET_VIDEO_OVERLAY;  // start address of memory where we read data from
+                       ^
+../src/object_detection.c:74:23: warning: assignment makes pointer from integer without a cast
+    input_pointer_base = base_address + FRAME_HORIZONTAL_LEN_VIDEO_OVERLAY * FRAME_VERTICAL_LEN_VIDEO_OVERLAY + SUBFRAME_START_OFFSET_VIDEO_OVERLAY;  // start address of memory where we read data from
+                       ^
+../src/object_detection.c:275:18: warning: assignment from incompatible pointer type
+     read_pointer = VOVRLAY_READ_REGION;
+                  ^
+../src/object_detection.c:280:22: warning: assignment from incompatible pointer type
+     read_pointer_del = VOVRLAY_READ_REGION;
+                      ^
+../src/object_detection.c:172:15: warning: iteration 278u invokes undefined behavior [-Waggressive-loop-optimizations]
+      if (Label[center_index] != 0 && Label[top_index] != 0 && Label[center_index] !=  Label[top_index])
+               ^
+../src/object_detection.c:163:4: note: containing loop
+    for(y_index = 1; y_index < reduced_height-1 ; y_index++)
+    ^
+../src/object_detection.c:52:8: warning: 'input_pointer_base' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  u32 * input_pointer_base, * input_pointer_offset;
+        ^
+Finished building: ../src/object_detection.c
+ 
+Building target: vision_flow_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "vision_flow_app.elf"  ./src/app_cpu0.o ./src/cache_disable.o ./src/fg_match_det_threshold_config.o ./src/fmc_imageon_hdmi_passthrough.o ./src/foreground_threshold_config.o ./src/input_param.o ./src/learnfact_config.o ./src/match_det_threshold_config.o ./src/mog_params_config.o ./src/object_detection.o ./src/object_detection_intr.o ./src/object_focus.o ./src/system_reset_assert.o ./src/system_reset_deassert.o ./src/temp.o ./src/vdma_cfg.o ./src/vdma_stat.o ./src/video_resolution.o ./src/vision_flow.o ./src/woi_config.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: vision_flow_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size vision_flow_app.elf  |tee "vision_flow_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  96848	   4528	188967440	189068816	b44f610	vision_flow_app.elf
+Finished building: vision_flow_app.elf.size
+ 
+17:35:36 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+17:35:37 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+18:02:06 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+18:02:07 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+12:41:39 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:41:40 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+12:49:39 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:49:40 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+12:50:28 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:50:29 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+15:22:45 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+15:22:46 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+15:26:16 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+15:26:17 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+15:27:42 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+15:27:43 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+15:28:13 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+15:28:14 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+10:25:33 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+10:25:34 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+12:29:28 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:29:29 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+12:50:59 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:51:00 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+12:56:34 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:56:35 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+16:20:00 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+16:20:02 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+16:21:56 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+16:21:57 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+16:29:13 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+16:29:14 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+16:36:10 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+16:36:11 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+16:37:21 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+16:37:22 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+16:39:08 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+16:39:09 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+09:39:49 **** Auto Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+09:39:55 **** Auto Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+09:40:20 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+09:40:22 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+09:42:01 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+09:42:02 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+09:43:50 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+09:43:51 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+10:00:58 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+10:00:59 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+13:57:20 **** Auto Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:57:23 **** Auto Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+13:57:39 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:57:40 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+14:02:06 **** Auto Build of configuration Debug for project app_cpu1 ****
+make all 
+Building file: ../src/blob_tracking.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/blob_tracking.o" -I../../app_cpu1_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/blob_tracking.d" -MT"src/blob_tracking.o" -o "src/blob_tracking.o" "../src/blob_tracking.c"
+In file included from ../src/blob_tracking.h:13:0,
+                 from ../src/blob_tracking.c:9:
+../src/vdma_cfg.h:45:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^
+In file included from ../src/object_focus.h:11:0,
+                 from ../src/blob_tracking.h:14,
+                 from ../src/blob_tracking.c:9:
+../../app_cpu1_bsp/ps7_cortexa9_1/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../app_cpu1_bsp/ps7_cortexa9_1/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/blob_tracking.c: In function 'blob_tracking':
+../src/blob_tracking.c:76:16: warning: assignment from incompatible pointer type
+   read_pointer = VOVRLAY_READ_REGION + FRAME_HORIZONTAL_LEN_VIDEO_OVERLAY * FRAME_VERTICAL_LEN_VIDEO_OVERLAY;
+                ^
+../src/blob_tracking.c:81:16: warning: assignment from incompatible pointer type
+   read_pointer = VOVRLAY_READ_REGION;
+                ^
+../src/blob_tracking.c:92:144: warning: passing argument 5 of 'object_focus' makes integer from pointer without a cast
+    object_focus (m_Bloblist_past_0.blob[i].min_x, m_Bloblist_past_0.blob[i].min_y, m_Bloblist_past_0.blob[i].wx, m_Bloblist_past_0.blob[i].wy, read_pointer, 0XFFFFFFFF,  0, VIDEO_OVERLAY_VDMA_ID,0);
+                                                                                                                                                ^
+In file included from ../src/blob_tracking.h:14:0,
+                 from ../src/blob_tracking.c:9:
+../src/object_focus.h:15:5: note: expected 'u32' but argument is of type 'u32 *'
+ int object_focus (
+     ^
+../src/blob_tracking.c:100:144: warning: passing argument 5 of 'object_focus' makes integer from pointer without a cast
+    object_focus (m_Bloblist_past_1.blob[i].min_x, m_Bloblist_past_1.blob[i].min_y, m_Bloblist_past_1.blob[i].wx, m_Bloblist_past_1.blob[i].wy, read_pointer, 0XFFFFFFFF,  0, VIDEO_OVERLAY_VDMA_ID,0);
+                                                                                                                                                ^
+In file included from ../src/blob_tracking.h:14:0,
+                 from ../src/blob_tracking.c:9:
+../src/object_focus.h:15:5: note: expected 'u32' but argument is of type 'u32 *'
+ int object_focus (
+     ^
+../src/blob_tracking.c:416:30: warning: unused variable 'height' [-Wunused-variable]
+  int prevNum = 0, width = 0, height = 0;;
+                              ^
+../src/blob_tracking.c:416:19: warning: unused variable 'width' [-Wunused-variable]
+  int prevNum = 0, width = 0, height = 0;;
+                   ^
+../src/blob_tracking.c:416:6: warning: unused variable 'prevNum' [-Wunused-variable]
+  int prevNum = 0, width = 0, height = 0;;
+      ^
+../src/blob_tracking.c:140:6: warning: variable 'compared' set but not used [-Wunused-but-set-variable]
+  int compared;
+      ^
+../src/blob_tracking.c:139:6: warning: unused variable 'velocityNum' [-Wunused-variable]
+  int velocityNum; //update the info. of existence blob in list
+      ^
+../src/blob_tracking.c:61:44: warning: variable 'label' set but not used [-Wunused-but-set-variable]
+  int min_x = 0, min_y = 0, wx = 0, wy = 0, label = 0;
+                                            ^
+../src/blob_tracking.c:61:36: warning: variable 'wy' set but not used [-Wunused-but-set-variable]
+  int min_x = 0, min_y = 0, wx = 0, wy = 0, label = 0;
+                                    ^
+../src/blob_tracking.c:61:28: warning: variable 'wx' set but not used [-Wunused-but-set-variable]
+  int min_x = 0, min_y = 0, wx = 0, wy = 0, label = 0;
+                            ^
+../src/blob_tracking.c:61:17: warning: variable 'min_y' set but not used [-Wunused-but-set-variable]
+  int min_x = 0, min_y = 0, wx = 0, wy = 0, label = 0;
+                 ^
+../src/blob_tracking.c:61:6: warning: variable 'min_x' set but not used [-Wunused-but-set-variable]
+  int min_x = 0, min_y = 0, wx = 0, wy = 0, label = 0;
+      ^
+../src/blob_tracking.c:60:9: warning: unused variable 'time' [-Wunused-variable]
+  double time;
+         ^
+../src/blob_tracking.c: In function 'getPixelValue':
+../src/blob_tracking.c:796:13: warning: assignment from incompatible pointer type
+  pixelValue = YCBCR2MEM_WRITE_REGION;
+             ^
+Finished building: ../src/blob_tracking.c
+ 
+Building target: app_cpu1.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../app_cpu1_bsp/ps7_cortexa9_1/lib -o "app_cpu1.elf"  ./src/app_cpu1.o ./src/blob_tracking.o ./src/kalman_filter_helper.o ./src/matrix.o ./src/object_focus.o ./src/vovrly_write_back.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_cpu1.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_cpu1.elf  |tee "app_cpu1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78280	   2264	 305032	 385576	  5e228	app_cpu1.elf
+Finished building: app_cpu1.elf.size
+ 
+14:02:10 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+14:02:11 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+14:06:42 **** Auto Build of configuration Debug for project app_cpu1 ****
+make all 
+Building file: ../src/blob_tracking.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/blob_tracking.o" -I../../app_cpu1_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/blob_tracking.d" -MT"src/blob_tracking.o" -o "src/blob_tracking.o" "../src/blob_tracking.c"
+In file included from ../src/blob_tracking.h:13:0,
+                 from ../src/blob_tracking.c:9:
+../src/vdma_cfg.h:45:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^
+In file included from ../src/object_focus.h:11:0,
+                 from ../src/blob_tracking.h:14,
+                 from ../src/blob_tracking.c:9:
+../../app_cpu1_bsp/ps7_cortexa9_1/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../app_cpu1_bsp/ps7_cortexa9_1/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/blob_tracking.c: In function 'blob_tracking':
+../src/blob_tracking.c:76:16: warning: assignment from incompatible pointer type
+   read_pointer = VOVRLAY_READ_REGION + FRAME_HORIZONTAL_LEN_VIDEO_OVERLAY * FRAME_VERTICAL_LEN_VIDEO_OVERLAY;
+                ^
+../src/blob_tracking.c:81:16: warning: assignment from incompatible pointer type
+   read_pointer = VOVRLAY_READ_REGION;
+                ^
+../src/blob_tracking.c:92:144: warning: passing argument 5 of 'object_focus' makes integer from pointer without a cast
+    object_focus (m_Bloblist_past_0.blob[i].min_x, m_Bloblist_past_0.blob[i].min_y, m_Bloblist_past_0.blob[i].wx, m_Bloblist_past_0.blob[i].wy, read_pointer, 0XFFFFFFFF,  0, VIDEO_OVERLAY_VDMA_ID,0);
+                                                                                                                                                ^
+In file included from ../src/blob_tracking.h:14:0,
+                 from ../src/blob_tracking.c:9:
+../src/object_focus.h:15:5: note: expected 'u32' but argument is of type 'u32 *'
+ int object_focus (
+     ^
+../src/blob_tracking.c:100:144: warning: passing argument 5 of 'object_focus' makes integer from pointer without a cast
+    object_focus (m_Bloblist_past_1.blob[i].min_x, m_Bloblist_past_1.blob[i].min_y, m_Bloblist_past_1.blob[i].wx, m_Bloblist_past_1.blob[i].wy, read_pointer, 0XFFFFFFFF,  0, VIDEO_OVERLAY_VDMA_ID,0);
+                                                                                                                                                ^
+In file included from ../src/blob_tracking.h:14:0,
+                 from ../src/blob_tracking.c:9:
+../src/object_focus.h:15:5: note: expected 'u32' but argument is of type 'u32 *'
+ int object_focus (
+     ^
+../src/blob_tracking.c:734:40: warning: passing argument 5 of 'object_focus' makes integer from pointer without a cast
+    object_focus (min_x, min_y, wx, wy, read_pointer, 0XFFFFFFFF,  1, VIDEO_OVERLAY_VDMA_ID, label);
+                                        ^
+In file included from ../src/blob_tracking.h:14:0,
+                 from ../src/blob_tracking.c:9:
+../src/object_focus.h:15:5: note: expected 'u32' but argument is of type 'u32 *'
+ int object_focus (
+     ^
+../src/blob_tracking.c:750:40: warning: passing argument 5 of 'object_focus' makes integer from pointer without a cast
+    object_focus (min_x, min_y, wx, wy, read_pointer, 0XFFFFFFFF,  1, VIDEO_OVERLAY_VDMA_ID, label);
+                                        ^
+In file included from ../src/blob_tracking.h:14:0,
+                 from ../src/blob_tracking.c:9:
+../src/object_focus.h:15:5: note: expected 'u32' but argument is of type 'u32 *'
+ int object_focus (
+     ^
+../src/blob_tracking.c:416:30: warning: unused variable 'height' [-Wunused-variable]
+  int prevNum = 0, width = 0, height = 0;;
+                              ^
+../src/blob_tracking.c:416:19: warning: unused variable 'width' [-Wunused-variable]
+  int prevNum = 0, width = 0, height = 0;;
+                   ^
+../src/blob_tracking.c:416:6: warning: unused variable 'prevNum' [-Wunused-variable]
+  int prevNum = 0, width = 0, height = 0;;
+      ^
+../src/blob_tracking.c:140:6: warning: variable 'compared' set but not used [-Wunused-but-set-variable]
+  int compared;
+      ^
+../src/blob_tracking.c:139:6: warning: unused variable 'velocityNum' [-Wunused-variable]
+  int velocityNum; //update the info. of existence blob in list
+      ^
+../src/blob_tracking.c:60:9: warning: unused variable 'time' [-Wunused-variable]
+  double time;
+         ^
+../src/blob_tracking.c: In function 'getPixelValue':
+../src/blob_tracking.c:796:13: warning: assignment from incompatible pointer type
+  pixelValue = YCBCR2MEM_WRITE_REGION;
+             ^
+Finished building: ../src/blob_tracking.c
+ 
+Building target: app_cpu1.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../app_cpu1_bsp/ps7_cortexa9_1/lib -o "app_cpu1.elf"  ./src/app_cpu1.o ./src/blob_tracking.o ./src/kalman_filter_helper.o ./src/matrix.o ./src/object_focus.o ./src/vovrly_write_back.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_cpu1.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_cpu1.elf  |tee "app_cpu1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78472	   2264	 305032	 385768	  5e2e8	app_cpu1.elf
+Finished building: app_cpu1.elf.size
+ 
+14:08:10 **** Auto Build of configuration Debug for project vision_flow_app ****
+make all 
+Building file: ../src/vision_flow.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/custom_repo/SWcodes/inc -I/home/LAB/asawant2/VisionGit/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/uncc_embed/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -c -fmessage-length=0 -MT"src/vision_flow.o" -MMD -MP -MF"src/vision_flow.d" -MT"src/vision_flow.o" -o "src/vision_flow.o" "../src/vision_flow.c"
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/cache_disable.h:12:0,
+                 from ../src/vision_flow.h:12,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/cache_disable.h:13:0,
+                 from ../src/vision_flow.h:12,
+                 from ../src/vision_flow.c:8:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/vdma_cfg.h:43:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^
+In file included from ../src/vision_flow.h:13:0,
+                 from ../src/vision_flow.c:8:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:62:0,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:63:0,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_imageon.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_imageon.h:78:0,
+                 from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:63,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:64:0,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+Finished building: ../src/vision_flow.c
+ 
+Building target: vision_flow_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "vision_flow_app.elf"  ./src/app_cpu0.o ./src/cache_disable.o ./src/fg_match_det_threshold_config.o ./src/fmc_imageon_hdmi_passthrough.o ./src/foreground_threshold_config.o ./src/input_param.o ./src/learnfact_config.o ./src/match_det_threshold_config.o ./src/mog_params_config.o ./src/object_detection.o ./src/object_detection_intr.o ./src/object_focus.o ./src/system_reset_assert.o ./src/system_reset_deassert.o ./src/temp.o ./src/vdma_cfg.o ./src/vdma_stat.o ./src/video_resolution.o ./src/vision_flow.o ./src/woi_config.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: vision_flow_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size vision_flow_app.elf  |tee "vision_flow_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  96932	   4528	188967440	189068900	b44f664	vision_flow_app.elf
+Finished building: vision_flow_app.elf.size
+ 
+14:12:25 **** Auto Build of configuration Debug for project vision_flow_app ****
+make all 
+Building file: ../src/vision_flow.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/custom_repo/SWcodes/inc -I/home/LAB/asawant2/VisionGit/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/uncc_embed/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -c -fmessage-length=0 -MT"src/vision_flow.o" -MMD -MP -MF"src/vision_flow.d" -MT"src/vision_flow.o" -o "src/vision_flow.o" "../src/vision_flow.c"
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/cache_disable.h:12:0,
+                 from ../src/vision_flow.h:12,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/cache_disable.h:13:0,
+                 from ../src/vision_flow.h:12,
+                 from ../src/vision_flow.c:8:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/vdma_cfg.h:43:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^
+In file included from ../src/vision_flow.h:13:0,
+                 from ../src/vision_flow.c:8:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:62:0,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:63:0,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_imageon.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_imageon.h:78:0,
+                 from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:63,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:64:0,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+Finished building: ../src/vision_flow.c
+ 
+Building target: vision_flow_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "vision_flow_app.elf"  ./src/app_cpu0.o ./src/cache_disable.o ./src/fg_match_det_threshold_config.o ./src/fmc_imageon_hdmi_passthrough.o ./src/foreground_threshold_config.o ./src/input_param.o ./src/learnfact_config.o ./src/match_det_threshold_config.o ./src/mog_params_config.o ./src/object_detection.o ./src/object_detection_intr.o ./src/object_focus.o ./src/system_reset_assert.o ./src/system_reset_deassert.o ./src/temp.o ./src/vdma_cfg.o ./src/vdma_stat.o ./src/video_resolution.o ./src/vision_flow.o ./src/woi_config.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: vision_flow_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size vision_flow_app.elf  |tee "vision_flow_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  97200	   4528	188967440	189069168	b44f770	vision_flow_app.elf
+Finished building: vision_flow_app.elf.size
+ 
+14:12:28 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+14:12:29 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+14:13:34 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+14:13:35 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.
+14:14:33 **** Auto Build of configuration Debug for project vision_flow_app ****
+make all 
+Building file: ../src/vision_flow.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/custom_repo/SWcodes/inc -I/home/LAB/asawant2/VisionGit/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/uncc_embed/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -I/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc -c -fmessage-length=0 -MT"src/vision_flow.o" -MMD -MP -MF"src/vision_flow.d" -MT"src/vision_flow.o" -o "src/vision_flow.o" "../src/vision_flow.c"
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/cache_disable.h:12:0,
+                 from ../src/vision_flow.h:12,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/cache_disable.h:13:0,
+                 from ../src/vision_flow.h:12,
+                 from ../src/vision_flow.c:8:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/vdma_cfg.h:43:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^
+In file included from ../src/vision_flow.h:13:0,
+                 from ../src/vision_flow.c:8:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:62:0,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:63:0,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_imageon.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_imageon.h:78:0,
+                 from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:63,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+../../standalone_bsp_0/ps7_cortexa9_0/include/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/fmc_imageon_hdmi_passthrough.h:64:0,
+                 from ../src/vision_flow.h:13,
+                 from ../src/vision_flow.c:8:
+/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/custom_repo/SWcodes/inc/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+Finished building: ../src/vision_flow.c
+ 
+Building target: vision_flow_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "vision_flow_app.elf"  ./src/app_cpu0.o ./src/cache_disable.o ./src/fg_match_det_threshold_config.o ./src/fmc_imageon_hdmi_passthrough.o ./src/foreground_threshold_config.o ./src/input_param.o ./src/learnfact_config.o ./src/match_det_threshold_config.o ./src/mog_params_config.o ./src/object_detection.o ./src/object_detection_intr.o ./src/object_focus.o ./src/system_reset_assert.o ./src/system_reset_deassert.o ./src/temp.o ./src/vdma_cfg.o ./src/vdma_stat.o ./src/video_resolution.o ./src/vision_flow.o ./src/woi_config.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: vision_flow_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size vision_flow_app.elf  |tee "vision_flow_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  97164	   4528	188967440	189069132	b44f74c	vision_flow_app.elf
+Finished building: vision_flow_app.elf.size
+ 
+14:14:37 **** Incremental Build of configuration Debug for project app_cpu1 ****
+make all 
+make: Nothing to be done for 'all'.
+14:14:38 **** Incremental Build of configuration Debug for project vision_flow_app ****
+make all 
+make: Nothing to be done for 'all'.

@@ -1,0 +1,7 @@
+the_ROM_image:
+{
+	[bootloader]../../fsbl/Debug/fsbl.elf
+	../../hdmi_directpassthr_woi_wrapper_hw_platform_0/hdmi_directpassthr_woi_wrapper.bit
+	../../vision_flow_app/Debug/vision_flow_app.elf
+	../../app_cpu1/Debug/app_cpu1.elf
+}

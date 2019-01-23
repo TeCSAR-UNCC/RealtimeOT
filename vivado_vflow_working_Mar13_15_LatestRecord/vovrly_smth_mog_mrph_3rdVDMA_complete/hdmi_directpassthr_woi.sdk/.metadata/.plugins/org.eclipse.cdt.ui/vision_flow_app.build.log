@@ -1,0 +1,54 @@
+15:50:21 **** Auto Build of configuration Debug for project vision_flow_app ****
+make all 
+Building file: ../src/object_detection_intr.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I/export/scratch/fan/vivado_vflow_working_dec10_14/custom_repo/SWcodes/inc -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/object_detection_intr.d" -MT"src/object_detection_intr.d" -o "src/object_detection_intr.o" "../src/object_detection_intr.c"
+In file included from ../src/object_detection_intr.h:15:0,
+                 from ../src/object_detection_intr.c:9:
+/export/scratch/fan/vivado_vflow_working_dec10_14/custom_repo/SWcodes/inc/vdma_cfg.h:36:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^
+../src/object_detection_intr.c: In function 'user_IntrHandler':
+../src/object_detection_intr.c:417:3: warning: passing argument 1 of 'object_detection' makes integer from pointer without a cast [enabled by default]
+Finished building: ../src/object_detection_intr.c
+   object_detection (&VOVRLAY_WRITE_REGION);
+   ^
+ 
+In file included from ../src/object_detection_intr.h:16:0,
+Building target: vision_flow_app.elf
+                 from ../src/object_detection_intr.c:9:
+/export/scratch/fan/vivado_vflow_working_dec10_14/custom_repo/SWcodes/inc/object_detection.h:42:5: note: expected 'u32' but argument is of type 'unsigned char (*)[327680]'
+Invoking: ARM gcc linker
+ int object_detection(u32 base_address);//Base address for reading the blob mask
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "vision_flow_app.elf"  ./src/cache_disable.o ./src/fg_match_det_threshold_config.o ./src/fmc_imageon_hdmi_passthrough.o ./src/foreground_threshold_config.o ./src/input_param.o ./src/learnfact_config.o ./src/main.o ./src/match_det_threshold_config.o ./src/mog_params_config.o ./src/object_detection.o ./src/object_detection_intr.o ./src/object_focus.o ./src/system_reset_assert.o ./src/system_reset_deassert.o ./src/temp.o ./src/vdma_cfg.o ./src/vdma_stat.o ./src/video_resolution.o ./src/woi_config.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+     ^
+../src/object_detection_intr.c: At top level:
+../src/object_detection_intr.c:281:13: warning: 'DisableIntrSystem' defined but not used [-Wunused-function]
+ static void DisableIntrSystem(u16 ReadIntrId, u16 WriteIntrId)
+             ^
+../src/object_detection_intr.c:460:13: warning: 'user_callback' defined but not used [-Wunused-function]
+ static void user_callback()
+             ^
+../src/object_detection_intr.c:315:13: warning: 'ReadCallBack' defined but not used [-Wunused-function]
+ static void ReadCallBack(void *CallbackRef, u32 Mask)
+Finished building target: vision_flow_app.elf
+             ^
+../src/object_detection_intr.c:336:13: warning: 'ReadErrorCallBack' defined but not used [-Wunused-function]
+ static void ReadErrorCallBack(void *CallbackRef, u32 Mask)
+             ^
+ 
+../src/object_detection_intr.c:358:13: warning: 'WriteCallBack' defined but not used [-Wunused-function]
+ static void WriteCallBack(void *CallbackRef, u32 Mask)
+             ^
+Invoking: ARM Print Size
+../src/object_detection_intr.c:379:13: warning: 'WriteErrorCallBack' defined but not used [-Wunused-function]
+ static void WriteErrorCallBack(void *CallbackRef, u32 Mask)
+             ^
+arm-xilinx-eabi-size vision_flow_app.elf  |tee "vision_flow_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 111848	   4528	193694336	193810712	b8d5118	vision_flow_app.elf
+Finished building: vision_flow_app.elf.size
+ 
+
+15:50:21 Build Finished (took 258ms)
+

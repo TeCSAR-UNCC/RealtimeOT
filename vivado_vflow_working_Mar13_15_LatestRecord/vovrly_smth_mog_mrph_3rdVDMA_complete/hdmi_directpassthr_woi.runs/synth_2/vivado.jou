@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Tue Apr 24 16:30:16 2018
+# Process ID: 11011
+# Current directory: /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.runs/synth_2
+# Command line: vivado -log hdmi_directpassthr_woi_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_directpassthr_woi_wrapper.tcl
+# Log file: /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.runs/synth_2/hdmi_directpassthr_woi_wrapper.vds
+# Journal file: /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.runs/synth_2/vivado.jou
+#-----------------------------------------------------------
+source hdmi_directpassthr_woi_wrapper.tcl -notrace

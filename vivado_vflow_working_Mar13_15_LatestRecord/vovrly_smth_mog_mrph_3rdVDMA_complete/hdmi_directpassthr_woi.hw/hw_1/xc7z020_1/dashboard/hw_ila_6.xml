@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <DashboardHolder activeDashboard="ILA">
+        <Dashboard columnResizable="1" key="ILA" rowResizable="0" title="ILA">
+            <Settings/>
+            <GadgetContainer boxAxis="1" count="2" height="759"
+                layout="JideBoxLayout" vgap="6" width="718">
+                <Gadget height="108" key="Trigger Capture Status" width="718">
+                    <Ila capture_condition="AND" capture_mode="ALWAYS"
+                        data_depth="2048" trigger_condition="AND"
+                        trigger_mode="BASIC_ONLY"
+                        trigger_position="1024" trigout_mode="DISABLED"
+                        tsm_file="" window_count="1"/>
+                </Gadget>
+                <Gadget height="446" key="Basic Trigger Setup" width="718">
+                    <Probe name="hdmi_directpassthr_woi_i/video_overlay_unit_y1"/>
+                    <Probe name="hdmi_directpassthr_woi_i/rst_processing_system7_0_150M_peripheral_aresetn_1"/>
+                    <Probe name="hdmi_directpassthr_woi_i/video_overlay_unit_axis_overflow"/>
+                    <Probe name="hdmi_directpassthr_woi_i/video_overlay_unit_pipe_out2[31:0]"/>
+                    <Probe name="hdmi_directpassthr_woi_i/video_overlay_unit_pipe_out3"/>
+                    <Probe name="hdmi_directpassthr_woi_i/video_overlay_unit_s_axis_tready_1"/>
+                </Gadget>
+                <Settings/>
+            </GadgetContainer>
+        </Dashboard>
+    </DashboardHolder>
+</component>

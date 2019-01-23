@@ -1,0 +1,10 @@
+#In the name of God the compassionate the merciful
+
+Here are the features of this project:
+1- Smoothing
+2- MoG
+3- Video Overlay read and write path
+4- Morphology added
+
+#Known Issues:
+-Blinking screen when the MoG read/write path is enabled and we move the mouse in some portions of MoG the window of interest

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;vision_flow_app/src/app_cpu0_past.c&apos;" deleteContents="false" description="Delete resource &apos;vision_flow_app/src/app_cpu0_past.c&apos;" element1="/vision_flow_app/src/app_cpu0_past.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1426259136460"/>
+</session>

@@ -1,0 +1,674 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:12:34 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Tue Aug  4 17:43:19 2015
+# Process ID: 28284
+# Log file: /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/custom_repo/IPcores/vovrlay/vivado.log
+# Journal file: /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/custom_repo/IPcores/vovrlay/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/hdl/hdmi_directpassthr_woi_wrapper.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/hdl/hdmi_directpassthr_woi_wrapper.v]
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/custom_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/export/scratch/fan/vivado/tutorials/FMC_IMAGEON/2013_3/avnet_fmc_imageon_cores'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/export/thishost/opt/Xilinx/Vivado/2014.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 4772.195 ; gain = 133.582
+open_bd_design {/export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/hdmi_directpassthr_woi.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.4 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_iic:2.0 - fmc_imageon_iic_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_100M
+Adding component instance block -- NEU-ESL:user:vbb_system_reset:1.0 - vbb_system_reset_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_150M
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - LEARNING_FACTOR
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - FG_THRESHOLD
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - MATCH_THRESHOLD
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- SchuylerEldridge:user:pipeline_registers:1.0 - pipeline_registers_1
+Adding component instance block -- SchuylerEldridge:user:pipeline_registers:1.0 - pipeline_registers_2
+Adding component instance block -- SchuylerEldridge:user:pipeline_registers:1.0 - pipeline_registers_3
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - ycbcr_to_grayscale
+Adding component instance block -- avnet:fmc_imageon:fmc_imageon_hdmi_in:2.0 - fmc_imageon_hdmi_input_0
+Adding component instance block -- NEU-ESL:user:axi_window_of_interest_detection:1.0 - mog_woi_det
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - concat_interrupt
+Adding component instance block -- NEU-ESL:user:image_smoothing:1.0 - image_smoothing_0
+Adding component instance block -- NEU-ESL:user:Morphology:1.0 - Morphology_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - before_morph
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - after_morph
+Adding component instance block -- xilinx.com:xup:xup_2_to_1_mux_vector:1.0 - morph_pass_over
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_2
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_3
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_4
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_5
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - before_smth
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - after_smth
+Adding component instance block -- xilinx.com:xup:xup_2_to_1_mux_vector:1.0 - smth_pass_over
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_2
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_3
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_4
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_5
+Adding component instance block -- xilinx.com:xup:xup_and4:1.0 - xup_and4_0
+Adding component instance block -- xilinx.com:xup:xup_and3:1.0 - xup_and3_0
+Adding component instance block -- xilinx.com:xup:xup_and4:1.0 - xup_and4_1
+Adding component instance block -- xilinx.com:xup:xup_and3:1.0 - xup_and3_1
+Adding component instance block -- xilinx.com:xup:xup_and3:1.0 - xup_and3_2
+Adding component instance block -- xilinx.com:ip:fifo_generator:12.0 - ycbcr_mem_write_async_fifo
+INFO: [xilinx.com:ip:fifo_generator:12.0-5968] /ycbcr2mem_unit/ycbcr_mem_write_async_fifoExecuting the post_config_ip from bd
+Adding component instance block -- NEU-ESL:user:data_unpacking:1.0 - ycbcr_data_unpacking_0
+Adding component instance block -- NEU-ESL:user:data_packing:1.0 - ycbcr_data_packing_0
+Adding component instance block -- xilinx.com:ip:fifo_generator:12.0 - ycbcr_mem_sync_sigs_async_fifo
+INFO: [xilinx.com:ip:fifo_generator:12.0-5968] /ycbcr2mem_unit/ycbcr_mem_sync_sigs_async_fifoExecuting the post_config_ip from bd
+Adding component instance block -- xilinx.com:ip:fifo_generator:12.0 - ycbcr_mem_read_async_fifo
+INFO: [xilinx.com:ip:fifo_generator:12.0-5968] /ycbcr2mem_unit/ycbcr_mem_read_async_fifoExecuting the post_config_ip from bd
+Adding component instance block -- SchuylerEldridge:user:pipeline_registers:1.0 - tkeep_pass
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.2 - ycbcr_vdma
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - one
+Adding component instance block -- xilinx.com:xup:xup_or2:1.0 - xup_or2_0
+Adding component instance block -- SchuylerEldridge:user:pipeline_registers:1.0 - pipeline_registers_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - concatenation
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - y_sel
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - cbcr_gray
+Adding component instance block -- avnet:fmc_imageon:fmc_imageon_hdmi_out:2.0 - fmc_imageon_hdmi_out_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - vcc
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - gnd
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - hblank_out
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - de_out
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - vlbank_out
+Adding component instance block -- SchuylerEldridge:user:pipeline_registers:1.0 - pipeline_registers_1
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - hdmi_sync_pass
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - spdif_out
+Adding component instance block -- xilinx.com:ip:fifo_generator:12.0 - color_video_pass_fifo
+INFO: [xilinx.com:ip:fifo_generator:12.0-5968] /color_video_pass/color_video_pass_fifoExecuting the post_config_ip from bd
+Adding component instance block -- SchuylerEldridge:user:pipeline_registers:1.0 - pipeline_registers_10
+Adding component instance block -- xilinx.com:xup:xup_or2:1.0 - xup_or2_2
+Adding component instance block -- SchuylerEldridge:user:pipeline_registers:1.0 - pipeline_registers_10
+Adding component instance block -- xilinx.com:xup:xup_or2:1.0 - xup_or2_2
+Adding component instance block -- SchuylerEldridge:user:pipeline_registers:1.0 - spdif
+Adding component instance block -- SchuylerEldridge:user:pipeline_registers:1.0 - vblank
+Adding component instance block -- SchuylerEldridge:user:pipeline_registers:1.0 - de_pass
+Adding component instance block -- SchuylerEldridge:user:pipeline_registers:1.0 - hblank
+Adding component instance block -- xilinx.com:ip:fifo_generator:12.0 - mog_params_write_async_fifo
+INFO: [xilinx.com:ip:fifo_generator:12.0-5968] /bge_unit/mog_params_write_async_fifoExecuting the post_config_ip from bd
+Adding component instance block -- xilinx.com:ip:fifo_generator:12.0 - mog_params_read_async_fifo
+INFO: [xilinx.com:ip:fifo_generator:12.0-5968] /bge_unit/mog_params_read_async_fifoExecuting the post_config_ip from bd
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - grayscale8to32
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - zero24
+Adding component instance block -- SchuylerEldridge:user:pipeline_registers:1.0 - pipeline_registers_1
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.2 - mog_vdma
+Adding component instance block -- xilinx.com:ip:fifo_generator:12.0 - vdma_sync_signals_passing
+INFO: [xilinx.com:ip:fifo_generator:12.0-5968] /bge_unit/vdma_sync_signals_passingExecuting the post_config_ip from bd
+Adding component instance block -- xilinx.com:xup:xup_and3:1.0 - xup_and3_0
+Adding component instance block -- xilinx.com:xup:xup_and3:1.0 - xup_and3_1
+Adding component instance block -- xilinx.com:xup:xup_and3:1.0 - xup_and3_2
+Adding component instance block -- xilinx.com:xup:xup_and3:1.0 - xup_and3_3
+Adding component instance block -- NEU-ESL:user:MixtureOfGaussians:1.0 - MixtureOfGaussians_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- SchuylerEldridge:user:pipeline_registers:1.0 - pipeline_registers_10
+Adding component instance block -- xilinx.com:xup:xup_or2:1.0 - xup_or2_2
+Adding component instance block -- xilinx.com:ip:c_addsub:12.0 - one16subw1addw2
+Adding component instance block -- xilinx.com:ip:c_addsub:12.0 - w1addw2
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - one16
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - w3_concat
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - zero16
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - w1_slice
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - w1_concat
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - zero16
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - w2_slice
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - w2_concat
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - zero16
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - sd2_slice
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - sd2_concat
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - zero16
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - sd1_slice
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - sd1_concat
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - zero16
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - mean1_slice
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - mean1_concat
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - zero16
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - mean3_slice
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - mean3_concat
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - zero16
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - sd3_slice
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - sd3_concat
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - zero16
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - mean2_slice
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - mean2_concat
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - zero16
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - w2_slice
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - sd1_slice
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - mean3_slice
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - sd2_slice
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - sd3_slice
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - mean1_slice
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - w1_slice
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - mean2_slice
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - params_concat
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.2 - vovrly_vdma
+Adding component instance block -- SchuylerEldridge:user:pipeline_registers:1.0 - pipeline_registers_1
+Adding component instance block -- xilinx.com:ip:fifo_generator:12.0 - vovraly_rd_async_fifo
+INFO: [xilinx.com:ip:fifo_generator:12.0-5968] /video_overlay_unit/vovraly_rd_async_fifoExecuting the post_config_ip from bd
+Adding component instance block -- SchuylerEldridge:user:pipeline_registers:1.0 - pipeline_registers_2
+Adding component instance block -- xilinx.com:xup:xup_and3:1.0 - xup_and3_1
+Adding component instance block -- SchuylerEldridge:user:pipeline_registers:1.0 - pipeline_registers_3
+Adding component instance block -- xilinx.com:xup:xup_and4:1.0 - xup_and4_0
+Adding component instance block -- xilinx.com:xup:xup_and3:1.0 - xup_and3_2
+Adding component instance block -- xilinx.com:xup:xup_and3:1.0 - xup_and3_3
+Adding component instance block -- xilinx.com:ip:fifo_generator:12.0 - vovrly_sync_sigs_pass
+INFO: [xilinx.com:ip:fifo_generator:12.0-5968] /video_overlay_unit/vovrly_sync_sigs_passExecuting the post_config_ip from bd
+Adding component instance block -- NEU-ESL:user:data_packing:1.0 - vovrlay_data_packing_0
+Adding component instance block -- xilinx.com:ip:fifo_generator:12.0 - vovraly_wr_async_fifo
+INFO: [xilinx.com:ip:fifo_generator:12.0-5968] /video_overlay_unit/vovraly_wr_async_fifoExecuting the post_config_ip from bd
+Adding component instance block -- xilinx.com:xup:xup_and4:1.0 - xup_and4_1
+Adding component instance block -- SchuylerEldridge:user:pipeline_registers:1.0 - pipeline_registers_5
+Adding component instance block -- SchuylerEldridge:user:pipeline_registers:1.0 - pipeline_registers_6
+Adding component instance block -- NEU-ESL:user:data_unpacking:1.0 - vovrly_data_unpacking0
+Adding component instance block -- SchuylerEldridge:user:pipeline_registers:1.0 - pipeline_registers_0
+Adding component instance block -- SchuylerEldridge:user:pipeline_registers:1.0 - pipeline_registers_4
+Adding component instance block -- NEU-ESL:user:axi_window_of_interest_detection:1.0 - vovrlay_woi_det
+Adding component instance block -- www.northeastern.edu:user:video_overlay:1.0 - video_overlay_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- SchuylerEldridge:user:pipeline_registers:1.0 - pipeline_registers_10
+Adding component instance block -- xilinx.com:xup:xup_or2:1.0 - xup_or2_2
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - hblank_out
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - de_out
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - vlbank_out
+Adding component instance block -- SchuylerEldridge:user:pipeline_registers:1.0 - pipeline_registers_1
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - hdmi_sync_pass
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - spdif_out
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - hblank_out
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - de_out
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - vlbank_out
+Adding component instance block -- SchuylerEldridge:user:pipeline_registers:1.0 - pipeline_registers_1
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - hdmi_sync_pass
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - spdif_out
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <hdmi_directpassthr_woi> from BD file </export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/hdmi_directpassthr_woi.bd>
+open_bd_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:19 . Memory (MB): peak = 5222.547 ; gain = 436.828
+delete_bd_objs [get_bd_nets output_source_1] [get_bd_ports output_source]
+startgroup
+create_bd_port -dir I -from 3 -to 0 output_source
+connect_bd_net [get_bd_pins /video_overlay_unit/video_overlay_0/output_source] [get_bd_ports output_source]
+endgroup
+save_bd_design
+Wrote  : </export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/hdmi_directpassthr_woi.bd> 
+make_wrapper -files [get_files /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/hdmi_directpassthr_woi.bd] -top
+INFO: [xilinx.com:ip:axi_vdma:6.2-15] /ycbcr2mem_unit/ycbcr_vdma 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+INFO: [xilinx.com:ip:axi_vdma:6.2-15] /bge_unit/mog_vdma 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /bge_unit/mog_params_extraction/w3_selection/one16subw1addw2 A_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /bge_unit/mog_params_extraction/w3_selection/one16subw1addw2 A_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /bge_unit/mog_params_extraction/w3_selection/one16subw1addw2 B_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /bge_unit/mog_params_extraction/w3_selection/one16subw1addw2 B_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /bge_unit/mog_params_extraction/w3_selection/w1addw2 A_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /bge_unit/mog_params_extraction/w3_selection/w1addw2 A_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /bge_unit/mog_params_extraction/w3_selection/w1addw2 B_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /bge_unit/mog_params_extraction/w3_selection/w1addw2 B_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:axi_vdma:6.2-15] /video_overlay_unit/vovrly_vdma 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+INFO: [BD 41-237] Bus Interface property READ_WRITE_MODE does not match between /axi_mem_intercon/xbar/S00_AXI(READ_WRITE) and /video_overlay_unit/vovrly_vdma/M_AXI_MM2S(READ_ONLY)
+INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon/xbar/S00_AXI(1) and /video_overlay_unit/vovrly_vdma/M_AXI_MM2S(0)
+INFO: [BD 41-237] Bus Interface property MAX_BURST_LENGTH does not match between /axi_mem_intercon/xbar/S00_AXI(256) and /video_overlay_unit/vovrly_vdma/M_AXI_MM2S(16)
+INFO: [BD 41-237] Bus Interface property READ_WRITE_MODE does not match between /axi_mem_intercon/xbar/S01_AXI(READ_WRITE) and /video_overlay_unit/vovrly_vdma/M_AXI_S2MM(WRITE_ONLY)
+INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon/xbar/S01_AXI(1) and /video_overlay_unit/vovrly_vdma/M_AXI_S2MM(0)
+INFO: [BD 41-237] Bus Interface property MAX_BURST_LENGTH does not match between /axi_mem_intercon/xbar/S01_AXI(256) and /video_overlay_unit/vovrly_vdma/M_AXI_S2MM(16)
+INFO: [BD 41-237] Bus Interface property READ_WRITE_MODE does not match between /axi_mem_intercon_1/xbar/S00_AXI(READ_WRITE) and /bge_unit/mog_vdma/M_AXI_MM2S(READ_ONLY)
+INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon_1/xbar/S00_AXI(1) and /bge_unit/mog_vdma/M_AXI_MM2S(0)
+INFO: [BD 41-237] Bus Interface property READ_WRITE_MODE does not match between /axi_mem_intercon_1/xbar/S01_AXI(READ_WRITE) and /bge_unit/mog_vdma/M_AXI_S2MM(WRITE_ONLY)
+INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon_1/xbar/S01_AXI(1) and /bge_unit/mog_vdma/M_AXI_S2MM(0)
+INFO: [BD 41-237] Bus Interface property READ_WRITE_MODE does not match between /axi_mem_intercon_2/xbar/S00_AXI(READ_WRITE) and /axi_mem_intercon_2/s00_couplers/auto_us/M_AXI(READ_ONLY)
+INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon_2/xbar/S00_AXI(1) and /axi_mem_intercon_2/s00_couplers/auto_us/M_AXI(0)
+INFO: [BD 41-237] Bus Interface property MAX_BURST_LENGTH does not match between /axi_mem_intercon_2/xbar/S00_AXI(256) and /axi_mem_intercon_2/s00_couplers/auto_us/M_AXI(128)
+INFO: [BD 41-237] Bus Interface property READ_WRITE_MODE does not match between /axi_mem_intercon_2/xbar/S01_AXI(READ_WRITE) and /axi_mem_intercon_2/s01_couplers/auto_us/M_AXI(WRITE_ONLY)
+INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon_2/xbar/S01_AXI(1) and /axi_mem_intercon_2/s01_couplers/auto_us/M_AXI(0)
+INFO: [BD 41-237] Bus Interface property MAX_BURST_LENGTH does not match between /axi_mem_intercon_2/xbar/S01_AXI(256) and /axi_mem_intercon_2/s01_couplers/auto_us/M_AXI(128)
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. 
+Please check your design and connect them if needed: 
+/video_overlay_unit/video_grayscale_data_smth
+/video_overlay_unit/video_color_data_smth
+
+Exporting to file /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/hw_handoff/hdmi_directpassthr_woi.hwh
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to net 'axi_mem_intercon_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/M00_AXI_rid'(1) to net 'axi_mem_intercon_M00_AXI_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/M00_AXI_bid'(1) to net 'axi_mem_intercon_M00_AXI_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to net 'axi_mem_intercon_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to net 'axi_mem_intercon_M00_AXI_WID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_AWID'(6) to net 'axi_mem_intercon_2_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon_2/M00_AXI_rid'(1) to net 'axi_mem_intercon_2_M00_AXI_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon_2/M00_AXI_bid'(1) to net 'axi_mem_intercon_2_M00_AXI_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_ARID'(6) to net 'axi_mem_intercon_2_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_WID'(6) to net 'axi_mem_intercon_2_M00_AXI_WID'(1) - Only lower order bits will be connected.
+Verilog Output written to : hdmi_directpassthr_woi.v
+Verilog Output written to : hdmi_directpassthr_woi_wrapper.v
+Wrote  : </export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/hdmi_directpassthr_woi.bd> 
+make_wrapper: Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 5302.418 ; gain = 76.867
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream
+INFO: [xilinx.com:ip:axi_vdma:6.2-15] /ycbcr2mem_unit/ycbcr_vdma 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+INFO: [xilinx.com:ip:axi_vdma:6.2-15] /bge_unit/mog_vdma 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /bge_unit/mog_params_extraction/w3_selection/one16subw1addw2 A_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /bge_unit/mog_params_extraction/w3_selection/one16subw1addw2 A_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /bge_unit/mog_params_extraction/w3_selection/one16subw1addw2 B_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /bge_unit/mog_params_extraction/w3_selection/one16subw1addw2 B_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /bge_unit/mog_params_extraction/w3_selection/w1addw2 A_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /bge_unit/mog_params_extraction/w3_selection/w1addw2 A_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /bge_unit/mog_params_extraction/w3_selection/w1addw2 B_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /bge_unit/mog_params_extraction/w3_selection/w1addw2 B_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:axi_vdma:6.2-15] /video_overlay_unit/vovrly_vdma 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+INFO: [BD 41-237] Bus Interface property READ_WRITE_MODE does not match between /axi_mem_intercon/xbar/S00_AXI(READ_WRITE) and /video_overlay_unit/vovrly_vdma/M_AXI_MM2S(READ_ONLY)
+INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon/xbar/S00_AXI(1) and /video_overlay_unit/vovrly_vdma/M_AXI_MM2S(0)
+INFO: [BD 41-237] Bus Interface property MAX_BURST_LENGTH does not match between /axi_mem_intercon/xbar/S00_AXI(256) and /video_overlay_unit/vovrly_vdma/M_AXI_MM2S(16)
+INFO: [BD 41-237] Bus Interface property READ_WRITE_MODE does not match between /axi_mem_intercon/xbar/S01_AXI(READ_WRITE) and /video_overlay_unit/vovrly_vdma/M_AXI_S2MM(WRITE_ONLY)
+INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon/xbar/S01_AXI(1) and /video_overlay_unit/vovrly_vdma/M_AXI_S2MM(0)
+INFO: [BD 41-237] Bus Interface property MAX_BURST_LENGTH does not match between /axi_mem_intercon/xbar/S01_AXI(256) and /video_overlay_unit/vovrly_vdma/M_AXI_S2MM(16)
+INFO: [BD 41-237] Bus Interface property READ_WRITE_MODE does not match between /axi_mem_intercon_1/xbar/S00_AXI(READ_WRITE) and /bge_unit/mog_vdma/M_AXI_MM2S(READ_ONLY)
+INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon_1/xbar/S00_AXI(1) and /bge_unit/mog_vdma/M_AXI_MM2S(0)
+INFO: [BD 41-237] Bus Interface property READ_WRITE_MODE does not match between /axi_mem_intercon_1/xbar/S01_AXI(READ_WRITE) and /bge_unit/mog_vdma/M_AXI_S2MM(WRITE_ONLY)
+INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon_1/xbar/S01_AXI(1) and /bge_unit/mog_vdma/M_AXI_S2MM(0)
+INFO: [BD 41-237] Bus Interface property READ_WRITE_MODE does not match between /axi_mem_intercon_2/xbar/S00_AXI(READ_WRITE) and /axi_mem_intercon_2/s00_couplers/auto_us/M_AXI(READ_ONLY)
+INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon_2/xbar/S00_AXI(1) and /axi_mem_intercon_2/s00_couplers/auto_us/M_AXI(0)
+INFO: [BD 41-237] Bus Interface property MAX_BURST_LENGTH does not match between /axi_mem_intercon_2/xbar/S00_AXI(256) and /axi_mem_intercon_2/s00_couplers/auto_us/M_AXI(128)
+INFO: [BD 41-237] Bus Interface property READ_WRITE_MODE does not match between /axi_mem_intercon_2/xbar/S01_AXI(READ_WRITE) and /axi_mem_intercon_2/s01_couplers/auto_us/M_AXI(WRITE_ONLY)
+INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon_2/xbar/S01_AXI(1) and /axi_mem_intercon_2/s01_couplers/auto_us/M_AXI(0)
+INFO: [BD 41-237] Bus Interface property MAX_BURST_LENGTH does not match between /axi_mem_intercon_2/xbar/S01_AXI(256) and /axi_mem_intercon_2/s01_couplers/auto_us/M_AXI(128)
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. 
+Please check your design and connect them if needed: 
+/video_overlay_unit/video_grayscale_data_smth
+/video_overlay_unit/video_color_data_smth
+
+Exporting to file /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/hw_handoff/hdmi_directpassthr_woi.hwh
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to net 'axi_mem_intercon_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/M00_AXI_rid'(1) to net 'axi_mem_intercon_M00_AXI_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/M00_AXI_bid'(1) to net 'axi_mem_intercon_M00_AXI_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to net 'axi_mem_intercon_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to net 'axi_mem_intercon_M00_AXI_WID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_AWID'(6) to net 'axi_mem_intercon_2_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon_2/M00_AXI_rid'(1) to net 'axi_mem_intercon_2_M00_AXI_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon_2/M00_AXI_bid'(1) to net 'axi_mem_intercon_2_M00_AXI_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_ARID'(6) to net 'axi_mem_intercon_2_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_WID'(6) to net 'axi_mem_intercon_2_M00_AXI_WID'(1) - Only lower order bits will be connected.
+Verilog Output written to : hdmi_directpassthr_woi.v
+Verilog Output written to : hdmi_directpassthr_woi_wrapper.v
+Wrote  : </export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/hdmi_directpassthr_woi.bd> 
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_processing_system7_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_axi_iic_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fmc_imageon_iic_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_rst_processing_system7_0_100M_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_100M .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_fmc_imageon_hdmi_in_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fmc_imageon_hdmi_input_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_fmc_imageon_hdmi_out_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fmc_imageon_hdmi_output_0/fmc_imageon_hdmi_out_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xlconstant_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fmc_imageon_hdmi_output_0/vcc .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xlconstant_1_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fmc_imageon_hdmi_output_0/gnd .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xlconcat_0_3'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block four_signal_registering/hdmi_sync_pass .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_pipeline_registers_1_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block four_signal_registering/pipeline_registers_1 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xlslice_0_3'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block four_signal_registering/hblank_out .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xlslice_0_4'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block four_signal_registering/vlbank_out .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xlslice_0_5'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block four_signal_registering/de_out .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xlslice_0_6'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block four_signal_registering/spdif_out .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_hblank_out_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block four_signal_registering1/hblank_out .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_de_out_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block four_signal_registering1/de_out .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_vlbank_out_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block four_signal_registering1/vlbank_out .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_pipeline_registers_1_1'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block four_signal_registering1/pipeline_registers_1 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_hdmi_sync_pass_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block four_signal_registering1/hdmi_sync_pass .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_spdif_out_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block four_signal_registering1/spdif_out .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_vbb_system_reset_0_1'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vbb_system_reset_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_rst_processing_system7_0_150M_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_150M .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_pipeline_registers_1_4'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_overlay_unit/pipeline_registers_1 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_pipeline_registers_1_5'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_overlay_unit/pipeline_registers_2 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_fifo_generator_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_overlay_unit/vovraly_rd_async_fifo .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_axi_vdma_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_overlay_unit/vovrly_vdma .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xbar_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/xbar .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xup_and3_1_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_overlay_unit/xup_and3_1 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_pipeline_registers_1_7'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_overlay_unit/vovrly_async_fifo_rst/pipeline_registers_10 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xup_or2_0_1'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_overlay_unit/vovrly_async_fifo_rst/xup_or2_2 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xlconstant_1_2'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_overlay_unit/vovrly_async_fifo_rst/xlconstant_1 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xlconstant_0_4'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block LEARNING_FACTOR .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xlconstant_0_5'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FG_THRESHOLD .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xlconstant_0_6'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MATCH_THRESHOLD .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_fifo_generator_0_1'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_read_async_fifo .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xlslice_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/mean1_selection/mean1_slice .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xlconcat_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/mean1_selection/mean1_concat .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xlconstant_0_7'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/mean1_selection/zero16 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_mean1_slice_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/mean2_selection/mean2_slice .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_mean1_concat_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/mean2_selection/mean2_concat .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_zero16_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/mean2_selection/zero16 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_mean1_slice_1'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/mean3_selection/mean3_slice .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_mean1_concat_1'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/mean3_selection/mean3_concat .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_zero16_1'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/mean3_selection/zero16 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_mean1_slice_2'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/sd1_selection/sd1_slice .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_mean1_concat_2'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/sd1_selection/sd1_concat .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_zero16_2'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/sd1_selection/zero16 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_mean1_slice_3'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/sd2_selection/sd2_slice .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_mean1_concat_3'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/sd2_selection/sd2_concat .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_zero16_3'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/sd2_selection/zero16 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_mean1_slice_4'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/sd3_selection/sd3_slice .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_mean1_concat_4'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/sd3_selection/sd3_concat .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_zero16_4'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/sd3_selection/zero16 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_mean1_slice_5'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/w1_selection/w1_slice .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_mean1_concat_5'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/w1_selection/w1_concat .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_zero16_5'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/w1_selection/zero16 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_mean1_slice_6'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/w2_selection/w2_slice .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_mean1_concat_6'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/w2_selection/w2_concat .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_zero16_6'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/w2_selection/zero16 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xlconstant_0_8'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/w3_selection/one16 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_c_addsub_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/w3_selection/w1addw2 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_c_addsub_0_1'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/w3_selection/one16subw1addw2 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xlconcat_0_4'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_packing/params_concat .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xlslice_0_7'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_packing/mean1_slice .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_mean1_slice_7'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_packing/mean2_slice .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_mean1_slice_8'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_packing/sd2_slice .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_mean1_slice_9'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_packing/mean3_slice .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_mean1_slice_10'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_packing/sd1_slice .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_mean1_slice_11'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_packing/w1_slice .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_mean1_slice_12'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_packing/w2_slice .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_mean1_slice_13'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_packing/sd3_slice .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_fifo_generator_0_2'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_write_async_fifo .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_axi_vdma_0_1'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_vdma .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xbar_1'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/xbar .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xlconstant_1_3'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_async_fifo_rst/xlconstant_1 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_pipeline_registers_10_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_async_fifo_rst/pipeline_registers_10 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xup_or2_2_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_async_fifo_rst/xup_or2_2 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_pipeline_registers_1_2'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/pipeline_registers_1 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xlconcat_0_5'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/grayscale8to32 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xlconstant_0_11'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/zero24 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xlslice_0_8'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/xlslice_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_pipeline_registers_1_3'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_overlay_unit/pipeline_registers_3 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xlconcat_0_6'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/w3_selection/w3_concat .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xlconstant_0_12'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/mog_params_extraction/w3_selection/zero16 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_fifo_generator_0_3'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/vdma_sync_signals_passing .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xup_and3_0_1'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/xup_and3_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xup_and3_0_2'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/xup_and3_1 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xup_and3_1_1'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/xup_and3_2 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xup_and3_2_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bge_unit/xup_and3_3 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_fifo_generator_0_4'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_overlay_unit/vovrly_sync_sigs_pass .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_fifo_generator_1_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_overlay_unit/vovraly_wr_async_fifo .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_data_packing_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_overlay_unit/vovrlay_data_packing_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xup_and3_0_3'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_overlay_unit/xup_and3_2 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xup_and3_1_2'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_overlay_unit/xup_and3_3 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xup_and4_0_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_overlay_unit/xup_and4_0 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_xup_and4_1_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_overlay_unit/xup_and4_1 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_pipeline_registers_5_0'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_overlay_unit/pipeline_registers_5 .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_pipeline_registers_1_6'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hdmi_sync_signals_passing/de_pass .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_pipeline_registers_1_8'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hdmi_sync_signals_passing/vblank .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_pipeline_registers_1_10'. Target already exists and is up to date.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hdmi_sync_signals_passing/hblank .
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_pipeline_registers_1_11'. Target already exists and is up to date.
+INFO: [Common 17-14] Message 'IP_Flow 19-1706' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hdmi_sync_signals_passing/spdif .
+INFO: [Common 17-14] Message 'BD 41-1029' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_Morphology_1_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'morphology_fifo'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'morphology_fifo' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_image_smoothing_1_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'smoothing_fifo'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'smoothing_fifo' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_MixtureOfGaussians_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'divider_16_8'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'divider_16_8' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'divider_16_9'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'divider_16_9' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mult_16x16'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'mult_16x16' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'sqrt_core'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'sqrt_core' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_video_overlay_0_2'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_auto_pc_0'...
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:fifo_generator:12.0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:blk_mem_gen:8.2' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_auto_pc_1'...
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:fifo_generator:12.0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:blk_mem_gen:8.2' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_auto_ds_0'...
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:fifo_generator:12.0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:blk_mem_gen:8.2' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:fifo_generator:12.0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:blk_mem_gen:8.2' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:fifo_generator:12.0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:blk_mem_gen:8.2' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_auto_pc_2'...
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:fifo_generator:12.0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:blk_mem_gen:8.2' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_auto_pc_3'...
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:fifo_generator:12.0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:blk_mem_gen:8.2' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_auto_us_0'...
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:fifo_generator:12.0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:blk_mem_gen:8.2' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:fifo_generator:12.0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:blk_mem_gen:8.2' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:fifo_generator:12.0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:blk_mem_gen:8.2' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hdmi_directpassthr_woi_auto_us_1'...
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:fifo_generator:12.0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:blk_mem_gen:8.2' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:fifo_generator:12.0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:blk_mem_gen:8.2' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:fifo_generator:12.0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:blk_mem_gen:8.2' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/hdl/hdmi_directpassthr_woi_wrapper.v]
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_processing_system7_0_0/hdmi_directpassthr_woi_processing_system7_0_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_axi_iic_0_0/hdmi_directpassthr_woi_axi_iic_0_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_processing_system7_0_axi_periph_0/hdmi_directpassthr_woi_processing_system7_0_axi_periph_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_rst_processing_system7_0_100M_0/hdmi_directpassthr_woi_rst_processing_system7_0_100M_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_fmc_imageon_hdmi_in_0_0/hdmi_directpassthr_woi_fmc_imageon_hdmi_in_0_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_fmc_imageon_hdmi_out_0_0/hdmi_directpassthr_woi_fmc_imageon_hdmi_out_0_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xlconstant_0_0/hdmi_directpassthr_woi_xlconstant_0_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xlconstant_1_0/hdmi_directpassthr_woi_xlconstant_1_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xlconcat_0_3/hdmi_directpassthr_woi_xlconcat_0_3.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_pipeline_registers_1_0/hdmi_directpassthr_woi_pipeline_registers_1_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xlslice_0_3/hdmi_directpassthr_woi_xlslice_0_3.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xlslice_0_4/hdmi_directpassthr_woi_xlslice_0_4.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xlslice_0_5/hdmi_directpassthr_woi_xlslice_0_5.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xlslice_0_6/hdmi_directpassthr_woi_xlslice_0_6.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_hblank_out_0/hdmi_directpassthr_woi_hblank_out_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_de_out_0/hdmi_directpassthr_woi_de_out_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_vlbank_out_0/hdmi_directpassthr_woi_vlbank_out_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_pipeline_registers_1_1/hdmi_directpassthr_woi_pipeline_registers_1_1.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_hdmi_sync_pass_0/hdmi_directpassthr_woi_hdmi_sync_pass_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_spdif_out_0/hdmi_directpassthr_woi_spdif_out_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_vbb_system_reset_0_1/hdmi_directpassthr_woi_vbb_system_reset_0_1.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_axi_mem_intercon_0/hdmi_directpassthr_woi_axi_mem_intercon_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_rst_processing_system7_0_150M_0/hdmi_directpassthr_woi_rst_processing_system7_0_150M_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_pipeline_registers_1_4/hdmi_directpassthr_woi_pipeline_registers_1_4.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_pipeline_registers_1_5/hdmi_directpassthr_woi_pipeline_registers_1_5.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_fifo_generator_0_0/hdmi_directpassthr_woi_fifo_generator_0_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_axi_vdma_0_0/hdmi_directpassthr_woi_axi_vdma_0_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xbar_0/hdmi_directpassthr_woi_xbar_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xup_and3_1_0/hdmi_directpassthr_woi_xup_and3_1_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_pipeline_registers_1_7/hdmi_directpassthr_woi_pipeline_registers_1_7.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xup_or2_0_1/hdmi_directpassthr_woi_xup_or2_0_1.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xlconstant_1_2/hdmi_directpassthr_woi_xlconstant_1_2.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xlconstant_0_4/hdmi_directpassthr_woi_xlconstant_0_4.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xlconstant_0_5/hdmi_directpassthr_woi_xlconstant_0_5.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xlconstant_0_6/hdmi_directpassthr_woi_xlconstant_0_6.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_fifo_generator_0_1/hdmi_directpassthr_woi_fifo_generator_0_1.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xlslice_0_0/hdmi_directpassthr_woi_xlslice_0_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xlconcat_0_0/hdmi_directpassthr_woi_xlconcat_0_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xlconstant_0_7/hdmi_directpassthr_woi_xlconstant_0_7.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_mean1_slice_0/hdmi_directpassthr_woi_mean1_slice_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_mean1_concat_0/hdmi_directpassthr_woi_mean1_concat_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_zero16_0/hdmi_directpassthr_woi_zero16_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_mean1_slice_1/hdmi_directpassthr_woi_mean1_slice_1.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_mean1_concat_1/hdmi_directpassthr_woi_mean1_concat_1.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_zero16_1/hdmi_directpassthr_woi_zero16_1.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_mean1_slice_2/hdmi_directpassthr_woi_mean1_slice_2.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_mean1_concat_2/hdmi_directpassthr_woi_mean1_concat_2.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_zero16_2/hdmi_directpassthr_woi_zero16_2.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_mean1_slice_3/hdmi_directpassthr_woi_mean1_slice_3.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_mean1_concat_3/hdmi_directpassthr_woi_mean1_concat_3.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_zero16_3/hdmi_directpassthr_woi_zero16_3.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_mean1_slice_4/hdmi_directpassthr_woi_mean1_slice_4.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_mean1_concat_4/hdmi_directpassthr_woi_mean1_concat_4.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_zero16_4/hdmi_directpassthr_woi_zero16_4.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_mean1_slice_5/hdmi_directpassthr_woi_mean1_slice_5.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_mean1_concat_5/hdmi_directpassthr_woi_mean1_concat_5.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_zero16_5/hdmi_directpassthr_woi_zero16_5.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_mean1_slice_6/hdmi_directpassthr_woi_mean1_slice_6.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_mean1_concat_6/hdmi_directpassthr_woi_mean1_concat_6.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_zero16_6/hdmi_directpassthr_woi_zero16_6.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xlconstant_0_8/hdmi_directpassthr_woi_xlconstant_0_8.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_c_addsub_0_0/hdmi_directpassthr_woi_c_addsub_0_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_c_addsub_0_1/hdmi_directpassthr_woi_c_addsub_0_1.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xlconcat_0_4/hdmi_directpassthr_woi_xlconcat_0_4.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xlslice_0_7/hdmi_directpassthr_woi_xlslice_0_7.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_mean1_slice_7/hdmi_directpassthr_woi_mean1_slice_7.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_mean1_slice_8/hdmi_directpassthr_woi_mean1_slice_8.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_mean1_slice_9/hdmi_directpassthr_woi_mean1_slice_9.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_mean1_slice_10/hdmi_directpassthr_woi_mean1_slice_10.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_mean1_slice_11/hdmi_directpassthr_woi_mean1_slice_11.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_mean1_slice_12/hdmi_directpassthr_woi_mean1_slice_12.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_mean1_slice_13/hdmi_directpassthr_woi_mean1_slice_13.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_fifo_generator_0_2/hdmi_directpassthr_woi_fifo_generator_0_2.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_axi_vdma_0_1/hdmi_directpassthr_woi_axi_vdma_0_1.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_axi_mem_intercon_1_0/hdmi_directpassthr_woi_axi_mem_intercon_1_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xbar_1/hdmi_directpassthr_woi_xbar_1.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xlconstant_1_3/hdmi_directpassthr_woi_xlconstant_1_3.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_pipeline_registers_10_0/hdmi_directpassthr_woi_pipeline_registers_10_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xup_or2_2_0/hdmi_directpassthr_woi_xup_or2_2_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_pipeline_registers_1_2/hdmi_directpassthr_woi_pipeline_registers_1_2.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xlconcat_0_5/hdmi_directpassthr_woi_xlconcat_0_5.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xlconstant_0_11/hdmi_directpassthr_woi_xlconstant_0_11.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xlslice_0_8/hdmi_directpassthr_woi_xlslice_0_8.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_pipeline_registers_1_3/hdmi_directpassthr_woi_pipeline_registers_1_3.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xlconcat_0_6/hdmi_directpassthr_woi_xlconcat_0_6.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xlconstant_0_12/hdmi_directpassthr_woi_xlconstant_0_12.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_fifo_generator_0_3/hdmi_directpassthr_woi_fifo_generator_0_3.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xup_and3_0_1/hdmi_directpassthr_woi_xup_and3_0_1.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xup_and3_0_2/hdmi_directpassthr_woi_xup_and3_0_2.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xup_and3_1_1/hdmi_directpassthr_woi_xup_and3_1_1.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xup_and3_2_0/hdmi_directpassthr_woi_xup_and3_2_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_fifo_generator_0_4/hdmi_directpassthr_woi_fifo_generator_0_4.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_fifo_generator_1_0/hdmi_directpassthr_woi_fifo_generator_1_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_data_packing_0_0/hdmi_directpassthr_woi_data_packing_0_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xup_and3_0_3/hdmi_directpassthr_woi_xup_and3_0_3.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xup_and3_1_2/hdmi_directpassthr_woi_xup_and3_1_2.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xup_and4_0_0/hdmi_directpassthr_woi_xup_and4_0_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_xup_and4_1_0/hdmi_directpassthr_woi_xup_and4_1_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_pipeline_registers_5_0/hdmi_directpassthr_woi_pipeline_registers_5_0.xci
+INFO: [Memdata 28-152] Did  not create MIG processor data. /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/ip/hdmi_directpassthr_woi_pipeline_registers_1_6/hdmi_directpassthr_woi_pipeline_registers_1_6.xci
+INFO: [Common 17-14] Message 'Memdata 28-152' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+[Tue Aug  4 17:46:54 2015] Launched synth_2...
+Run output will be captured here: /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.runs/synth_2/runme.log
+[Tue Aug  4 17:46:54 2015] Launched impl_2...
+Run output will be captured here: /export/scratch/fan/vivado/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.runs/impl_2/runme.log
+launch_runs: Time (s): cpu = 00:00:38 ; elapsed = 00:00:33 . Memory (MB): peak = 5431.840 ; gain = 123.363
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 19 13:44:14 2015...

@@ -1,0 +1,40 @@
+10
+
+dir
+35
+https://nuforge.coe.neu.edu/svn/zynq/branches/vision_flow_vivado_ver/custom_repo/IPcores/mixture_of_gaussians/sources_1/ip
+https://nuforge.coe.neu.edu/svn/zynq
+
+
+
+2014-08-14T21:22:03.804937Z
+35
+msabbagh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+aff6d62a-51ee-4626-8219-6379798b591e
+
+sqrt_core
+dir
+
+divider_16_8
+dir
+
+divider_16_9
+dir
+
+mult_16x16
+dir
+

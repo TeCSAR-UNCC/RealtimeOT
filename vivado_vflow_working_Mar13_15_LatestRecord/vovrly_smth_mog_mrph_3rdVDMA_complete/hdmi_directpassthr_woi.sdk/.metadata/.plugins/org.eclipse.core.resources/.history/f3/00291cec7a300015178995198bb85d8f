@@ -1,0 +1,24 @@
+/*
+ * kalman_filter_helper.h
+ *
+ *  Created on: Jul 20, 2015
+ *      Author: xufaneric
+ */
+
+#ifndef KALMAN_FILTER_HELPER_H_
+#define KALMAN_FILTER_HELPER_H_
+
+include "matrix.h"
+
+struct _Matrix F;
+struct _Matrix FT;
+struct _Matrix Q;
+struct _Matrix H;
+struct _Matrix HT;
+struct _Matrix R;
+struct _Matrix I;
+
+void kalman_filter_helper_init();
+void kalman_filter_helper_free();
+
+#endif /* KALMAN_FILTER_HELPER_H_ */

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <DashboardHolder activeDashboard="ILA">
+        <Dashboard columnResizable="1" key="ILA" rowResizable="0" title="ILA">
+            <Settings/>
+            <GadgetContainer boxAxis="1" count="2" height="759"
+                layout="JideBoxLayout" vgap="6" width="718">
+                <Gadget height="108" key="Trigger Capture Status" width="718">
+                    <Ila capture_condition="AND" capture_mode="ALWAYS"
+                        data_depth="1024" trigger_condition="AND"
+                        trigger_mode="BASIC_ONLY"
+                        trigger_position="1023" trigout_mode="DISABLED"
+                        tsm_file="" window_count="1"/>
+                </Gadget>
+                <Gadget height="461" key="Basic Trigger Setup" width="718">
+                    <Probe name="hdmi_directpassthr_woi_i/MixtureOfGuassians_0_window_en_out"/>
+                    <Probe name="hdmi_directpassthr_woi_i/S00_AXI_1_ARBURST[1:0]"/>
+                    <Probe name="hdmi_directpassthr_woi_i/S00_AXI_1_ARCACHE[3:0]"/>
+                    <Probe name="hdmi_directpassthr_woi_i/S00_AXI_1_ARREADY"/>
+                    <Probe name="hdmi_directpassthr_woi_i/S00_AXI_1_ARSIZE[2:0]"/>
+                    <Probe name="hdmi_directpassthr_woi_i/S00_AXI_1_ARVALID"/>
+                    <Probe name="hdmi_directpassthr_woi_i/S00_AXI_1_RLAST"/>
+                    <Probe name="hdmi_directpassthr_woi_i/S00_AXI_1_RRESP[1:0]"/>
+                    <Probe name="hdmi_directpassthr_woi_i/S00_AXI_1_RVALID"/>
+                    <Probe name="hdmi_directpassthr_woi_i/processing_system7_0_FCLK_RESET2_N"/>
+                </Gadget>
+                <Settings/>
+            </GadgetContainer>
+        </Dashboard>
+    </DashboardHolder>
+</component>

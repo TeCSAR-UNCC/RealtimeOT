@@ -1,0 +1,75 @@
+{
+   guistr: "# # String gsaved with Nlview version 6.3.3  2013-08-16 bk=1.2871 VDI=33 GEI=35
+#  -string -flagsOSRD
+preplace port s_axi_aclk -pg 1 -y 970 -defaultsOSRD
+preplace port LMB_Clk -pg 1 -y 290 -defaultsOSRD
+preplace port M07_AXI -pg 1 -y 560 -defaultsOSRD
+preplace port M_AXI_DC -pg 1 -y 330 -defaultsOSRD
+preplace port processor_clk -pg 1 -y 450 -defaultsOSRD
+preplace port M06_AXI -pg 1 -y 540 -defaultsOSRD
+preplace port UART -pg 1 -y 970 -defaultsOSRD
+preplace port M_AXI_IC -pg 1 -y 350 -defaultsOSRD
+preplace port slowest_sync_clk -pg 1 -y 640 -defaultsOSRD
+preplace port M10_AXI -pg 1 -y 620 -defaultsOSRD
+preplace port M04_AXI -pg 1 -y 500 -defaultsOSRD
+preplace port S00_ACLK -pg 1 -y 500 -defaultsOSRD
+preplace port IIC -pg 1 -y 460 -defaultsOSRD
+preplace port s_axi_aclk1 -pg 1 -y 600 -defaultsOSRD
+preplace port M09_AXI -pg 1 -y 600 -defaultsOSRD
+preplace port M11_AXI -pg 1 -y 640 -defaultsOSRD
+preplace port M05_AXI -pg 1 -y 520 -defaultsOSRD
+preplace port ext_reset_in -pg 1 -y 770 -defaultsOSRD
+preplace portBus In1 -pg 1 -y 580 -defaultsOSRD
+preplace portBus In4 -pg 1 -y 560 -defaultsOSRD
+preplace portBus peripheral_aresetn -pg 1 -y 830 -defaultsOSRD
+preplace portBus interconnect_aresetn -pg 1 -y 810 -defaultsOSRD
+preplace inst interconnect -pg 1 -lvl 4 -y 560 -defaultsOSRD
+preplace inst proc_sys_reset_1 -pg 1 -lvl 5 -y 770 -defaultsOSRD
+preplace inst blk_mem_gen_1 -pg 1 -lvl 5 -y 90 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 1 -y 650 -defaultsOSRD
+preplace inst axi_uartlite_1 -pg 1 -lvl 5 -y 980 -defaultsOSRD
+preplace inst microblaze_1 -pg 1 -lvl 2 -y 310 -defaultsOSRD
+preplace inst lmb_v10_1 -pg 1 -lvl 3 -y 70 -defaultsOSRD
+preplace inst lmb_bram_if_cntlr_1 -pg 1 -lvl 4 -y 100 -defaultsOSRD
+preplace inst lmb_v10_2 -pg 1 -lvl 3 -y 230 -defaultsOSRD
+preplace inst lmb_bram_if_cntlr_2 -pg 1 -lvl 4 -y 250 -defaultsOSRD
+preplace netloc microblaze_1_M_AXI_DP 1 2 2 960 460 NJ
+preplace netloc mdm_1_mbdebug_0 1 1 1 450
+preplace netloc lmb_bram_if_cntlr_2_bram_port 1 4 1 1510
+preplace netloc Conn1 1 3 1 N
+preplace netloc mig_1_ui_clk 1 0 5 170 740 NJ 730 NJ 730 NJ 730 NJ
+preplace netloc Conn2 1 4 2 1500 500 NJ
+preplace netloc microblaze_1_ilmb 1 2 1 950
+preplace netloc axi_uartlite_1_interrupt 1 3 3 1240 910 NJ 910 1860
+preplace netloc s_axi_aclk_1 1 0 5 NJ 970 NJ 970 NJ 970 NJ 980 N
+preplace netloc Conn3 1 5 1 N
+preplace netloc s_axi_aclk_2 1 0 4 180 570 NJ 640 NJ 640 NJ
+preplace netloc Conn4 1 4 2 1510 520 NJ
+preplace netloc Conn5 1 4 2 NJ 560 1860
+preplace netloc proc_sys_reset_1_peripheral_aresetn 1 0 6 190 730 NJ 720 NJ 720 1200 990 1510 900 1880
+preplace netloc Conn6 1 4 2 NJ 660 1890
+preplace netloc S00_ACLK_1 1 0 4 NJ 500 NJ 500 NJ 500 N
+preplace netloc proc_sys_reset_1_bus_struct_reset 1 2 4 970 160 1220 870 NJ 870 1860
+preplace netloc interconnect_M08_AXI 1 0 5 190 580 NJ 660 NJ 660 NJ 720 1470
+preplace netloc Conn7 1 4 2 NJ 640 1870
+preplace netloc microblaze_1_dlmb 1 2 1 940
+preplace netloc Conn10 1 4 2 N 460 NJ
+preplace netloc interconnect_interrupt 1 1 4 480 650 NJ 650 NJ 710 1480
+preplace netloc Conn8 1 4 2 NJ 580 1870
+preplace netloc microblaze_1_m_axi_dc 1 2 4 N 330 NJ 330 NJ 330 NJ
+preplace netloc lmb_bram_if_cntlr_1_bram_port 1 4 1 N
+preplace netloc mig_1_ui_clk1 1 0 4 NJ 290 460 220 960 150 1240
+preplace netloc Conn9 1 4 2 NJ 620 1860
+preplace netloc interconnect_M01_AXI 1 4 1 1490
+preplace netloc microblaze_1_m_axi_ic 1 2 4 N 350 NJ 350 NJ 350 NJ
+preplace netloc Conn 1 3 1 1220
+preplace netloc processor_clk_1 1 0 4 NJ 450 NJ 450 NJ 470 1240
+preplace netloc proc_sys_reset_1_interconnect_aresetn 1 3 3 1230 890 NJ 890 1890
+preplace netloc mig_1_ui_clk_sync_rst 1 0 5 NJ 770 NJ 770 NJ 770 NJ 770 1510
+preplace netloc In4_1 1 0 4 NJ 550 NJ 550 NJ 550 1210
+preplace netloc mdm_1_debug_sys_rst 1 1 4 460 790 NJ 790 NJ 790 NJ
+preplace netloc In1_1 1 0 4 NJ 560 NJ 560 NJ 560 1170
+preplace netloc proc_sys_reset_1_mb_reset 1 1 5 490 520 NJ 520 1190 880 NJ 880 1870
+levelinfo -pg 1 140 320 720 1070 1360 1700 1910
+",
+}

@@ -1,0 +1,12 @@
+
+
+the_ROM_image:
+{
+
+	[bootloader] ../vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/fsbl/Debug/fsbl.elf
+		../vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/hdmi_directpassthr_woi_wrapper_hw_platform_0/hdmi_directpassthr_woi_wrapper.bit
+	             ../vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/vision_flow_app/Debug/vision_flow_app.elf
+	             ../vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/app_cpu1/Debug/app_cpu1.elf
+
+}
+

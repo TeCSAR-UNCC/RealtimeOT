@@ -1,0 +1,36 @@
+{
+   guistr: "# # String gsaved with Nlview version 6.4-r1  2014-02-28 bk=1.3047 VDI=34 GEI=35 GUI=JA:1.7
+#  -string -flagsOSRD
+preplace portBus In0 -pg 1 -y 40 -defaultsOSRD
+preplace portBus In1 -pg 1 -y 60 -defaultsOSRD
+preplace portBus In2 -pg 1 -y 80 -defaultsOSRD
+preplace portBus In3 -pg 1 -y 100 -defaultsOSRD
+preplace portBus In4 -pg 1 -y 120 -defaultsOSRD
+preplace portBus In5 -pg 1 -y 140 -defaultsOSRD
+preplace portBus In6 -pg 1 -y 280 -defaultsOSRD
+preplace portBus In7 -pg 1 -y 300 -defaultsOSRD
+preplace portBus In8 -pg 1 -y 320 -defaultsOSRD
+preplace portBus In9 -pg 1 -y 240 -defaultsOSRD
+preplace portBus In10 -pg 1 -y 220 -defaultsOSRD
+preplace portBus In11 -pg 1 -y 260 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 2 -y 190 -defaultsOSRD
+preplace inst after_smth -pg 1 -lvl 1 -y 90 -defaultsOSRD
+preplace inst before_smth -pg 1 -lvl 1 -y 270 -defaultsOSRD
+preplace inst smth_pass_over -pg 1 -lvl 2 -y 90 -defaultsOSRD
+preplace netloc In2_1 1 0 1 NJ
+preplace netloc mog_woi_det_window_enable 1 0 1 NJ
+preplace netloc image_smoothing_1_de_out 1 0 1 NJ
+preplace netloc image_smoothing_1_win_enable_out 1 0 1 NJ
+preplace netloc image_smoothing_1_spdif_out 1 0 1 NJ
+preplace netloc xlconcat_1_dout 1 1 1 N
+preplace netloc image_smoothing_1_Vblank_out 1 0 1 NJ
+preplace netloc image_smoothing_full_version_0_Hblank_out 1 0 1 NJ
+preplace netloc In3_1 1 0 1 NJ
+preplace netloc image_smoothing_1_data_out 1 0 1 NJ
+preplace netloc xlconcat_0_dout 1 1 1 330
+preplace netloc pipeline_registers_1_pipe_out1 1 0 1 NJ
+preplace netloc image_smoothing_full_version_0_Vblank_out 1 0 1 NJ
+preplace netloc image_smoothing_1_Hblank_out 1 0 1 NJ
+levelinfo -pg 1 100 230 430 550
+",
+}

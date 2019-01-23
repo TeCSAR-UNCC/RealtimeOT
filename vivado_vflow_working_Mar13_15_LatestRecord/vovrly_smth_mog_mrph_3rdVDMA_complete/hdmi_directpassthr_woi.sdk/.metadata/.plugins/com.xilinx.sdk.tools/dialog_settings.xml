@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="" key="com.xilinx.sdk.debug.sysgen.mdlName"/>
+	<item value="qspi_single" key="hdmi_directpassthr_woi_wrapper_hw_platform_0-flashType"/>
+	<item value="false" key="hdmi_directpassthr_woi_wrapper_hw_platform_0-blankCheck"/>
+	<item value="" key="hdmi_directpassthr_woi_wrapper_hw_platform_0-fsblFile"/>
+	<item value="/export/scratch/wenyu/wenyu_vision_project/vivado_vflow_working_Mar13_15/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/app_cpu1/bootimage/BOOT.bin" key="hdmi_directpassthr_woi_wrapper_hw_platform_0-imgFile"/>
+	<item value="Local" key="hdmi_directpassthr_woi_wrapper_hw_platform_0-target"/>
+	<item value="" key="hdmi_directpassthr_woi_wrapper_hw_platform_0-offSet"/>
+	<item value="false" key="hdmi_directpassthr_woi_wrapper_hw_platform_0-verifyFlash"/>
+</section>

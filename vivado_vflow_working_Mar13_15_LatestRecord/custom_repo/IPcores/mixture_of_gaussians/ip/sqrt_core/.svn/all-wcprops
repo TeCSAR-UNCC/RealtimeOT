@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/mixture_of_gaussians/sources_1/ip/sqrt_core
+END
+sqrt_core.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/mixture_of_gaussians/sources_1/ip/sqrt_core/sqrt_core.xml
+END
+sqrt_core_funcsim.vhdl
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/mixture_of_gaussians/sources_1/ip/sqrt_core/sqrt_core_funcsim.vhdl
+END
+sqrt_core_stub.v
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/mixture_of_gaussians/sources_1/ip/sqrt_core/sqrt_core_stub.v
+END
+sqrt_core.xci
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/mixture_of_gaussians/sources_1/ip/sqrt_core/sqrt_core.xci
+END
+sqrt_core.dcp
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/mixture_of_gaussians/sources_1/ip/sqrt_core/sqrt_core.dcp
+END
+sqrt_core.veo
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/mixture_of_gaussians/sources_1/ip/sqrt_core/sqrt_core.veo
+END
+sqrt_core_funcsim.v
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/mixture_of_gaussians/sources_1/ip/sqrt_core/sqrt_core_funcsim.v
+END
+sqrt_core_stub.vhdl
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/mixture_of_gaussians/sources_1/ip/sqrt_core/sqrt_core_stub.vhdl
+END
+sqrt_core_ooc.xdc
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/mixture_of_gaussians/sources_1/ip/sqrt_core/sqrt_core_ooc.xdc
+END

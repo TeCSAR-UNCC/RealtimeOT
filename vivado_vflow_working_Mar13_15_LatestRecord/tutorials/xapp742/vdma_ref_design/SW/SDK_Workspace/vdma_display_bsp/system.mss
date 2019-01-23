@@ -1,0 +1,111 @@
+
+ PARAMETER VERSION = 2.2.0
+
+
+BEGIN OS
+ PARAMETER OS_NAME = standalone
+ PARAMETER OS_VER = 3.12.a
+ PARAMETER PROC_INSTANCE = processor_subsystem_microblaze_1
+ PARAMETER STDIN = processor_subsystem_axi_uartlite_1
+ PARAMETER STDOUT = processor_subsystem_axi_uartlite_1
+END
+
+
+BEGIN PROCESSOR
+ PARAMETER DRIVER_NAME = cpu
+ PARAMETER DRIVER_VER = 1.15.a
+ PARAMETER HW_INSTANCE = processor_subsystem_microblaze_1
+END
+
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = axipmon
+ PARAMETER DRIVER_VER = 5.00.a
+ PARAMETER HW_INSTANCE = axi_perf_mon_0
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = mig_7series
+ PARAMETER DRIVER_VER = 1.00.a
+ PARAMETER HW_INSTANCE = memory_subsystem_mig_1
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = uartlite
+ PARAMETER DRIVER_VER = 2.01.a
+ PARAMETER HW_INSTANCE = processor_subsystem_axi_uartlite_1
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = iic
+ PARAMETER DRIVER_VER = 2.08.a
+ PARAMETER HW_INSTANCE = processor_subsystem_interconnect_axi_iic_1
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = intc
+ PARAMETER DRIVER_VER = 2.07.a
+ PARAMETER HW_INSTANCE = processor_subsystem_interconnect_axi_intc_1
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = tmrctr
+ PARAMETER DRIVER_VER = 2.05.a
+ PARAMETER HW_INSTANCE = processor_subsystem_interconnect_axi_timer_1
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = bram
+ PARAMETER DRIVER_VER = 3.03.a
+ PARAMETER HW_INSTANCE = processor_subsystem_lmb_bram_if_cntlr_1
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = bram
+ PARAMETER DRIVER_VER = 3.03.a
+ PARAMETER HW_INSTANCE = processor_subsystem_lmb_bram_if_cntlr_2
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = uartlite
+ PARAMETER DRIVER_VER = 2.01.a
+ PARAMETER HW_INSTANCE = processor_subsystem_mdm_1
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = axivdma
+ PARAMETER DRIVER_VER = 4.06.a
+ PARAMETER HW_INSTANCE = video_pipeline_axi_vdma_1
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = tpg
+ PARAMETER DRIVER_VER = 1.00.a
+ PARAMETER HW_INSTANCE = video_pipeline_v_tpg_1
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = cresample
+ PARAMETER DRIVER_VER = 2.00.a
+ PARAMETER HW_INSTANCE = video_pipeline_video_out_v_cresample_0
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = osd
+ PARAMETER DRIVER_VER = 2.00.a
+ PARAMETER HW_INSTANCE = video_pipeline_video_out_v_osd_1
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = rgb2ycrcb
+ PARAMETER DRIVER_VER = 5.01.a
+ PARAMETER HW_INSTANCE = video_pipeline_video_out_v_rgb2ycrcb_0
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = vtc
+ PARAMETER DRIVER_VER = 5.00.a
+ PARAMETER HW_INSTANCE = video_pipeline_video_out_v_tc_1
+END
+
+

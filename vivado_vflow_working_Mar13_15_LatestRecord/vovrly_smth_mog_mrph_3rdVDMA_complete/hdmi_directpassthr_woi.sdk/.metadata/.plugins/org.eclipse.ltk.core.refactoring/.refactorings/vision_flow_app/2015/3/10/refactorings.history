@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;vision_flow_app/src/main.c&apos; to &apos;vision_flow.c&apos;" description="Rename resource &apos;main.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main.c" name="vision_flow.c" stamp="1425675751697" updateReferences="true"/>
+</session>

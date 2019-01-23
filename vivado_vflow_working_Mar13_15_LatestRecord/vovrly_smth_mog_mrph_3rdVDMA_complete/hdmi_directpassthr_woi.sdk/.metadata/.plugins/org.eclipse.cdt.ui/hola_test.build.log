@@ -1,0 +1,26 @@
+09:20:37 **** Auto Build of configuration Debug for project hola_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hola_test_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hola_test_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: hola_test.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hola_test_bsp/ps7_cortexa9_1/lib -o "hola_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hola_test.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hola_test.elf  |tee "hola_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22940	   1096	  29780	  53816	   d238	hola_test.elf
+Finished building: hola_test.elf.size
+ 
+
+09:20:38 Build Finished (took 106ms)
+

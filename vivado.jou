@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Apr 25 12:40:39 2018
+# Process ID: 9506
+# Current directory: /home/work1/Documents/Vision_Project_WORKING_SET
+# Command line: vivado
+# Log file: /home/work1/Documents/Vision_Project_WORKING_SET/vivado.log
+# Journal file: /home/work1/Documents/Vision_Project_WORKING_SET/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk -hwspec /home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.sdk/hdmi_directpassthr_woi_wrapper.hdf
+open_bd_design {/home/work1/Documents/Vision_Project_WORKING_SET/vivado_vflow_working_Mar13_15_LatestRecord/vovrly_smth_mog_mrph_3rdVDMA_complete/hdmi_directpassthr_woi.srcs/sources_1/bd/hdmi_directpassthr_woi/hdmi_directpassthr_woi.bd}
+synth_design -rtl -name rtl_1
+open_run impl_2

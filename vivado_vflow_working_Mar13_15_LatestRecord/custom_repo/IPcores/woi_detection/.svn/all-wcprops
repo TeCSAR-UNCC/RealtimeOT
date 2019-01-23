@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/woi_detection
+END
+component.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/woi_detection/component.xml
+END
+NEU_ESL_woi_detection.zip
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/woi_detection/NEU_ESL_woi_detection.zip
+END
+window_of_interest_detection.v
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/zynq/!svn/ver/35/branches/vision_flow_vivado_ver/custom_repo/IPcores/woi_detection/window_of_interest_detection.v
+END

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/export/thishost/scratch/sabbagh/vivado/hdmi_directpassthr_woi/hdmi_directpassthr_woi.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="5" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject db_ref_id="1" type="logic" fp_name="hdmi_directpassthr_woi_i/four_signal_registering1_Dout">
+      <obj_property name="ElementShortName">hdmi_directpassthr_woi_i/four_signal_registering1_Dout</obj_property>
+      <obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/four_signal_registering1_Dout</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="hdmi_directpassthr_woi_i/four_signal_registering1_Dout1">
+      <obj_property name="ElementShortName">hdmi_directpassthr_woi_i/four_signal_registering1_Dout1</obj_property>
+      <obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/four_signal_registering1_Dout1</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="hdmi_directpassthr_woi_i/four_signal_registering1_Dout2">
+      <obj_property name="ElementShortName">hdmi_directpassthr_woi_i/four_signal_registering1_Dout2</obj_property>
+      <obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/four_signal_registering1_Dout2</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="hdmi_directpassthr_woi_i/four_signal_registering1_Dout3">
+      <obj_property name="ElementShortName">hdmi_directpassthr_woi_i/four_signal_registering1_Dout3</obj_property>
+      <obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/four_signal_registering1_Dout3</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="hdmi_directpassthr_woi_i/video_overlay_0_video_data_out">
+      <obj_property name="ElementShortName">hdmi_directpassthr_woi_i/video_overlay_0_video_data_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">hdmi_directpassthr_woi_i/video_overlay_0_video_data_out[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="/export/thishost/opt/Xilinx/SDK/2014.2/tps/lnx64" version="1.7.0_40">
+<bootpath>
+<entry path="/export/thishost/opt/Xilinx/SDK/2014.2/tps/lnx64/jre/lib/resources.jar"/>
+<entry path="/export/thishost/opt/Xilinx/SDK/2014.2/tps/lnx64/jre/lib/rt.jar"/>
+<entry path="/export/thishost/opt/Xilinx/SDK/2014.2/tps/lnx64/jre/lib/sunrsasign.jar"/>
+<entry path="/export/thishost/opt/Xilinx/SDK/2014.2/tps/lnx64/jre/lib/jsse.jar"/>
+<entry path="/export/thishost/opt/Xilinx/SDK/2014.2/tps/lnx64/jre/lib/jce.jar"/>
+<entry path="/export/thishost/opt/Xilinx/SDK/2014.2/tps/lnx64/jre/lib/charsets.jar"/>
+<entry path="/export/thishost/opt/Xilinx/SDK/2014.2/tps/lnx64/jre/lib/jfr.jar"/>
+<entry path="/export/thishost/opt/Xilinx/SDK/2014.2/tps/lnx64/jre/classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="/export/thishost/opt/Xilinx/SDK/2014.2/tps/lnx64/jre/lib/ext"/>
+<entry path="/usr/java/packages/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/export/thishost/opt/Xilinx/SDK/2014.2/tps/lnx64/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="/export/thishost/scratch/opt/XilinxVivado/SDK/2014.2/tps/lnx64" version="1.7.0_40">
+<bootpath>
+<entry path="/export/thishost/scratch/opt/XilinxVivado/SDK/2014.2/tps/lnx64/jre/lib/resources.jar"/>
+<entry path="/export/thishost/scratch/opt/XilinxVivado/SDK/2014.2/tps/lnx64/jre/lib/rt.jar"/>
+<entry path="/export/thishost/scratch/opt/XilinxVivado/SDK/2014.2/tps/lnx64/jre/lib/sunrsasign.jar"/>
+<entry path="/export/thishost/scratch/opt/XilinxVivado/SDK/2014.2/tps/lnx64/jre/lib/jsse.jar"/>
+<entry path="/export/thishost/scratch/opt/XilinxVivado/SDK/2014.2/tps/lnx64/jre/lib/jce.jar"/>
+<entry path="/export/thishost/scratch/opt/XilinxVivado/SDK/2014.2/tps/lnx64/jre/lib/charsets.jar"/>
+<entry path="/export/thishost/scratch/opt/XilinxVivado/SDK/2014.2/tps/lnx64/jre/lib/jfr.jar"/>
+<entry path="/export/thishost/scratch/opt/XilinxVivado/SDK/2014.2/tps/lnx64/jre/classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="/export/thishost/scratch/opt/XilinxVivado/SDK/2014.2/tps/lnx64/jre/lib/ext"/>
+<entry path="/usr/java/packages/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/export/thishost/scratch/opt/XilinxVivado/SDK/2014.2/tps/lnx64/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>
